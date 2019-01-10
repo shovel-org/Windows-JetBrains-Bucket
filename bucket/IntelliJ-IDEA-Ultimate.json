@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.2-183.4886.37",
+    "version": "2018.3.3-183.5153.38",
     "description": "IntelliJ IDEA Ultimate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.2.win.zip",
-    "hash": "8af7495c7dadffca6c9d38f8ff9f02be4bf183f52dfa5834cde8ea47a342d4f6",
+    "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.3.win.zip",
+    "hash": "0652ef2c60b15f63967079c19a5428a13d9ca29bbc2e19f940034db62330eb6d",
     "architecture": {
         "64bit": {
             "bin": [
