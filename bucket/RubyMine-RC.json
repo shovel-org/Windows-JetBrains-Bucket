@@ -1,0 +1,37 @@
+{
+    "version": "2018.3-183.4284.98",
+    "description": "RubyMine Release Candidate. Cross-Platform Ruby on Rails IDE by JetBrains.",
+    "homepage": "https://www.jetbrains.com/rubymine/",
+    "url": "https://download.jetbrains.com/ruby/RubyMine-183.4284.98.exe#/cosi.7z",
+    "hash": "18bdb61e62b99dff5decc40b6ed35e976e9bd5e1584f81a17d72b50ad8f96059",
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "bin\\rubymine64.exe",
+                    "RubyMine (Release Candidate)"
+                ]
+            ]
+        },
+        "32bit": {
+            "shortcuts": [
+                [
+                    "bin\\rubymine.exe",
+                    "RubyMine (Release Candidate)"
+                ]
+            ]
+        }
+    },
+    "persist": "bin\\idea.properties",
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=RM&latest=true&platform=zip&type=rc",
+        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "replace": "${ver}-${build}"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/ruby/RubyMine-$matchBuild.exe#/cosi.7z",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
