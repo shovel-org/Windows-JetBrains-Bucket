@@ -1,0 +1,37 @@
+{
+    "version": "2018.3-183.4284.109",
+    "description": "DataGrip Early Access Program. Cross-Platform IDE for Databases & SQL by JetBrains.",
+    "homepage": "https://www.jetbrains.com/datagrip/",
+    "url": "https://download.jetbrains.com/datagrip/datagrip-183.4284.109.exe#/cosi.7z",
+    "hash": "cb471de05b54cc565ca3c58526e5805add52508446b98e02cee4dc69b3ce4f87",
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "bin\\datagrip64.exe",
+                    "DataGrip (Early Access Program)"
+                ]
+            ]
+        },
+        "32bit": {
+            "shortcuts": [
+                [
+                    "bin\\datagrip.exe",
+                    "DataGrip (Early Access Program)"
+                ]
+            ]
+        }
+    },
+    "persist": "bin\\idea.properties",
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=DG&latest=true&platform=zip&type=eap",
+        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "replace": "${ver}-${build}"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/datagrip/datagrip-$matchBuild.exe#/cosi.7z",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
