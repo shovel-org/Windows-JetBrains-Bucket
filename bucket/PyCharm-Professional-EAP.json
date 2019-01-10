@@ -1,0 +1,37 @@
+{
+    "version": "2018.3-183.4139.23",
+    "description": "PyCharm Professional Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.",
+    "homepage": "https://www.jetbrains.com/pycharm/",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-183.4139.23.exe#/cosi.7z",
+    "hash": "1392a5091fad35dea8c53f3e3a6c91a5c6e680fce719310a02f5e940ca10fbbf",
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "bin\\pycharm64.exe",
+                    "PyCharm Professional (Early Access Program)"
+                ]
+            ]
+        },
+        "32bit": {
+            "shortcuts": [
+                [
+                    "bin\\pycharm.exe",
+                    "PyCharm Professional (Early Access Program)"
+                ]
+            ]
+        }
+    },
+    "persist": "bin\\idea.properties",
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&platform=zip&type=eap",
+        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "replace": "${ver}-${build}"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/python/pycharm-professional-$matchBuild.exe#/cosi.7z",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
