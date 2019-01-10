@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.2-183.4886.43",
+    "version": "2018.3.3-183.5153.39",
     "description": "PyCharm Community. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-community-2018.3.2.exe#/cosi.7z",
-    "hash": "3ba823af8244a87e81ce6d18fe6cc617d56284add9a1c8385f433efb30a34e76",
+    "url": "https://download.jetbrains.com/python/pycharm-community-2018.3.3.exe#/cosi.7z",
+    "hash": "fdacdb645e34a6b03de77d1f717b4bc4bbfd6cc96c8cc5f2bf47b7e8ac46a5e8",
     "architecture": {
         "64bit": {
             "bin": [
