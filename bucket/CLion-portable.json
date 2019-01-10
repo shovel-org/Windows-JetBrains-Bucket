@@ -1,11 +1,11 @@
 {
-    "version": "2018.3.2-183.4886.39",
+    "version": "2018.3.3-183.5153.40",
     "description": "CLion. Cross-Platform IDE for C and C++ by JetBrains.",
     "homepage": "https://www.jetbrains.com/cpp/",
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/cpp/CLion-2018.3.2.zip",
-            "hash": "24169c45759a81486fcbcdd5e6a952843a2f6567cb84b8d1b8007c28a7705be5",
+            "url": "https://download.jetbrains.com/cpp/CLion-2018.3.3.zip",
+            "hash": "45ac2aa06108009329a7c070a6d857abe0cb899eb7957bfbe4c569b90622651d",
             "installer": {
                 "script": [
                     "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
