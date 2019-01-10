@@ -1,0 +1,42 @@
+{
+    "version": "2018.3.2-183.4886.37",
+    "description": "IntelliJ IDEA Community. Cross-Platform Java IDE for professional developers by JetBrains.",
+    "homepage": "https://www.jetbrains.com/idea/",
+    "url": "https://download.jetbrains.com/idea/ideaIC-2018.3.2.win.zip",
+    "hash": "b8c40e9233912eee86b7f199af590771e8b7203f83c25b55f642bc887b07652e",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "bin\\idea.bat",
+                "bin\\idea64.exe"
+            ],
+            "shortcuts": [
+                [
+                    "bin\\idea64.exe",
+                    "IntelliJ IDEA Community"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "bin\\idea.exe",
+            "shortcuts": [
+                [
+                    "bin\\idea.exe",
+                    "IntelliJ IDEA Community"
+                ]
+            ]
+        }
+    },
+    "persist": "bin\\idea.properties",
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&platform=zip&type=release",
+        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "replace": "${ver}-${build}"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/idea/ideaIC-$matchVer.win.zip",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
