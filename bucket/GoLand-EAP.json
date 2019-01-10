@@ -1,0 +1,37 @@
+{
+    "version": "2018.3-183.4284.84",
+    "description": "GoLand Early Access Program. Cross-Platform, Clever IDE to Go by JetBrains.",
+    "homepage": "https://www.jetbrains.com/goland/",
+    "url": "https://download.jetbrains.com/go/goland-183.4284.84.exe#/cosi.7z",
+    "hash": "6a2df398ec7666fe8cae7d16306f1e3fafc9d61a93aa55c7a5e822f466de765d",
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "bin\\goland64.exe",
+                    "GoLand (Early Access Program)"
+                ]
+            ]
+        },
+        "32bit": {
+            "shortcuts": [
+                [
+                    "bin\\goland.exe",
+                    "GoLand (Early Access Program)"
+                ]
+            ]
+        }
+    },
+    "persist": "bin\\idea.properties",
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=GO&latest=true&platform=zip&type=eap",
+        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "replace": "${ver}-${build}"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/go/goland-$matchBuild.exe#/cosi.7z",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
