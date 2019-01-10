@@ -1,0 +1,42 @@
+{
+    "version": "2018.3.2-183.4886.41",
+    "description": "WebStorm. Cross-Platform, Smart JavaScript IDE by JetBrains.",
+    "homepage": "https://www.jetbrains.com/webstorm/",
+    "url": "https://download.jetbrains.com/webstorm/WebStorm-2018.3.2.exe#/cosi.7z",
+    "hash": "efd0a704c760474539d5759c026c81b6744ee1994b289986f0232a98f6987ad4",
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "bin\\webstorm.bat",
+                "bin\\webstorm64.exe"
+            ],
+            "shortcuts": [
+                [
+                    "bin\\webstorm64.exe",
+                    "WebStorm"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "bin\\webstorm.exe",
+            "shortcuts": [
+                [
+                    "bin\\webstorm.exe",
+                    "WebStorm"
+                ]
+            ]
+        }
+    },
+    "persist": "bin\\idea.properties",
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=WS&latest=true&platform=zip&type=release",
+        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "replace": "${ver}-${build}"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/webstorm/WebStorm-$matchVer.exe#/cosi.7z",
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}
