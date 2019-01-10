@@ -1,0 +1,28 @@
+environment:
+  scoop: C:\projects\scoop
+  scoop_home: C:\projects\scoop\apps\scoop\current
+
+branches:
+  except:
+    - gh-pages
+
+skip_commits:
+  files:
+    - '**/*.md'
+    - '.vscode/**/*'
+
+init:
+  - ps: |
+      (Get-PsProvider 'FileSystem').Home = 'C:\projects\'
+      iex (New-Object System.Net.Webclient).DownloadString('https://get.scoop.sh')
+      Install-Module -Name Pester -Repository PSGallery -Force
+
+build: off
+
+test_script:
+  - ps: Invoke-Pester -PassThru -EnableExit
+
+on_finish:
+  - ps: |
+      Write-Host (Get-Content 'INSTALL.log' -Raw)
+      Push-AppveyorArtifact 'INSTALL.log'
