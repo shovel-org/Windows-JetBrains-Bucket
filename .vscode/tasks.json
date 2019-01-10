@@ -4,7 +4,7 @@
         {
             "label": "Check version (Whole repository)",
             "type": "shell",
-            "command": ".\\bin\\checkver.ps1 -Recurse",
+            "command": ".\\bin\\checkver.ps1 -Recurse -s",
             "presentation": {
                 "echo": true,
                 "reveal": "always",
@@ -14,6 +14,27 @@
             },
             "group": "test",
             "problemMatcher": [],
+        },
+        {
+            // Default (While opened file, Press CTRL+F9 / CTRL+SHIFT+B)
+            "label": "Check version and update (Actual)",
+            "type": "shell",
+            "command": ".\\bin\\checkAndPush.ps1",
+            "args": [
+                "'${file}'",
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true,
+            },
         },
         {
             "label": "Test",
