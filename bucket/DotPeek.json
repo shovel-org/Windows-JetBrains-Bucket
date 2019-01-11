@@ -1,6 +1,6 @@
 {
     "version": "2018.3.1",
-    "description": "Free .NET Decompiler and Assembly Browser by JetBrains.",
+    "description": "DotPeek. Free .NET Decompiler and Assembly Browser by JetBrains.",
     "homepage": "https://www.jetbrains.com/decompiler/",
     "license": {
         "identifier": "Proprietary",
@@ -16,6 +16,7 @@
             "hash": "456fa1755553ceff75e054dcf2ca9e1707d21f400a4febe57857d1ce2c58ac1d"
         }
     },
+    "bin": "dotPeek.exe",
     "shortcuts": [
         [
             "dotPeek.exe",
@@ -23,7 +24,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://data.services.jetbrains.com/products/releases?code=DPK&latest=true&platform=zip&type=release ",
+        "url": "https://data.services.jetbrains.com/products/releases?code=DPK&latest=true&platform=zip&type=release",
         "jsonpath": "$..version"
     },
     "autoupdate": {
