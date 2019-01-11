@@ -4,29 +4,6 @@
     "homepage": "https://www.jetbrains.com/rubymine/",
     "url": "https://download.jetbrains.com/ruby/RubyMine-2018.3.2.exe#/cosi.7z",
     "hash": "0d8bb7eca93a9813351e2c6bc4725ee38e675b6ece875b510ab101acc1d861cd",
-    "architecture": {
-        "64bit": {
-            "bin": [
-                "bin\\rubymine.bat",
-                "bin\\rubymine64.exe"
-            ],
-            "shortcuts": [
-                [
-                    "bin\\rubymine64.exe",
-                    "RubyMine"
-                ]
-            ]
-        },
-        "32bit": {
-            "bin": "bin\\rubymine.exe",
-            "shortcuts": [
-                [
-                    "bin\\rubymine.exe",
-                    "RubyMine"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -51,6 +28,29 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "bin\\rubymine.bat",
+                "bin\\rubymine64.exe"
+            ],
+            "shortcuts": [
+                [
+                    "bin\\rubymine64.exe",
+                    "RubyMine"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "bin\\rubymine.exe",
+            "shortcuts": [
+                [
+                    "bin\\rubymine.exe",
+                    "RubyMine"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=RM&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

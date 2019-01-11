@@ -4,7 +4,6 @@
     "homepage": "https://www.jetbrains.com/webstorm/",
     "url": "https://download.jetbrains.com/webstorm/WebStorm-183.4284.112.exe#/cosi.7z",
     "hash": "884d6d9647ad45ec064f23f62ae6759c81b3a9f9701e6f0cc82bcc39a0fa312c",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",

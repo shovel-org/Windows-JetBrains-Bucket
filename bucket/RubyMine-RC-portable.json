@@ -4,24 +4,6 @@
     "homepage": "https://www.jetbrains.com/rubymine/",
     "url": "https://download.jetbrains.com/ruby/RubyMine-183.4284.98.exe#/cosi.7z",
     "hash": "18bdb61e62b99dff5decc40b6ed35e976e9bd5e1584f81a17d72b50ad8f96059",
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "bin\\rubymine64.exe",
-                    "RubyMine (Release Candidate)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "bin\\rubymine.exe",
-                    "RubyMine (Release Candidate)"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -46,6 +28,24 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "bin\\rubymine64.exe",
+                    "RubyMine (Release Candidate)"
+                ]
+            ]
+        },
+        "32bit": {
+            "shortcuts": [
+                [
+                    "bin\\rubymine.exe",
+                    "RubyMine (Release Candidate)"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=RM&latest=true&platform=zip&type=rc",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
