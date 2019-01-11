@@ -4,6 +4,7 @@
     "homepage": "https://www.jetbrains.com/idea/",
     "url": "https://download.jetbrains.com/idea/ideaIU-183.4284.118.win.zip",
     "hash": "116998a77b08a303385377ffd355899f9e565f4201cadc9af6ea51762d98ee30",
+    "persist": "bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
@@ -22,7 +23,6 @@
             ]
         }
     },
-    "persist": "bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&platform=zip&type=rc",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

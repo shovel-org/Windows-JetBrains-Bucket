@@ -4,29 +4,6 @@
     "homepage": "https://www.jetbrains.com/idea/",
     "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.3.win.zip",
     "hash": "0652ef2c60b15f63967079c19a5428a13d9ca29bbc2e19f940034db62330eb6d",
-    "architecture": {
-        "64bit": {
-            "bin": [
-                "bin\\idea.bat",
-                "bin\\idea64.exe"
-            ],
-            "shortcuts": [
-                [
-                    "bin\\idea64.exe",
-                    "IntelliJ IDEA Ultimate"
-                ]
-            ]
-        },
-        "32bit": {
-            "bin": "bin\\idea.exe",
-            "shortcuts": [
-                [
-                    "bin\\idea.exe",
-                    "IntelliJ IDEA Ultimate"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -50,6 +27,29 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "bin\\idea.bat",
+                "bin\\idea64.exe"
+            ],
+            "shortcuts": [
+                [
+                    "bin\\idea64.exe",
+                    "IntelliJ IDEA Ultimate"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "bin\\idea.exe",
+            "shortcuts": [
+                [
+                    "bin\\idea.exe",
+                    "IntelliJ IDEA Ultimate"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

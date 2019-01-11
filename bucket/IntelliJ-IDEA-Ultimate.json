@@ -4,6 +4,7 @@
     "homepage": "https://www.jetbrains.com/idea/",
     "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.3.win.zip",
     "hash": "0652ef2c60b15f63967079c19a5428a13d9ca29bbc2e19f940034db62330eb6d",
+    "persist": "bin\\idea.properties",
     "architecture": {
         "64bit": {
             "bin": [
@@ -27,7 +28,6 @@
             ]
         }
     },
-    "persist": "bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

@@ -4,6 +4,7 @@
     "homepage": "https://www.jetbrains.com/idea/",
     "url": "https://download.jetbrains.com/idea/ideaIC-183.4284.118.win.zip",
     "hash": "1077958df26d33fd74016074f0d5391217afb200e7aa8704e2de5bd244460d82",
+    "persist": "bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
@@ -22,7 +23,6 @@
             ]
         }
     },
-    "persist": "bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&platform=zip&type=rc",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
