@@ -4,24 +4,6 @@
     "homepage": "https://www.jetbrains.com/phpstorm/",
     "url": "https://download.jetbrains.com/webide/PhpStorm-183.4886.22.exe#/cosi.7z",
     "hash": "d522f2a68980a1b8adec691837fe6d9d9c43b49cd0c42dbd5bda389ffcb9221c",
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "bin\\phpstorm64.exe",
-                    "PhpStorm (Early Access Program)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "bin\\phpstorm.exe",
-                    "PhpStorm (Early Access Program)"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -46,6 +28,24 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "bin\\phpstorm64.exe",
+                    "PhpStorm (Early Access Program)"
+                ]
+            ]
+        },
+        "32bit": {
+            "shortcuts": [
+                [
+                    "bin\\phpstorm.exe",
+                    "PhpStorm (Early Access Program)"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=PS&latest=true&platform=zip&type=eap",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
