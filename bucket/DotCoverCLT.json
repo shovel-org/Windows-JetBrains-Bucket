@@ -1,6 +1,6 @@
 {
     "version": "2018.3.1",
-    "description": "dotCover Command Line Tools. Standalone command line package that enables analysing code coverage outside of Visual Studio.",
+    "description": "dotCover Command Line Tools. Standalone command line package that enables analysing code coverage outside of Visual Studio by JetBrains.",
     "homepage": "https://www.jetbrains.com/dotcover/download/#section=commandline",
     "license": {
         "identifier": "Freeware",
