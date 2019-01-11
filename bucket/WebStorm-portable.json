@@ -4,29 +4,6 @@
     "homepage": "https://www.jetbrains.com/webstorm/",
     "url": "https://download.jetbrains.com/webstorm/WebStorm-2018.3.3.exe#/cosi.7z",
     "hash": "c6b7e2ff563a10e63e46df42166d5eb63dd29fe7b813a4903c4e2368f4df0f5c",
-    "architecture": {
-        "64bit": {
-            "bin": [
-                "bin\\webstorm.bat",
-                "bin\\webstorm64.exe"
-            ],
-            "shortcuts": [
-                [
-                    "bin\\webstorm64.exe",
-                    "WebStorm"
-                ]
-            ]
-        },
-        "32bit": {
-            "bin": "bin\\webstorm.exe",
-            "shortcuts": [
-                [
-                    "bin\\webstorm.exe",
-                    "WebStorm"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -51,6 +28,29 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "bin\\webstorm.bat",
+                "bin\\webstorm64.exe"
+            ],
+            "shortcuts": [
+                [
+                    "bin\\webstorm64.exe",
+                    "WebStorm"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "bin\\webstorm.exe",
+            "shortcuts": [
+                [
+                    "bin\\webstorm.exe",
+                    "WebStorm"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=WS&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
