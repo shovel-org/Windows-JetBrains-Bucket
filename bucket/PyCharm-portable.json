@@ -4,29 +4,6 @@
     "homepage": "https://www.jetbrains.com/pycharm/",
     "url": "https://download.jetbrains.com/python/pycharm-community-2018.3.3.exe#/cosi.7z",
     "hash": "fdacdb645e34a6b03de77d1f717b4bc4bbfd6cc96c8cc5f2bf47b7e8ac46a5e8",
-    "architecture": {
-        "64bit": {
-            "bin": [
-                "bin\\pycharm.bat",
-                "bin\\pycharm64.exe"
-            ],
-            "shortcuts": [
-                [
-                    "bin\\pycharm64.exe",
-                    "PyCharm Community"
-                ]
-            ]
-        },
-        "32bit": {
-            "bin": "bin\\pycharm.exe",
-            "shortcuts": [
-                [
-                    "bin\\pycharm.exe",
-                    "PyCharm Community"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -51,6 +28,29 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "bin\\pycharm.bat",
+                "bin\\pycharm64.exe"
+            ],
+            "shortcuts": [
+                [
+                    "bin\\pycharm64.exe",
+                    "PyCharm Community"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "bin\\pycharm.exe",
+            "shortcuts": [
+                [
+                    "bin\\pycharm.exe",
+                    "PyCharm Community"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=PCC&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

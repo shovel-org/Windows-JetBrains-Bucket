@@ -4,24 +4,6 @@
     "homepage": "https://www.jetbrains.com/pycharm/",
     "url": "https://download.jetbrains.com/python/pycharm-community-183.4284.116.exe#/cosi.7z",
     "hash": "09fc8640bd0f574eb6f03b3e9df5f8a30dd401349fe503038ac9e5c331a61d30",
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "bin\\pycharm64.exe",
-                    "PyCharm Community (Release Candidate)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "bin\\pycharm.exe",
-                    "PyCharm Community (Release Candidate)"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -46,6 +28,24 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "bin\\pycharm64.exe",
+                    "PyCharm Community (Release Candidate)"
+                ]
+            ]
+        },
+        "32bit": {
+            "shortcuts": [
+                [
+                    "bin\\pycharm.exe",
+                    "PyCharm Community (Release Candidate)"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=PCC&latest=true&platform=zip&type=rc",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

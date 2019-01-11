@@ -4,29 +4,6 @@
     "homepage": "https://www.jetbrains.com/pycharm/",
     "url": "https://download.jetbrains.com/python/pycharm-professional-2018.3.3.exe#/cosi.7z",
     "hash": "38f5c8916fc401573cbd83e7cae2e77d9dc7eb2c18e5b7daafd81cd5fad00567",
-    "architecture": {
-        "64bit": {
-            "bin": [
-                "bin\\pycharm.bat",
-                "bin\\pycharm64.exe"
-            ],
-            "shortcuts": [
-                [
-                    "bin\\pycharm64.exe",
-                    "PyCharm Professional"
-                ]
-            ]
-        },
-        "32bit": {
-            "bin": "bin\\pycharm.exe",
-            "shortcuts": [
-                [
-                    "bin\\pycharm.exe",
-                    "PyCharm Professional"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -51,6 +28,29 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "bin": [
+                "bin\\pycharm.bat",
+                "bin\\pycharm64.exe"
+            ],
+            "shortcuts": [
+                [
+                    "bin\\pycharm64.exe",
+                    "PyCharm Professional"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "bin\\pycharm.exe",
+            "shortcuts": [
+                [
+                    "bin\\pycharm.exe",
+                    "PyCharm Professional"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

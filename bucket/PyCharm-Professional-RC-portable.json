@@ -4,24 +4,6 @@
     "homepage": "https://www.jetbrains.com/pycharm/",
     "url": "https://download.jetbrains.com/python/pycharm-professional-183.4284.116.exe#/cosi.7z",
     "hash": "a20c1a538840c566669db62c1291ff2989f6d4966f1f8ec54ef6748bf2b63f12",
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "bin\\pycharm64.exe",
-                    "PyCharm Professional (Release Candidate)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "bin\\pycharm.exe",
-                    "PyCharm Professional (Release Candidate)"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -46,6 +28,24 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "bin\\pycharm64.exe",
+                    "PyCharm Professional (Release Candidate)"
+                ]
+            ]
+        },
+        "32bit": {
+            "shortcuts": [
+                [
+                    "bin\\pycharm.exe",
+                    "PyCharm Professional (Release Candidate)"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&platform=zip&type=rc",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
