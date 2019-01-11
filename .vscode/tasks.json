@@ -79,7 +79,7 @@
                 "showReuseMessage": false,
             },
             "group": "build",
-            "problemMatcher": []
+            "problemMatcher": [],
         },
     ],
 }
