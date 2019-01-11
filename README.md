@@ -15,4 +15,3 @@ TODO:
 - MPS
 - TeamCity
 - UpSource
-- Dotpeek

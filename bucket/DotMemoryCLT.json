@@ -1,7 +1,7 @@
 {
     "version": "2018.3.1",
     "description": "DotMemory Command Line Tool. Free package for profiling .NET memory usage from the command line by JetBrains.",
-    "homepage": "https://www.jetbrains.com/dotmemory/",
+    "homepage": "https://www.jetbrains.com/dotmemory/download/#section=command-line-profiler",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.jetbrains.com/dotmemory/download/dotmemory_clt_license.html"
