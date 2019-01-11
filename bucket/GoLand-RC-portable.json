@@ -4,24 +4,6 @@
     "homepage": "https://www.jetbrains.com/goland/",
     "url": "https://download.jetbrains.com/go/goland-2018.3.2.exe#/cosi.7z",
     "hash": "afe8c5c71749e4684efdb6029d071fbb1722eece21fc08b0196875174733ff26",
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "bin\\goland64.exe",
-                    "GoLand (Release Candidate)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "bin\\goland.exe",
-                    "GoLand (Release Candidate)"
-                ]
-            ]
-        }
-    },
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
@@ -46,6 +28,24 @@
         "bin\\idea.properties",
         "persistedConfig"
     ],
+    "architecture": {
+        "64bit": {
+            "shortcuts": [
+                [
+                    "bin\\goland64.exe",
+                    "GoLand (Release Candidate)"
+                ]
+            ]
+        },
+        "32bit": {
+            "shortcuts": [
+                [
+                    "bin\\goland.exe",
+                    "GoLand (Release Candidate)"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=GO&latest=true&platform=zip&type=rc",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
