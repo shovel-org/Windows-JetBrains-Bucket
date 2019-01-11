@@ -4,6 +4,8 @@
     "homepage": "https://www.jetbrains.com/datagrip/",
     "url": "https://download.jetbrains.com/datagrip/datagrip-183.4284.159.exe#/cosi.7z",
     "hash": "73b93e47978a75e8de294ae972de53037838782aac4654e57745e21369ff0ac3",
+    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
+    "persist": "bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
@@ -22,7 +24,6 @@
             ]
         }
     },
-    "persist": "bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=DG&latest=true&platform=zip&type=rc",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
