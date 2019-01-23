@@ -1,9 +1,9 @@
 {
-    "version": "2018.3-183.4284.118",
+    "version": "2018.3.4-183.5429.25",
     "description": "IntelliJ IDEA Community Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIC-183.4284.118.win.zip",
-    "hash": "1077958df26d33fd74016074f0d5391217afb200e7aa8704e2de5bd244460d82",
+    "url": "https://download.jetbrains.com/idea/ideaIC-183.5429.25.win.zip",
+    "hash": "b59bb90b45e5630423af2d9431b1a70d75ecf38ff3cc35865de9abde7eb4e70a",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
