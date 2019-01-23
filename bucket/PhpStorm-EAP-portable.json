@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.2-183.4886.22",
+    "version": "2019.1-191.4212.35",
     "description": "PhpStorm Early Access Program. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.",
     "homepage": "https://www.jetbrains.com/phpstorm/",
-    "url": "https://download.jetbrains.com/webide/PhpStorm-183.4886.22.exe#/cosi.7z",
-    "hash": "d522f2a68980a1b8adec691837fe6d9d9c43b49cd0c42dbd5bda389ffcb9221c",
+    "url": "https://download.jetbrains.com/webide/PhpStorm-191.4212.35.exe#/cosi.7z",
+    "hash": "3bd92c396924f6f77a2742b839345255b770577e08f4113b1a2b8cd58c1dd59f",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
