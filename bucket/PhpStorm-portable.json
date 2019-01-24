@@ -57,7 +57,7 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/webide/PhpStorm-$matchVer.exe#/cosi.7z",
+        "url": "https://download.jetbrains.com/webide/PhpStorm-$matchHead.exe#/cosi.7z",
         "hash": {
             "url": "$url.sha256"
         }

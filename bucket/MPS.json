@@ -12,7 +12,7 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/mps/$majorVersion.$minorVersion/MPS-$matchVer.exe#/cosi.7z",
+        "url": "https://download.jetbrains.com/mps/$majorVersion.$minorVersion/MPS-$matchHead.exe#/cosi.7z",
         "hash": {
             "url": "$url.sha256"
         }

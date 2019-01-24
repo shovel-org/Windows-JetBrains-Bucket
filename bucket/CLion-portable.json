@@ -49,7 +49,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.jetbrains.com/cpp/CLion-$matchVer.zip"
+                "url": "https://download.jetbrains.com/cpp/CLion-$matchHead.zip"
             }
         },
         "hash": {

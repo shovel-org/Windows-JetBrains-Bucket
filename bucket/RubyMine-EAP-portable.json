@@ -52,7 +52,7 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/ruby/RubyMine-$matchBuild.exe#/cosi.7z",
+        "url": "https://download.jetbrains.com/ruby/RubyMine-$preReleaseVersion.exe#/cosi.7z",
         "hash": {
             "url": "$url.sha256"
         }

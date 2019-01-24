@@ -29,7 +29,7 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/idea/ideaIU-$matchBuild.win.zip",
+        "url": "https://download.jetbrains.com/idea/ideaIU-$preReleaseVersion.win.zip",
         "hash": {
             "url": "$url.sha256"
         }

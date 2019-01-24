@@ -57,7 +57,7 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/webstorm/WebStorm-$matchVer.exe#/cosi.7z",
+        "url": "https://download.jetbrains.com/webstorm/WebStorm-$matchHead.exe#/cosi.7z",
         "hash": {
             "url": "$url.sha256"
         }

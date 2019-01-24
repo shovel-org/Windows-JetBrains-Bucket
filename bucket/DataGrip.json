@@ -35,7 +35,7 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/datagrip/datagrip-$matchVer.exe#/cosi.7z",
+        "url": "https://download.jetbrains.com/datagrip/datagrip-$matchHead.exe#/cosi.7z",
         "hash": {
             "url": "$url.sha256"
         }

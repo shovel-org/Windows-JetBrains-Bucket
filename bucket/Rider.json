@@ -25,7 +25,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.jetbrains.com/rider/JetBrains.Rider-$matchVer.exe#/cosi.7z",
+                "url": "https://download.jetbrains.com/rider/JetBrains.Rider-$matchHead.exe#/cosi.7z",
                 "hash": {
                     "url": "$url.sha256"
                 }

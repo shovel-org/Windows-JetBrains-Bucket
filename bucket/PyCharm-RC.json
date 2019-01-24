@@ -30,7 +30,7 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/python/pycharm-community-$matchBuild.exe#/cosi.7z",
+        "url": "https://download.jetbrains.com/python/pycharm-community-$preReleaseVersion.exe#/cosi.7z",
         "hash": {
             "url": "$url.sha256"
         }

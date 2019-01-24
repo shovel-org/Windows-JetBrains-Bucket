@@ -34,7 +34,7 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/idea/ideaIC-$matchVer.win.zip",
+        "url": "https://download.jetbrains.com/idea/ideaIC-$matchHead.win.zip",
         "hash": {
             "url": "$url.sha256"
         }
