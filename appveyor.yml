@@ -17,7 +17,7 @@ init:
       iex (New-Object System.Net.Webclient).DownloadString('https://get.scoop.sh')
       Install-Module -Name Pester -Repository PSGallery -Force
 
-build: off
+build: 'off'
 
 test_script:
   - ps: Invoke-Pester -PassThru -EnableExit
