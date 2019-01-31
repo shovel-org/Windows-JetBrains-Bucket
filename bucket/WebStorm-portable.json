@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.3-183.5153.33",
+    "version": "2018.3.4-183.5429.34",
     "description": "WebStorm. Cross-Platform, Smart JavaScript IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/webstorm/",
-    "url": "https://download.jetbrains.com/webstorm/WebStorm-2018.3.3.exe#/cosi.7z",
-    "hash": "c6b7e2ff563a10e63e46df42166d5eb63dd29fe7b813a4903c4e2368f4df0f5c",
+    "url": "https://download.jetbrains.com/webstorm/WebStorm-2018.3.4.exe#/cosi.7z",
+    "hash": "4f794eb0cf3e77f67f4c09ec6b71fb71662666fd71afe04f7084725e5f5d3448",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
