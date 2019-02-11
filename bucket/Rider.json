@@ -1,11 +1,11 @@
 {
-    "version": "2018.3.2-183.5619.15",
+    "version": "2018.3.3-183.5619.41",
     "description": "Rider. Fast, powerful and cross-platform .NET IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rider/",
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2018.3.2.exe#/cosi.7z",
-            "hash": "ecab5a91e8245f21a07ef5a9fba07b4c3d74a366ab3ffaf27ac38f3be7de1c58",
+            "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2018.3.3.exe#/cosi.7z",
+            "hash": "94d76d7d9b92026493ef70a358888f211e9353a8be1e25e364fc21842160985b",
             "bin": "bin\\rider.bat",
             "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
             "shortcuts": [
