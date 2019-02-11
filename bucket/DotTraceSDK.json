@@ -1,13 +1,13 @@
 {
-    "version": "2018.3.2",
+    "version": "2018.3.3",
     "description": "dotTrace Profilling SDK. Free set of libraries that contains profiling and self-profiling APIs by JetBrains.",
     "homepage": "https://www.jetbrains.com/profiler/download/#section=dottracesdk",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/profiler/download/dottrace_sdk_license.html"
     },
-    "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2018.3.2/JetBrains.Profiler.SelfSdk.2018.3.2.zip",
-    "hash": "a74d9e6f2a43f0fc20bd3f662bd1033976d0e98feb61be4b4ab68eb80ba6f40f",
+    "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2018.3.3/JetBrains.Profiler.SelfSdk.2018.3.3.zip",
+    "hash": "52411ecec21dd17430f93e4440bbe0d9d230325e82e18d02eda454e840ffb508",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=DPPS&latest=true&platform=zip&type=release",
         "jsonpath": "$..version"
