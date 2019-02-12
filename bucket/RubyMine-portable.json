@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.3-183.5153.41",
+    "version": "2018.3.4-183.5429.43",
     "description": "RubyMine. Cross-Platform Ruby on Rails IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rubymine/",
-    "url": "https://download.jetbrains.com/ruby/RubyMine-2018.3.3.exe#/cosi.7z",
-    "hash": "2b0e4c73dbea216b1258faf96391c2b20bed9530aee1ffb9d0ac8404fb37d4f6",
+    "url": "https://download.jetbrains.com/ruby/RubyMine-2018.3.4.exe#/cosi.7z",
+    "hash": "291879d768e0aa600379c7cf8092ff78d69433613885be324d07acdcec89c8d8",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
