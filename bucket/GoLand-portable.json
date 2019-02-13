@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.3-183.5153.54",
+    "version": "2018.3.4-183.5429.49",
     "description": "GoLand. Cross-Platform, Clever IDE to Go by JetBrains.",
     "homepage": "https://www.jetbrains.com/goland/",
-    "url": "https://download.jetbrains.com/go/goland-2018.3.3.exe#/cosi.7z",
-    "hash": "abe8c03815927c5a166a75db079998fbfe0a018db185c6fe9af52bef850ef909",
+    "url": "https://download.jetbrains.com/go/goland-2018.3.4.exe#/cosi.7z",
+    "hash": "278fadd33450be3cac1424b7586cac3676e21b145a039341910e730981ee504f",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
