@@ -8,11 +8,11 @@
     "persist": "bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=MPS&latest=true&platform=zip&type=eap",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "EAP(?<eap>\\d+)\\.exe.*version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/mps/$majorVersion.$minorVersion/MPS-$matchHead-EAP3.exe#/cosi.7z",
+        "url": "https://download.jetbrains.com/mps/$majorVersion.$minorVersion/MPS-$matchHead-EAP$matchEap.exe#/cosi.7z",
         "hash": {
             "url": "$url.sha256"
         }
