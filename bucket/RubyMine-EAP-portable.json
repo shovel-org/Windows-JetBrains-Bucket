@@ -1,9 +1,9 @@
 {
-    "version": "2019.1-191.5109.20",
+    "version": "2019.1-191.5532.29",
     "description": "RubyMine Early Access Program. Cross-Platform Ruby on Rails IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rubymine/",
-    "url": "https://download.jetbrains.com/ruby/RubyMine-191.5109.20.exe#/cosi.7z",
-    "hash": "105232a9daf7e1a3b5bba6a38f32afa1968e5d98aef920a354c4b65a1c1c3166",
+    "url": "https://download.jetbrains.com/ruby/RubyMine-191.5532.29.exe#/cosi.7z",
+    "hash": "218938bf86db1fd91714751d9256bfaa4112db93d2e05239693a73557868eca8",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
