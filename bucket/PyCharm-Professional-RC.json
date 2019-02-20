@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.4-183.5429.27",
+    "version": "2018.3.5-183.5912.13",
     "description": "PyCharm Professional Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-professional-183.5429.27.exe#/cosi.7z",
-    "hash": "eb8e47645e5a38d0eac63fe488e9dc77d8ea8f54413d219210f0ac46332a1fda",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-183.5912.13.exe#/cosi.7z",
+    "hash": "4d3aa51340bb5c86e741cfbfab1ff16e71895e826e14dfde35b1ba90c8bbb7ea",
     "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
     "persist": "bin\\idea.properties",
     "architecture": {
