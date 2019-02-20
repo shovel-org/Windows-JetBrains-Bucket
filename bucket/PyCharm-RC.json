@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.4-183.5429.27",
+    "version": "2018.3.5-183.5912.13",
     "description": "PyCharm Community Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-community-183.5429.27.exe#/cosi.7z",
-    "hash": "a459e6b4d4d96b58826871d9846ca30fc990b8f19deda955686962f38f2298f2",
+    "url": "https://download.jetbrains.com/python/pycharm-community-183.5912.13.exe#/cosi.7z",
+    "hash": "fbf284ff636072fa21eff1867a8ad85ae985352876926a43a116fd52a7d71b6a",
     "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
     "persist": "bin\\idea.properties",
     "architecture": {
