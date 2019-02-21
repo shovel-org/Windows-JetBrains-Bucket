@@ -1,9 +1,9 @@
 {
-    "version": "2019.1-191.5532.45",
+    "version": "2019.1-191.5701.26",
     "description": "PyCharm Professional Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-professional-191.5532.45.exe#/cosi.7z",
-    "hash": "6f6f7c14e0aafedb0ed36340b658459c911871803c1da96accd5c6a54efe83b0",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-191.5701.26.exe#/cosi.7z",
+    "hash": "6da1029ee588bd4be05d8c3f3aaa0ad01d2aea634bbc0b573a5a14687e3a8e6f",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
