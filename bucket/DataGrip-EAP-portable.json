@@ -1,9 +1,9 @@
 {
-    "version": "2018.3-183.4284.109",
+    "version": "2019.1-191.5701.21",
     "description": "DataGrip Early Access Program. Cross-Platform IDE for Databases & SQL by JetBrains.",
     "homepage": "https://www.jetbrains.com/datagrip/",
-    "url": "https://download.jetbrains.com/datagrip/datagrip-183.4284.109.exe#/cosi.7z",
-    "hash": "cb471de05b54cc565ca3c58526e5805add52508446b98e02cee4dc69b3ce4f87",
+    "url": "https://download.jetbrains.com/datagrip/datagrip-191.5701.21.exe#/cosi.7z",
+    "hash": "d733c028dfe929ec46c321532bd5509bf0c1f3fbee10e4b8fbd249fc1a8d9fb1",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
