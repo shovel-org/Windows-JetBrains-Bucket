@@ -1,9 +1,9 @@
 {
-    "version": "2019.1-191.5701.16",
+    "version": "2019.1-191.5849.21",
     "description": "IntelliJ IDEA Community Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIC-191.5701.16.win.zip",
-    "hash": "cf9bdaa9cfe1e80396e7120c23191529bf9a398eb5f5b0db9e2c01db320c601b",
+    "url": "https://download.jetbrains.com/idea/ideaIC-191.5849.21.win.zip",
+    "hash": "8c3fada10fee444f523e50bb5f4c932fc2cadad5e67541d6622bd75c6828c959",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
