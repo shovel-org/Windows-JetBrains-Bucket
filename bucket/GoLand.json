@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.4-183.5429.49",
+    "version": "2018.3.5-183.5912.25",
     "description": "GoLand. Cross-Platform, Clever IDE to Go by JetBrains.",
     "homepage": "https://www.jetbrains.com/goland/",
-    "url": "https://download.jetbrains.com/go/goland-2018.3.4.exe#/cosi.7z",
-    "hash": "278fadd33450be3cac1424b7586cac3676e21b145a039341910e730981ee504f",
+    "url": "https://download.jetbrains.com/go/goland-2018.3.5.exe#/cosi.7z",
+    "hash": "ba9baca7522bc8d7c0610798f089cbb6ec9fb73222cccb216f019f4ba3636ddf",
     "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
     "persist": "bin\\idea.properties",
     "architecture": {
