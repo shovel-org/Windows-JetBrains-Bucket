@@ -1,9 +1,9 @@
 {
-    "version": "2019.1-191.5849.23",
+    "version": "2019.1-191.6014.12",
     "description": "PyCharm Community Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-community-191.5849.23.exe#/cosi.7z",
-    "hash": "de16e1a1603fbc601987ad3ddc081c0468b7a353b7df29371b279fe2305e120f",
+    "url": "https://download.jetbrains.com/python/pycharm-community-191.6014.12.exe#/cosi.7z",
+    "hash": "d12823c42dfe9b8e66ba80e6cbd242e4181e91b724246beb740a98588c8c18a3",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
