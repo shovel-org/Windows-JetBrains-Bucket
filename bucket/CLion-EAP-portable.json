@@ -1,11 +1,11 @@
 {
-    "version": "2019.1-191.5849.15",
+    "version": "2019.1-191.6014.11",
     "description": "CLion Early Access Program. Cross-Platform IDE for C and C++ by JetBrains.",
     "homepage": "https://www.jetbrains.com/cpp/",
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/cpp/CLion-191.5849.15.win.zip",
-            "hash": "517a08324adfbc2a72187b2a62de5ecc2b3b263a8daed791baac78bc9d5255a2",
+            "url": "https://download.jetbrains.com/cpp/CLion-191.6014.11.win.zip",
+            "hash": "5beda99fbcd9c2dadb58b5856ea3ab87ea5de4590d020799a1f14cb716861551",
             "installer": {
                 "script": [
                     "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
