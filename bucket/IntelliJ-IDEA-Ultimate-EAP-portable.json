@@ -1,9 +1,9 @@
 {
-    "version": "2019.1-191.6014.8",
+    "version": "2019.1-191.6183.20",
     "description": "IntelliJ IDEA Ultimate Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIU-191.6014.8.win.zip",
-    "hash": "02f0ea0fe37ef5bab128972b8d4c5d97d27926487d0220016f67a0d5675f05b7",
+    "url": "https://download.jetbrains.com/idea/ideaIU-191.6183.20.win.zip",
+    "hash": "b49622575f5b8cf2b06f24c70dc7a37cbaa76e31b2f359e892989b43ff44d212",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
