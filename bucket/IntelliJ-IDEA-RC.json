@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.5-183.5912.10",
+    "version": "2018.3.6-183.6156.8",
     "description": "IntelliJ IDEA Community Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIC-183.5912.10.win.zip",
-    "hash": "a0978cd30f24c33e53d778967dde588e8993667da8023910e4851c02c89f808c",
+    "url": "https://download.jetbrains.com/idea/ideaIC-183.6156.8.win.zip",
+    "hash": "7f2b32f103063bc62283c8e225a8a16a498b54b7e7dee5af58c3d156f91d3278",
     "persist": "bin\\idea.properties",
     "architecture": {
         "64bit": {
