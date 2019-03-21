@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.6-183.6156.8",
+    "version": "2019.1-191.6183.62",
     "description": "IntelliJ IDEA Ultimate Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIU-183.6156.8.win.zip",
-    "hash": "b69792ba1a90c39237e671df8f9bef9360342ac90696dd0865af962ee007c6db",
+    "url": "https://download.jetbrains.com/idea/ideaIU-191.6183.62.win.zip",
+    "hash": "910a7a2651445b5ab7e3645219f9b5350b10dd19d22dd66479a68d3b07573762",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
