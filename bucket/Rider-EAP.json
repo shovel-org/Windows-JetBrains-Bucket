@@ -1,11 +1,11 @@
 {
-    "version": "2019.1-EAP1-191.6062.275",
+    "version": "2019.1-EAP2-191.6349.96",
     "description": "Rider (Early Access Program). Fast, powerful and cross-platform .NET IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rider/",
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2019.1-EAP1-191.6062.275.Checked.win.zip",
-            "hash": "cffc67119c2b8ffaa1f494b40dfddaaa968115924225b81f9667422a2d751615",
+            "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2019.1-EAP2-191.6349.96.Checked.win.zip",
+            "hash": "67c7a93bd090ce2c4a2ece3c838fa00e83cb846b7ff1b054efd28f661d720932",
             "shortcuts": [
                 [
                     "bin\\rider64.exe",
