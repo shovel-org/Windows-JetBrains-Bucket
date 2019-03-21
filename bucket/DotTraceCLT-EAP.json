@@ -1,13 +1,13 @@
 {
-    "version": "2019.1.EAP1",
+    "version": "2019.1.EAP2",
     "description": "dotTrace Command Line Tools Early Access Program. Free package that enables analyzing performance of .NET applications outside of Visual Studio by JetBrains.",
     "homepage": "https://www.jetbrains.com/profiler/download/#section=dottraceclt",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.jetbrains.com/profiler/download/dottrace_clt_license.html"
     },
-    "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.1.EAP1/JetBrains.dotTrace.CommandLineTools.2019.1.EAP1.Checked.zip",
-    "hash": "453fc1cea22d48d31e0f60180d8306c71e6dd9fcf040d5c43a84e3f59c1469b5",
+    "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.1.EAP2/JetBrains.dotTrace.CommandLineTools.2019.1.EAP2.Checked.zip",
+    "hash": "c9e0d8dc676d72ff212665fedac111356f7ae6832a9998b33961a060919fdf9c",
     "bin": "ConsoleProfiler.exe",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=DPCLT&latest=true&platform=zip&type=eap",
