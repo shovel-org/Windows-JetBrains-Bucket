@@ -1,14 +1,14 @@
 {
-    "version": "2019.1.50680",
+    "version": "2019.1.50730",
     "description": "Youtrack. Free, online, easy-to-use, fully customizable issue tracking and agile project management tool.",
     "homepage": "https://www.jetbrains.com/youtrack/",
     "license": {
         "identifier": "Freeware"
     },
     "notes": "YouTrack could be runned from anywhere using 'youtrack' command.",
-    "url": "https://download.jetbrains.com/charisma/youtrack-2019.1.50680.zip",
-    "hash": "26337e4bdc020c61f94b2411b3494f338560020c1f79a3c39fb9f1b6bd51f1c7",
-    "extract_dir": "youtrack-2019.1.50680",
+    "url": "https://download.jetbrains.com/charisma/youtrack-2019.1.50730.zip",
+    "hash": "56854fa9c44d1f904e90319d35b83186a06a5f4b1351a9f5b0dc8fb4c9773b73",
+    "extract_dir": "youtrack-2019.1.50730",
     "installer": {
         "script": [
             "$ver_path = \"$original_dir\\bin\"",
