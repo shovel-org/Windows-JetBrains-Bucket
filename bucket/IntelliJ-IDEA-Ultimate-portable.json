@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.5-183.5912.21",
+    "version": "2018.3.6-183.6156.11",
     "description": "IntelliJ IDEA Ultimate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.5.win.zip",
-    "hash": "34186422967a59ba7099811eae9083b6618e2dfeb52db7a3169180ca7bac7301",
+    "url": "https://download.jetbrains.com/idea/ideaIU-2018.3.6.win.zip",
+    "hash": "d15a490266dadd7d350b40aab0db4f4ffc28da1b68faaaf0dfed2d020edcab64",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
