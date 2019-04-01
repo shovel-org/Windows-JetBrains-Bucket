@@ -1,9 +1,9 @@
 {
-    "version": "2019.1-191.6183.9",
+    "version": "2019.1.1-191.6605.3",
     "description": "PyCharm Professional Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-professional-191.6183.9.exe#/cosi.7z",
-    "hash": "34db007364a68d929dc2cfcdb845f5d875f66a306982605542691ded6966d34b",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-191.6605.3.exe#/cosi.7z",
+    "hash": "7ef664155a7289a21f74d25982837bb5dc0dcb59034507723cd961df2e19720f",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
