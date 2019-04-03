@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.4-183.6156.3",
+    "version": "2019.1-191.6707.12",
     "description": "DataGrip. Cross-Platform IDE for Databases & SQL by JetBrains.",
     "homepage": "https://www.jetbrains.com/datagrip/",
-    "url": "https://download.jetbrains.com/datagrip/datagrip-2018.3.4.exe#/cosi.7z",
-    "hash": "705b40160f9118dec4e53d1964ab6d64c425b2826bfff539f1f572d8abfc1566",
+    "url": "https://download.jetbrains.com/datagrip/datagrip-2019.1.exe#/cosi.7z",
+    "hash": "200c19255292e848bf432a72111500d9e290abce0ade2bee95a2dbaeafa941e7",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
