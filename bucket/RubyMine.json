@@ -1,9 +1,9 @@
 {
-    "version": "2018.3.5-183.5912.16",
+    "version": "2019.1-191.6183.108",
     "description": "RubyMine. Cross-Platform Ruby on Rails IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rubymine/",
-    "url": "https://download.jetbrains.com/ruby/RubyMine-2018.3.5.exe#/cosi.7z",
-    "hash": "84c8c499ad7e7f88faaa6d22b37264e4bc5ee83bf8c5c3e1d75d5424c8863b5d",
+    "url": "https://download.jetbrains.com/ruby/RubyMine-2019.1.exe#/cosi.7z",
+    "hash": "8bd17375c5a1d4191009bb0224063d4fb490fd3004d4c7026ebe0fe2760e8d8d",
     "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
     "persist": "bin\\idea.properties",
     "architecture": {
