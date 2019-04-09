@@ -4,48 +4,51 @@
     "homepage": "https://www.jetbrains.com/webstorm/",
     "url": "https://download.jetbrains.com/webstorm/WebStorm-2019.1.exe#/cosi.7z",
     "hash": "263f4a4a1b56eb90b2e15db0a72ec498e5399b8f9a7429c3d49cde0fa6ac00bc",
+    "extract_to": "IDE",
     "installer": {
         "script": [
-            "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
+            "$newDir = \"$(Split-Path \"$dir\")\\current\\IDE\" -replace '\\\\', '/'",
+            "$IDE = \"$dir\\IDE\"",
             "$file = 'idea.properties'",
+            "    # Persisted file is located inside root folder of $persist_dir",
             "if (-not (Test-Path \"$persist_dir\\$file\")) {",
             "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
-            "    $file = \"$dir\\bin\\$file\"",
-            "    $CONT = Get-Content $file",
-            "    $persistedConfigDir = \"$newDir/persistedConfig\"",
+            "    $file = \"$dir\\IDE\\bin\\$file\"",
+            "    $profileDir = \"$newDir/profile\"",
+            "    $CONT = Get-Content \"$file\"",
             "        # Replacing config options",
-            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$persistedConfigDir/config\"",
-            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$persistedConfigDir/system\"",
+            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
+            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
             "    $CONT = $CONT -replace '^# idea.plugins.path=', 'idea.plugins.path='",
             "    $CONT = $CONT -replace '^# idea.log.path=', 'idea.plugins.path='",
             "        # Rewrite properties file",
-            "    Set-Content $file ($CONT -join \"`r`n\") -Encoding Ascii -Force",
+            "    Set-Content \"$file\" ($CONT -join \"`r`n\") -Force -Encoding Ascii",
             "}",
-            "Remove-Item \"$dir\\`$*\" -Force -Recurse"
+            "Remove-Item \"$IDE\\`$*\" -Force -Recurse"
         ]
     },
     "persist": [
-        "bin\\idea.properties",
-        "persistedConfig"
+        "IDE\\bin\\idea.properties",
+        "profile"
     ],
     "architecture": {
         "64bit": {
             "bin": [
-                "bin\\webstorm.bat",
-                "bin\\webstorm64.exe"
+                "IDE\\bin\\webstorm.bat",
+                "IDE\\bin\\webstorm64.exe"
             ],
             "shortcuts": [
                 [
-                    "bin\\webstorm64.exe",
+                    "IDE\\bin\\webstorm64.exe",
                     "WebStorm"
                 ]
             ]
         },
         "32bit": {
-            "bin": "bin\\webstorm.exe",
+            "bin": "IDE\\bin\\webstorm.exe",
             "shortcuts": [
                 [
-                    "bin\\webstorm.exe",
+                    "IDE\\bin\\webstorm.exe",
                     "WebStorm"
                 ]
             ]
