@@ -1,13 +1,13 @@
 {
-    "version": "2019.1.EAP5",
+    "version": "2019.1.EAP6",
     "description": "dotCover Command Line Tools Early Access Program. Standalone command line package that enables analysing code coverage outside of Visual Studio.",
     "homepage": "https://www.jetbrains.com/dotcover/download/#section=commandline",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.jetbrains.com/dotcover/download/dotcover_clt_license.html"
     },
-    "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.1.EAP5/JetBrains.dotCover.CommandLineTools.2019.1.EAP5.Checked.zip",
-    "hash": "8edcb1938f3a58efa3a30127737149e2ce0b34ea2c8b97eaa98038e0964db9f9",
+    "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.1.EAP6/JetBrains.dotCover.CommandLineTools.2019.1.EAP6.Checked.zip",
+    "hash": "53543a1bba06d1ae50544ab539d3e1d26af3fb2fade82e86ea2d2386f64a05b6",
     "bin": "dotCover.exe",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=DCCLT&latest=true&platform=zip&type=eap",
