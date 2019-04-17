@@ -4,25 +4,27 @@
     "homepage": "https://www.jetbrains.com/idea/",
     "url": "https://download.jetbrains.com/idea/ideaIC-2019.1.1.win.zip",
     "hash": "85f298ee139418d7575e3af89cac90ef09960446fd455e8ae8e064611bcd1078",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "bin": [
-                "bin\\idea.bat",
-                "bin\\idea64.exe"
+                "IDE\\bin\\idea.bat",
+                "IDE\\bin\\idea64.exe"
             ],
             "shortcuts": [
                 [
-                    "bin\\idea64.exe",
+                    "IDE\\bin\\idea64.exe",
                     "IntelliJ IDEA Community"
                 ]
             ]
         },
         "32bit": {
-            "bin": "bin\\idea.exe",
+            "bin": "IDE\\bin\\idea.exe",
             "shortcuts": [
                 [
-                    "bin\\idea.exe",
+                    "IDE\\bin\\idea.exe",
                     "IntelliJ IDEA Community"
                 ]
             ]
