@@ -15,8 +15,8 @@
             "$ver_path = \"$original_dir\\bin\"",
             "$cont = @(",
             "    \"Push-Location \"\"$ver_path\"\"\"",
-            "  , '& .\\teamcity-server.bat @args'",
-            "  , 'Pop-Location'",
+            "    '& .\\teamcity-server.bat @args'",
+            "    'Pop-Location'",
             ")",
             "Set-Content \"$dir\\teamcity.ps1\" ($cont -join \"`r`n\") -Encoding Ascii"
         ]
