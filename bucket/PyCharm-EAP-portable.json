@@ -4,35 +4,38 @@
     "homepage": "https://www.jetbrains.com/pycharm/",
     "url": "https://download.jetbrains.com/python/pycharm-community-191.6014.12.exe#/cosi.7z",
     "hash": "d12823c42dfe9b8e66ba80e6cbd242e4181e91b724246beb740a98588c8c18a3",
+    "extract_to": "IDE",
     "installer": {
         "script": [
-            "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
-            "$file = 'idea.properties'",
+            "$currentDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
+            "$newDir = \"$(Split-Path \"$dir\")\\current\\IDE\" -replace '\\\\', '/'",
+            "$IDE = \"$dir\\IDE\"",
+            "$file = 'IDE\\bin\\idea.properties'",
             "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
-            "    $file = \"$dir\\bin\\$file\"",
-            "    $CONT = Get-Content $file",
-            "    $persistedConfigDir = \"$newDir/persistedConfig\"",
+            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    $file = \"$dir\\$file\"",
+            "    $profileDir = \"$currentDir/profile\"",
+            "    $CONT = Get-Content \"$file\"",
             "        # Replacing config options",
-            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$persistedConfigDir/config\"",
-            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$persistedConfigDir/system\"",
+            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
+            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
             "    $CONT = $CONT -replace '^# idea.plugins.path=', 'idea.plugins.path='",
             "    $CONT = $CONT -replace '^# idea.log.path=', 'idea.plugins.path='",
             "        # Rewrite properties file",
-            "    Set-Content $file ($CONT -join \"`r`n\") -Encoding Ascii -Force",
+            "    Set-Content \"$file\" ($CONT -join \"`r`n\") -Force -Encoding Ascii",
             "}",
-            "Remove-Item \"$dir\\`$*\" -Force -Recurse"
+            "Remove-Item \"$IDE\\`$*\" -Force -Recurse"
         ]
     },
     "persist": [
-        "bin\\idea.properties",
-        "persistedConfig"
+        "IDE\\bin\\idea.properties",
+        "profile"
     ],
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
-                    "bin\\pycharm64.exe",
+                    "IDE\\bin\\pycharm64.exe",
                     "PyCharm Community (Early Access Program)"
                 ]
             ]
@@ -40,7 +43,7 @@
         "32bit": {
             "shortcuts": [
                 [
-                    "bin\\pycharm.exe",
+                    "IDE\\bin\\pycharm.exe",
                     "PyCharm Community (Early Access Program)"
                 ]
             ]
