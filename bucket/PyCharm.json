@@ -4,26 +4,27 @@
     "homepage": "https://www.jetbrains.com/pycharm/",
     "url": "https://download.jetbrains.com/python/pycharm-community-2019.1.1.exe#/cosi.7z",
     "hash": "505af5a257d87402f2dc566cac618b3fcbe131c0499072c7963b56549c77729b",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "bin": [
-                "bin\\pycharm.bat",
-                "bin\\pycharm64.exe"
+                "IDE\\bin\\pycharm.bat",
+                "IDE\\bin\\pycharm64.exe"
             ],
             "shortcuts": [
                 [
-                    "bin\\pycharm64.exe",
+                    "IDE\\bin\\pycharm64.exe",
                     "PyCharm Community"
                 ]
             ]
         },
         "32bit": {
-            "bin": "bin\\pycharm.exe",
+            "bin": "IDE\\bin\\pycharm.exe",
             "shortcuts": [
                 [
-                    "bin\\pycharm.exe",
+                    "IDE\\bin\\pycharm.exe",
                     "PyCharm Community"
                 ]
             ]
