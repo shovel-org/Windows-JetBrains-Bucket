@@ -8,13 +8,15 @@
             "hash": "6f721d2ccc65d5daa8eab2148d4e1b1cdf984f38898cb015a49c574645881c19",
             "shortcuts": [
                 [
-                    "bin\\rider64.exe",
+                    "IDE\\bin\\rider64.exe",
                     "Rider (Early Access Program)"
                 ]
             ]
         }
     },
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=RD&latest=true&platform=zip&type=eap",
         "regex": "version\":\"(?<ver>[\\w\\.-]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

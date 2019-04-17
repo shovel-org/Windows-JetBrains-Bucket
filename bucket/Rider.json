@@ -6,17 +6,21 @@
         "64bit": {
             "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2018.3.4.exe#/cosi.7z",
             "hash": "6c6a1a5221731a7b464327dd732bea7d5d0fa7d2742eeeb7a5b67cc927eb2d4e",
-            "bin": "bin\\rider.bat",
-            "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
+            "bin": [
+                "IDE\\bin\\rider.bat",
+                "IDE\\bin\\rider64.exe"
+            ],
             "shortcuts": [
                 [
-                    "bin\\rider64.exe",
+                    "IDE\\bin\\rider64.exe",
                     "Rider"
                 ]
             ]
         }
     },
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=RD&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
