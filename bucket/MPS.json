@@ -4,8 +4,18 @@
     "homepage": "https://www.jetbrains.com/mps/",
     "url": "https://download.jetbrains.com/mps/2019.1/MPS-2019.1.exe#/cosi.7z",
     "hash": "235b4b50ebc8d07b9c3a51ba74aa23a1857005a5bfa6a9d607f4d6b60283971b",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
+    "bin": "IDE\\bin\\mps.bat",
+    "shortcuts": [
+        [
+            "IDE\\bin\\mps.bat",
+            "MPS",
+            "",
+            "IDE\\bin\\mps.ico"
+        ]
+    ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=MPS&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
