@@ -4,13 +4,14 @@
     "homepage": "https://www.jetbrains.com/rubymine/",
     "url": "https://download.jetbrains.com/ruby/RubyMine-191.6707.40.exe#/cosi.7z",
     "hash": "57f2cd6a92c8c50a9ab3dee20caf9c635f27f41e23d445f7ae69c9b4204cbafc",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
-                    "bin\\rubymine64.exe",
+                    "IDE\\bin\\rubymine64.exe",
                     "RubyMine (Early Access Program)"
                 ]
             ]
@@ -18,7 +19,7 @@
         "32bit": {
             "shortcuts": [
                 [
-                    "bin\\rubymine.exe",
+                    "IDE\\bin\\rubymine.exe",
                     "RubyMine (Early Access Program)"
                 ]
             ]
