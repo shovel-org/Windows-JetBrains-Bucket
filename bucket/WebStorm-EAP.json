@@ -4,13 +4,14 @@
     "homepage": "https://www.jetbrains.com/webstorm/",
     "url": "https://download.jetbrains.com/webstorm/WebStorm-191.6707.34.exe#/cosi.7z",
     "hash": "aaeb12493f5b99fa3351595557e298e665b99cc184cca44029c53d7ca23edf88",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
-                    "bin\\webstorm64.exe",
+                    "IDE\\bin\\webstorm64.exe",
                     "WebStorm (Early Access Program)"
                 ]
             ]
@@ -18,7 +19,7 @@
         "32bit": {
             "shortcuts": [
                 [
-                    "bin\\webstorm.exe",
+                    "IDE\\bin\\webstorm.exe",
                     "WebStorm (Early Access Program)"
                 ]
             ]
