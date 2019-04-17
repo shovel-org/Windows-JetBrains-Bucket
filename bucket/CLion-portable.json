@@ -6,40 +6,44 @@
         "64bit": {
             "url": "https://download.jetbrains.com/cpp/CLion-2019.1.1.win.zip",
             "hash": "33f5355e78d339196df328b92fe8ebacd7c171da8cb0ae96472744f0dfbcce45",
-            "installer": {
-                "script": [
-                    "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
-                    "$file = 'idea.properties'",
-                    "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-                    "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
-                    "    $file = \"$dir\\bin\\$file\"",
-                    "    $CONT = Get-Content $file",
-                    "    $persistedConfigDir = \"$newDir/persistedConfig\"",
-                    "        # Replacing config options",
-                    "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$persistedConfigDir/config\"",
-                    "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$persistedConfigDir/system\"",
-                    "    $CONT = $CONT -replace '^# idea.plugins.path=', 'idea.plugins.path='",
-                    "    $CONT = $CONT -replace '^# idea.log.path=', 'idea.plugins.path='",
-                    "        # Rewrite properties file",
-                    "    Set-Content $file ($CONT -join \"`r`n\") -Encoding Ascii -Force",
-                    "}"
-                ]
-            },
             "bin": [
-                "bin\\clion.bat",
-                "bin\\clion64.exe"
+                "IDE\\bin\\clion.bat",
+                "IDE\\bin\\clion64.exe"
             ],
             "shortcuts": [
                 [
-                    "bin\\clion64.exe",
+                    "IDE\\bin\\clion64.exe",
                     "CLion"
                 ]
             ]
         }
     },
+    "extract_to": "IDE",
+    "installer": {
+        "script": [
+            "$currentDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
+            "$newDir = \"$(Split-Path \"$dir\")\\current\\IDE\" -replace '\\\\', '/'",
+            "$IDE = \"$dir\\IDE\"",
+            "$file = 'IDE\\bin\\idea.properties'",
+            "if (-not (Test-Path \"$persist_dir\\$file\")) {",
+            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    $file = \"$dir\\$file\"",
+            "    $profileDir = \"$currentDir/profile\"",
+            "    $CONT = Get-Content \"$file\"",
+            "        # Replacing config options",
+            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
+            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
+            "    $CONT = $CONT -replace '^# idea.plugins.path=', 'idea.plugins.path='",
+            "    $CONT = $CONT -replace '^# idea.log.path=', 'idea.plugins.path='",
+            "        # Rewrite properties file",
+            "    Set-Content \"$file\" ($CONT -join \"`r`n\") -Force -Encoding Ascii",
+            "}",
+            "Remove-Item \"$IDE\\`$*\" -Force -Recurse"
+        ]
+    },
     "persist": [
-        "bin\\idea.properties",
-        "persistedConfig"
+        "IDE\\bin\\idea.properties",
+        "profile"
     ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=CL&latest=true&platform=zip&type=release",
