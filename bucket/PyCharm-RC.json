@@ -4,13 +4,14 @@
     "homepage": "https://www.jetbrains.com/pycharm/",
     "url": "https://download.jetbrains.com/python/pycharm-community-191.6605.3.exe#/cosi.7z",
     "hash": "048e239360860a5b1b1baf9d4f4bcd9a48a692c7cc9553b3ef91ca4b3d0db868",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
-                    "bin\\pycharm64.exe",
+                    "IDE\\bin\\pycharm64.exe",
                     "PyCharm Community (Release Candidate)"
                 ]
             ]
@@ -18,7 +19,7 @@
         "32bit": {
             "shortcuts": [
                 [
-                    "bin\\pycharm.exe",
+                    "IDE\\bin\\pycharm.exe",
                     "PyCharm Community (Release Candidate)"
                 ]
             ]

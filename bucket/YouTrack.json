@@ -3,7 +3,8 @@
     "description": "Youtrack. Free, online, easy-to-use, fully customizable issue tracking and agile project management tool.",
     "homepage": "https://www.jetbrains.com/youtrack/",
     "license": {
-        "identifier": "Freeware"
+        "identifier": "Freeware",
+        "url": "https://www.jetbrains.com/youtrack/buy/license.html"
     },
     "notes": "YouTrack could be runned from anywhere using 'youtrack' command.",
     "url": "https://download.jetbrains.com/charisma/youtrack-2019.1.51277.zip",
@@ -14,8 +15,8 @@
             "$ver_path = \"$original_dir\\bin\"",
             "$cont = @(",
             "    \"Push-Location \"\"$ver_path\"\"\"",
-            "  , '& .\\youtrack.bat @args'",
-            "  , 'Pop-Location'",
+            "    '& .\\youtrack.bat @args'",
+            "    'Pop-Location'",
             ")",
             "Set-Content \"$dir\\youtrack.ps1\" ($cont -join \"`r`n\") -Encoding Ascii"
         ]

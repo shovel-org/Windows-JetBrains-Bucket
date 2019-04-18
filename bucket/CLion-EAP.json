@@ -8,13 +8,15 @@
             "hash": "b14bb619a128713043ca1f4f8a87ca5b778532407249e307294041e2d56e0db3",
             "shortcuts": [
                 [
-                    "bin\\clion64.exe",
+                    "IDE\\bin\\clion64.exe",
                     "CLion (Early Access Program)"
                 ]
             ]
         }
     },
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=CL&latest=true&platform=zip&type=eap",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

@@ -4,13 +4,14 @@
     "homepage": "https://www.jetbrains.com/phpstorm/",
     "url": "https://download.jetbrains.com/webide/PhpStorm-191.6707.42.exe#/cosi.7z",
     "hash": "562111b7de3d7a49b1c57b4b3a814554b5b3e4e5fdb24f396b1b4d54ea43f300",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
-                    "bin\\phpstorm64.exe",
+                    "IDE\\bin\\phpstorm64.exe",
                     "PhpStorm (Early Access Program)"
                 ]
             ]
@@ -18,7 +19,7 @@
         "32bit": {
             "shortcuts": [
                 [
-                    "bin\\phpstorm.exe",
+                    "IDE\\bin\\phpstorm.exe",
                     "PhpStorm (Early Access Program)"
                 ]
             ]

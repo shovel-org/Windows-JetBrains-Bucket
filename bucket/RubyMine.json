@@ -4,26 +4,27 @@
     "homepage": "https://www.jetbrains.com/rubymine/",
     "url": "https://download.jetbrains.com/ruby/RubyMine-2019.1.exe#/cosi.7z",
     "hash": "8bd17375c5a1d4191009bb0224063d4fb490fd3004d4c7026ebe0fe2760e8d8d",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "bin": [
-                "bin\\rubymine.bat",
-                "bin\\rubymine64.exe"
+                "IDE\\bin\\rubymine.bat",
+                "IDE\\bin\\rubymine64.exe"
             ],
             "shortcuts": [
                 [
-                    "bin\\rubymine64.exe",
+                    "IDE\\bin\\rubymine64.exe",
                     "RubyMine"
                 ]
             ]
         },
         "32bit": {
-            "bin": "bin\\rubymine.exe",
+            "bin": "IDE\\bin\\rubymine.exe",
             "shortcuts": [
                 [
-                    "bin\\rubymine.exe",
+                    "IDE\\bin\\rubymine.exe",
                     "RubyMine"
                 ]
             ]

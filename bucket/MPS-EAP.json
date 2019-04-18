@@ -4,8 +4,17 @@
     "homepage": "https://www.jetbrains.com/mps/",
     "url": "https://download.jetbrains.com/mps/2019.1/MPS-2019.1-EAP8.exe#/cosi.7z",
     "hash": "365b89e332f4ab099ceb44b9927013434645dd6149aff9b7683640e9fea5c360",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
+    "shortcuts": [
+        [
+            "IDE\\bin\\mps.bat",
+            "MPS (Early Access Program)",
+            "",
+            "IDE\\bin\\mps.ico"
+        ]
+    ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=MPS&latest=true&platform=zip&type=eap",
         "regex": "EAP(?<eap>\\d+)\\.exe.*version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

@@ -4,12 +4,14 @@
     "homepage": "https://www.jetbrains.com/idea/",
     "url": "https://download.jetbrains.com/idea/ideaIU-191.6707.31.win.zip",
     "hash": "971932072c14f3b58ea10e514bb306cb1d1f84327d11c5ee0a05be4a9185f465",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
-                    "bin\\idea64.exe",
+                    "IDE\\bin\\idea64.exe",
                     "IntelliJ IDEA Ultimate (Release Candidate)"
                 ]
             ]
@@ -17,7 +19,7 @@
         "32bit": {
             "shortcuts": [
                 [
-                    "bin\\idea.exe",
+                    "IDE\\bin\\idea.exe",
                     "IntelliJ IDEA Ultimate (Release Candidate)"
                 ]
             ]

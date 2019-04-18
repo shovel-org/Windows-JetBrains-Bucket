@@ -4,25 +4,27 @@
     "homepage": "https://www.jetbrains.com/idea/",
     "url": "https://download.jetbrains.com/idea/ideaIU-2019.1.1.win.zip",
     "hash": "9cd7f7cbf94c38fc962a671e9fd74e30d3e9d26231d344ae2f18f60bd26c9a94",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "bin": [
-                "bin\\idea.bat",
-                "bin\\idea64.exe"
+                "IDE\\bin\\idea.bat",
+                "IDE\\bin\\idea64.exe"
             ],
             "shortcuts": [
                 [
-                    "bin\\idea64.exe",
+                    "IDE\\bin\\idea64.exe",
                     "IntelliJ IDEA Ultimate"
                 ]
             ]
         },
         "32bit": {
-            "bin": "bin\\idea.exe",
+            "bin": "IDE\\bin\\idea.exe",
             "shortcuts": [
                 [
-                    "bin\\idea.exe",
+                    "IDE\\bin\\idea.exe",
                     "IntelliJ IDEA Ultimate"
                 ]
             ]

@@ -4,12 +4,14 @@
     "homepage": "https://www.jetbrains.com/idea/",
     "url": "https://download.jetbrains.com/idea/ideaIC-191.6707.7.win.zip",
     "hash": "05f56f8b26d439bcbd2ad48074ab6bf2672c9b1dce4c526a2cedc32a0885fb5d",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
-                    "bin\\idea64.exe",
+                    "IDE\\bin\\idea64.exe",
                     "IntelliJ IDEA Community (Early Access Program)"
                 ]
             ]
@@ -17,7 +19,7 @@
         "32bit": {
             "shortcuts": [
                 [
-                    "bin\\idea.exe",
+                    "IDE\\bin\\idea.exe",
                     "IntelliJ IDEA Community (Early Access Program)"
                 ]
             ]

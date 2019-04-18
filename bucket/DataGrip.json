@@ -4,26 +4,27 @@
     "homepage": "https://www.jetbrains.com/datagrip/",
     "url": "https://download.jetbrains.com/datagrip/datagrip-2019.1.exe#/cosi.7z",
     "hash": "200c19255292e848bf432a72111500d9e290abce0ade2bee95a2dbaeafa941e7",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "bin": [
-                "bin\\datagrip.bat",
-                "bin\\datagrip64.exe"
+                "IDE\\bin\\datagrip.bat",
+                "IDE\\bin\\datagrip64.exe"
             ],
             "shortcuts": [
                 [
-                    "bin\\datagrip64.exe",
+                    "IDE\\bin\\datagrip64.exe",
                     "DataGrip"
                 ]
             ]
         },
         "32bit": {
-            "bin": "bin\\datagrip.exe",
+            "bin": "IDE\\bin\\datagrip.exe",
             "shortcuts": [
                 [
-                    "bin\\datagrip.exe",
+                    "IDE\\bin\\datagrip.exe",
                     "DataGrip"
                 ]
             ]

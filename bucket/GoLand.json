@@ -4,26 +4,27 @@
     "homepage": "https://www.jetbrains.com/goland/",
     "url": "https://download.jetbrains.com/go/goland-2019.1.exe#/cosi.7z",
     "hash": "ff398ffb247f6013a31303250506a124d8b7b7304f1f1a416adf3d93fd7c2a30",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "bin": [
-                "bin\\goland.bat",
-                "bin\\goland64.exe"
+                "IDE\\bin\\goland.bat",
+                "IDE\\bin\\goland64.exe"
             ],
             "shortcuts": [
                 [
-                    "bin\\goland64.exe",
+                    "IDE\\bin\\goland64.exe",
                     "GoLand"
                 ]
             ]
         },
         "32bit": {
-            "bin": "bin\\goland.exe",
+            "bin": "IDE\\bin\\goland.exe",
             "shortcuts": [
                 [
-                    "bin\\goland.exe",
+                    "IDE\\bin\\goland.exe",
                     "GoLand"
                 ]
             ]

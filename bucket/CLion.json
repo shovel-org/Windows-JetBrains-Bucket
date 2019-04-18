@@ -7,18 +7,20 @@
             "url": "https://download.jetbrains.com/cpp/CLion-2019.1.1.win.zip",
             "hash": "33f5355e78d339196df328b92fe8ebacd7c171da8cb0ae96472744f0dfbcce45",
             "bin": [
-                "bin\\clion.bat",
-                "bin\\clion64.exe"
+                "IDE\\bin\\clion.bat",
+                "IDE\\bin\\clion64.exe"
             ],
             "shortcuts": [
                 [
-                    "bin\\clion64.exe",
+                    "IDE\\bin\\clion64.exe",
                     "CLion"
                 ]
             ]
         }
     },
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=CL&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",

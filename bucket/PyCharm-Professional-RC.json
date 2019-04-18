@@ -4,13 +4,14 @@
     "homepage": "https://www.jetbrains.com/pycharm/",
     "url": "https://download.jetbrains.com/python/pycharm-professional-191.6605.3.exe#/cosi.7z",
     "hash": "7ef664155a7289a21f74d25982837bb5dc0dcb59034507723cd961df2e19720f",
-    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
-    "persist": "bin\\idea.properties",
+    "extract_to": "IDE",
+    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
-                    "bin\\pycharm64.exe",
+                    "IDE\\bin\\pycharm64.exe",
                     "PyCharm Professional (Release Candidate)"
                 ]
             ]
@@ -18,7 +19,7 @@
         "32bit": {
             "shortcuts": [
                 [
-                    "bin\\pycharm.exe",
+                    "IDE\\bin\\pycharm.exe",
                     "PyCharm Professional (Release Candidate)"
                 ]
             ]
