@@ -1,11 +1,11 @@
 {
-    "version": "2019.1.1-191.6707.62",
+    "version": "2019.1.2-191.6707.69",
     "description": "CLion. Cross-Platform IDE for C and C++ by JetBrains.",
     "homepage": "https://www.jetbrains.com/cpp/",
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/cpp/CLion-2019.1.1.win.zip",
-            "hash": "33f5355e78d339196df328b92fe8ebacd7c171da8cb0ae96472744f0dfbcce45",
+            "url": "https://download.jetbrains.com/cpp/CLion-2019.1.2.win.zip",
+            "hash": "1bf3ac77b91e2c1114cae414e52b683bd6e55ab8d01c85636b270ccf98901029",
             "bin": [
                 "IDE\\bin\\clion.bat",
                 "IDE\\bin\\clion64.exe"
