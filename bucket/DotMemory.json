@@ -1,15 +1,15 @@
 {
-    "version": "2018.3.4",
+    "version": "2019.1",
     "description": "DotMemory. Memory Profile & Unit testing framework for .NET by JetBrains.",
     "homepage": "https://www.jetbrains.com/dotmemory/",
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2018.3.4/dotMemory.UI.64.2018.3.4.exe#/dotMemory.exe",
-            "hash": "daddca542c657037463d9f69d5cf429e16c8104c864ff95ebea4d6c42ce08ea9"
+            "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.1/dotMemory.UI.64.2019.1.exe#/dotMemory.exe",
+            "hash": "f83a3d5ca8ccdfafd3a19a690f87031a7ad78f5df2b858e17ad9bc12488b9a1c"
         },
         "32bit": {
-            "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2018.3.4/dotMemory.UI.32.2018.3.4.exe#/dotMemory.exe",
-            "hash": "633ec6645684ca8b1bf75d115a8f5a42f7b5142439d196e825dd26a4a7f058eb"
+            "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.1/dotMemory.UI.32.2019.1.exe#/dotMemory.exe",
+            "hash": "0cded58fde74adc71cd8300daff94768667694cd59252f58b7cd7c6c24d4635e"
         }
     },
     "shortcuts": [
