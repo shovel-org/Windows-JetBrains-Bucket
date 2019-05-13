@@ -4,8 +4,9 @@ branches:
 build: 'off'
 image: Visual Studio 2017
 environment:
-  scoop: C:\projects\scoop
-  scoop_home: C:\projects\scoop
+  SCOOP: C:\projects\scoop
+  SCOOP_HOME: C:\projects\scoop
+  SCOOP_HELPERS: C:\projects\helpers
   matrix:
     - PowerShell: 5
     - PowerShell: 6
