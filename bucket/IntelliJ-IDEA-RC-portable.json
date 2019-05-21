@@ -1,9 +1,9 @@
 {
-    "version": "2019.1.2-191.7141.32",
+    "version": "2019.1.3-191.7479.7",
     "description": "IntelliJ IDEA Community Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIC-191.7141.32.win.zip",
-    "hash": "05272344895c348734e0a35004946ad19fc93c7a33e521e364c0c358d1342a96",
+    "url": "https://download.jetbrains.com/idea/ideaIC-191.7479.7.win.zip",
+    "hash": "ca04b2c5cba78b7c0e3b812d2662bf458ad03023e2f1b864ff38b619a6eec9c1",
     "extract_to": "IDE",
     "installer": {
         "script": [
