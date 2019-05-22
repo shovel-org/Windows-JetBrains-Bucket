@@ -1,9 +1,9 @@
 {
-    "version": "2019.1.1-191.6605.3",
+    "version": "2019.1.3-191.7479.10",
     "description": "PyCharm Professional Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-professional-191.6605.3.exe#/cosi.7z",
-    "hash": "7ef664155a7289a21f74d25982837bb5dc0dcb59034507723cd961df2e19720f",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-191.7479.10.exe#/cosi.7z",
+    "hash": "0e4907fbcb8313ba45efa086ed256d9624df48ba4a9e6553b86c4a5f2e6cea63",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
