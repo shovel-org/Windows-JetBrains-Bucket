@@ -1,9 +1,9 @@
 {
-    "version": "2019.1.2-191.7141.24",
+    "version": "2019.1.3-191.7479.11",
     "description": "WebStorm Early Access Program. Cross-Platform, Smart JavaScript IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/webstorm/",
-    "url": "https://download.jetbrains.com/webstorm/WebStorm-191.7141.24.exe#/cosi.7z",
-    "hash": "4692a07881fe95468a5c9683aad2bd52cf92e49a8b9889a6dee1c820c3730a38",
+    "url": "https://download.jetbrains.com/webstorm/WebStorm-191.7479.11.exe#/cosi.7z",
+    "hash": "479f0daa7e0067e8d6cb2811eb98e4b439ff19d96757fdd2c1f7893b63e40996",
     "installer": {
         "script": [
             "$newDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
