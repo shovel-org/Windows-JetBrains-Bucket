@@ -1,4 +1,4 @@
-# Scoop JetBrains bucket [![Build status](https://ci.appveyor.com/api/projects/status/dypffduw38i80p5d?svg=true)](https://ci.appveyor.com/project/Ash258/scoop-jetbrains)
+# Scoop JetBrains bucket [![Build status](https://img.shields.io/appveyor/ci/Ash258/scoop-Jetbrains/master.svg?style=popout&logo=appveyor&label=AppVeyor)](https://ci.appveyor.com/project/Ash258/scoop-jetbrains)
 
 `scoop bucket add JetBrains`
 
