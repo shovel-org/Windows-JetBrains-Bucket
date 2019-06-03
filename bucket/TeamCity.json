@@ -1,9 +1,9 @@
 {
-    "version": "2018.2.4.61678",
+    "version": "2019.1.65998",
     "description": "TeamCity. Powerful Continuous Integration out of the box by JetBrains.",
     "homepage": "https://www.jetbrains.com/teamcity/",
-    "url": "https://download.jetbrains.com/teamcity/TeamCity-2018.2.4.exe#/cosi.7z",
-    "hash": "db9d01eadd96d7eafb52680b37f00151c5169f0b0be4c760a7c5b20d1d4fc732",
+    "url": "https://download.jetbrains.com/teamcity/TeamCity-2019.1.exe#/cosi.7z",
+    "hash": "d39d734d4af302344dc1826c8c1506ff64be67076329a0e33c00721db4e3418f",
     "notes": [
         "TeamCity could be runned from anywhere using 'teamcity' command.",
         "Run 'teamcity --help' to get more info."
@@ -35,7 +35,7 @@
         "replace": "${ver}.${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/teamcity/TeamCity-$matchHead.exe#/cosi.7z",
+        "url": "https://download.jetbrains.com/teamcity/TeamCity-$majorVersion.$minorVersion.exe#/cosi.7z",
         "hash": {
             "url": "$url.sha256"
         }
