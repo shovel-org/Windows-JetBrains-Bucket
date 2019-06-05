@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.4205.50",
+    "version": "2019.2-192.4787.5",
     "description": "PyCharm Community Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-community-192.4205.50.exe#/cosi.7z",
-    "hash": "ff305bd1eaea2aa14cbc97a3606883e6428051b44325fea610af4b79c65e9087",
+    "url": "https://download.jetbrains.com/python/pycharm-community-192.4787.5.exe#/cosi.7z",
+    "hash": "6903e7acfb372d25c0bd76f6d4fe832dd26e2ccdc3fcf9bd7b3a04980236c7f1",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
