@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.4205.48",
+    "version": "2019.2-192.4787.13",
     "description": "WebStorm Early Access Program. Cross-Platform, Smart JavaScript IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/webstorm/",
-    "url": "https://download.jetbrains.com/webstorm/WebStorm-192.4205.48.exe#/cosi.7z",
-    "hash": "912663967befb46e5154f8747470272b13841dded50faf5a6c73df82b009b2b9",
+    "url": "https://download.jetbrains.com/webstorm/WebStorm-192.4787.13.exe#/cosi.7z",
+    "hash": "81a2edcb6bbf4df285a9b77984d9c3bb8d88084c31b23d8a98942b73f16ff5dc",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
