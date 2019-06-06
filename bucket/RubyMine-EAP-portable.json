@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.4205.37",
+    "version": "2019.2-192.4488.24",
     "description": "RubyMine Early Access Program. Cross-Platform Ruby on Rails IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rubymine/",
-    "url": "https://download.jetbrains.com/ruby/RubyMine-192.4205.37.exe#/cosi.7z",
-    "hash": "84f4de4a5899f99dd0f15d5ffcd5624ea2f6c4b642249092942b4405e4e90e52",
+    "url": "https://download.jetbrains.com/ruby/RubyMine-192.4488.24.exe#/cosi.7z",
+    "hash": "aa5f5e398ba0b86ec97568fd1ebbb9bffde4b39ca9c18a2fb67aee0df7b00fbe",
     "extract_to": "IDE",
     "installer": {
         "script": [
