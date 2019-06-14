@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.4787.16",
+    "version": "2019.2-192.5118.30",
     "description": "IntelliJ IDEA Ultimate Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIU-192.4787.16.win.zip",
-    "hash": "34b25459416086529a4345ed030baf317b50711ea07753adfa5dc967781e2ac3",
+    "url": "https://download.jetbrains.com/idea/ideaIU-192.5118.30.win.zip",
+    "hash": "778eed4b2a7a1ef84148920a0676c68b8456959973e6dde0f252c90b0e5e838f",
     "extract_to": "IDE",
     "installer": {
         "script": [
