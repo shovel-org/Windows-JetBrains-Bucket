@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.5118.39",
+    "version": "2019.2-192.5281.28",
     "description": "GoLand Early Access Program. Cross-Platform, Clever IDE to Go by JetBrains.",
     "homepage": "https://www.jetbrains.com/goland/",
-    "url": "https://download.jetbrains.com/go/goland-192.5118.39.exe#/cosi.7z",
-    "hash": "0d9232299c05143d74ac033d3715a00f90fda5c02398945273fd5c6639fffc89",
+    "url": "https://download.jetbrains.com/go/goland-192.5281.28.exe#/cosi.7z",
+    "hash": "0ca2182738ca8929370bd8438ea3295074e54e2a160e2b59db13ab734f331f0d",
     "extract_to": "IDE",
     "installer": {
         "script": [
