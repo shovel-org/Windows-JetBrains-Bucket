@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.5281.32",
+    "version": "2019.2-192.5438.21",
     "description": "RubyMine Early Access Program. Cross-Platform Ruby on Rails IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rubymine/",
-    "url": "https://download.jetbrains.com/ruby/RubyMine-192.5281.32.exe#/cosi.7z",
-    "hash": "3ebcc39b19aa98b682d7b292d2d3ab47900789be8c95a107e2953fc1a10cdab2",
+    "url": "https://download.jetbrains.com/ruby/RubyMine-192.5438.21.exe#/cosi.7z",
+    "hash": "4cf491d37ba568f19c128564a0b6528fcb2bc1f043a55b276ace1aeb20ef187d",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
