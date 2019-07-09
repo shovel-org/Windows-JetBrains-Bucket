@@ -1,9 +1,9 @@
 {
-    "version": "2019.1.4-191.1577",
+    "version": "2019.1.5-191.1593",
     "description": "MPS. The Domain-Specific language creator by JetBrains.",
     "homepage": "https://www.jetbrains.com/mps/",
-    "url": "https://download.jetbrains.com/mps/2019.1/MPS-2019.1.4.exe#/cosi.7z",
-    "hash": "9bf42cd0500dbcf2761368d95d733c58c2a08d98f63137ba1b4dace0863d8161",
+    "url": "https://download.jetbrains.com/mps/2019.1/MPS-2019.1.5.exe#/cosi.7z",
+    "hash": "604c7f126e7e2699e44e0d7767a6a587b3c234ba6289c5cde37b12e0166ae32c",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
