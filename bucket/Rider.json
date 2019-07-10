@@ -1,11 +1,11 @@
 {
-    "version": "2019.1.2-191.7141.355",
+    "version": "2019.1.3-191.7141.460",
     "description": "Rider. Fast, powerful and cross-platform .NET IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rider/",
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2019.1.2.exe#/cosi.7z",
-            "hash": "88edebdeebb9d54eb3b53bd044256ad4f40f34daa5dc00d8fc904db1335467c6",
+            "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2019.1.3.exe#/cosi.7z",
+            "hash": "060f43b3b663686fe0b58e93168c935ea990cc5725282e9e3b6d48b798bc8ac6",
             "bin": [
                 "IDE\\bin\\rider.bat",
                 "IDE\\bin\\rider64.exe"
