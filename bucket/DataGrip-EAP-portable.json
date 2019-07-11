@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.5587.22",
+    "version": "2019.2-192.5728.16",
     "description": "DataGrip Early Access Program. Cross-Platform IDE for Databases & SQL by JetBrains.",
     "homepage": "https://www.jetbrains.com/datagrip/",
-    "url": "https://download.jetbrains.com/datagrip/datagrip-192.5587.22.exe#/cosi.7z",
-    "hash": "85be9178de0fb14185bc7484c4a2c86019d40d0c1bab7bdfdd6469e57a153a38",
+    "url": "https://download.jetbrains.com/datagrip/datagrip-192.5728.16.exe#/cosi.7z",
+    "hash": "f70dbce2604b1fa801086211aacdb8ae9b793fa815d8b367003705379fbfb87b",
     "extract_to": "IDE",
     "installer": {
         "script": [
