@@ -1,9 +1,9 @@
 {
-    "version": "2019.1.3-191.7479.10",
+    "version": "2019.1.4-191.8026.37",
     "description": "PyCharm Community Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-community-191.7479.10.exe#/cosi.7z",
-    "hash": "55845288b0dfb63ed2fcd9bab94aabc518606063358e4f3022594931d4c03fce",
+    "url": "https://download.jetbrains.com/python/pycharm-community-191.8026.37.exe#/cosi.7z",
+    "hash": "f02e29e6245588b428dcd60e5f4a32c02c6d523e99f518d4996760683455edfe",
     "extract_to": "IDE",
     "installer": {
         "script": [
