@@ -1,9 +1,9 @@
 {
-    "version": "2019.1.3-191.7479.32",
+    "version": "2019.2-192.5728.103",
     "description": "GoLand. Cross-Platform, Clever IDE to Go by JetBrains.",
     "homepage": "https://www.jetbrains.com/goland/",
-    "url": "https://download.jetbrains.com/go/goland-2019.1.3.exe#/cosi.7z",
-    "hash": "ec6efce66a50006dfe6c5fb9f216ff1dff6318fd7b680cfe9ff637e16b47b8b3",
+    "url": "https://download.jetbrains.com/go/goland-2019.2.exe#/cosi.7z",
+    "hash": "7eb5d090eafa5fee49eb96ad8fd4c30608d906951d409234ade2138c26743a75",
     "extract_to": "IDE",
     "installer": {
         "script": [
