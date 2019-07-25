@@ -1,9 +1,9 @@
 {
-    "version": "2018.3-183.4284.159",
+    "version": "2019.2-192.5728.110",
     "description": "DataGrip Release Candidate. Cross-Platform IDE for Databases & SQL by JetBrains.",
     "homepage": "https://www.jetbrains.com/datagrip/",
-    "url": "https://download.jetbrains.com/datagrip/datagrip-183.4284.159.exe#/cosi.7z",
-    "hash": "73b93e47978a75e8de294ae972de53037838782aac4654e57745e21369ff0ac3",
+    "url": "https://download.jetbrains.com/datagrip/datagrip-192.5728.110.exe#/cosi.7z",
+    "hash": "c7b47409b287a24e27158b3f62b941835ab51f74c53c1a540ed99e07ac10093e",
     "extract_to": "IDE",
     "installer": {
         "script": [
