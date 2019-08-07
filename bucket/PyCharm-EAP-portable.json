@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.5728.77",
+    "version": "2019.2.1-192.6262.12",
     "description": "PyCharm Community Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-community-192.5728.77.exe#/cosi.7z",
-    "hash": "7647ff3a526608245e92e92d4a349f27951155c869da212a637a8ad3c79ee63d",
+    "url": "https://download.jetbrains.com/python/pycharm-community-192.6262.12.exe#/cosi.7z",
+    "hash": "8ee8ed7a83e7ac99c2f149110bbb4e281ef1860bb18707990a40ba250d50b419",
     "extract_to": "IDE",
     "installer": {
         "script": [
