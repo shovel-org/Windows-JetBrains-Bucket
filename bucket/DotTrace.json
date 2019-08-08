@@ -1,15 +1,15 @@
 {
-    "version": "2019.1.3",
+    "version": "2019.2",
     "description": "DotTrace. .NET Performace Profiler by JetBrains.",
     "homepage": "https://www.jetbrains.com/profiler/",
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.1.3/dotTrace64.2019.1.3.exe#/dotTrace.exe",
-            "hash": "08163f61ead9db610e24cb7c264fb018f4723ab077af51f30402f18785dd60c7"
+            "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.2/dotTrace64.2019.2.exe#/dotTrace.exe",
+            "hash": "e26d945e5233e3f21298050ff980a5b77d9d4803b9cdffc48fa923c42ea85893"
         },
         "32bit": {
-            "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.1.3/dotTrace32.2019.1.3.exe#/dotTrace.exe",
-            "hash": "0bd5a2d7d8fa5619a53132c48991d49eaa44c02997bfb518739427c3281c18d1"
+            "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.2/dotTrace32.2019.2.exe#/dotTrace.exe",
+            "hash": "bb94f2fa2f5b5e432a5c364feff8a059b1425bf99b591f1e656f4a4a16477100"
         }
     },
     "shortcuts": [
