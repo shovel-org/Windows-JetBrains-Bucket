@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.5728.74",
+    "version": "2019.2.1-192.6262.41",
     "description": "IntelliJ IDEA Ultimate Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIU-192.5728.74.win.zip",
-    "hash": "2c0105cd0bb6b1c044f953bc038df60b3b5845c296ac6bd104a13811f49ea4cc",
+    "url": "https://download.jetbrains.com/idea/ideaIU-192.6262.41.win.zip",
+    "hash": "c642664c3c051ef841df069ebd79f8fe47b30295bfd42640d0dd4305d4728708",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
