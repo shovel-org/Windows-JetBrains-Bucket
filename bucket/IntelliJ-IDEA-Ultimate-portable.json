@@ -1,9 +1,9 @@
 {
-    "version": "2019.2-192.5728.98",
+    "version": "2019.2.1-192.6262.58",
     "description": "IntelliJ IDEA Ultimate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIU-2019.2.win.zip",
-    "hash": "9bf893cbd250374c8229510be0cadf696919561773efc64673cd5846740d95da",
+    "url": "https://download.jetbrains.com/idea/ideaIU-2019.2.1.win.zip",
+    "hash": "6a652db8dba0da22cb2856c2d22d42c289b2ad4c7bf63880c3e68d0f7e822ebb",
     "extract_to": "IDE",
     "installer": {
         "script": [
