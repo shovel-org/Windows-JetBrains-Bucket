@@ -1,13 +1,13 @@
 {
-    "version": "2019.2.1",
+    "version": "2019.2.2",
     "description": "dotCover Command Line Tools. Standalone command line package that enables analysing code coverage outside of Visual Studio by JetBrains.",
     "homepage": "https://www.jetbrains.com/dotcover/download/#section=commandline",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.jetbrains.com/dotcover/download/dotcover_clt_license.html"
     },
-    "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.2.1/JetBrains.dotCover.CommandLineTools.2019.2.1.zip",
-    "hash": "1c995faac60d4eaef4844a87d3bf2e06c837b2cf1534b33d2de577966bcdf300",
+    "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.2.2/JetBrains.dotCover.CommandLineTools.2019.2.2.zip",
+    "hash": "a1e0a0115d58bf99fd907de35e3ff2bf8d435f62421e114a783695aae37e0bce",
     "bin": "dotCover.exe",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=DCCLT&latest=true&platform=zip&type=release",
