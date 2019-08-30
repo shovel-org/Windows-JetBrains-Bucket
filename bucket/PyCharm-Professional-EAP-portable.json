@@ -1,9 +1,9 @@
 {
-    "version": "2019.2.1-192.6262.12",
+    "version": "2019.2.2-192.6603.10",
     "description": "PyCharm Professional Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-professional-192.6262.12.exe#/cosi.7z",
-    "hash": "6a26fc6058698ca423e554e32a884680b630efd3b049f2645d9764ab4b3d5bcf",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-192.6603.10.exe#/cosi.7z",
+    "hash": "eb5feb9e5002f6a8fc2d32cd701a7b24af41d428fa354fd95f5f2072852419e1",
     "extract_to": "IDE",
     "installer": {
         "script": [
