@@ -1,9 +1,9 @@
 {
-    "version": "2019.2.1-192.6262.38",
+    "version": "2019.2.2-192.6603.24",
     "description": "PyCharm Professional Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-professional-192.6262.38.exe#/cosi.7z",
-    "hash": "7ceeac09f3f8c9fae9d55fb2c1126d1378074094dc40fbfde974b841794e8e66",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-192.6603.24.exe#/cosi.7z",
+    "hash": "76ac8eaefdcf617f697659dfff92b510059dca6674684570d13c88d848e6c83a",
     "extract_to": "IDE",
     "installer": {
         "script": [
