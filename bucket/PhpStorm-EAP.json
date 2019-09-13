@@ -1,9 +1,9 @@
 {
-    "version": "2019.2.2-192.6603.26",
+    "version": "2019.3-193.2956.42",
     "description": "PhpStorm Early Access Program. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.",
     "homepage": "https://www.jetbrains.com/phpstorm/",
-    "url": "https://download.jetbrains.com/webide/PhpStorm-192.6603.26.exe#/cosi.7z",
-    "hash": "3121b4ecadfbf625372fac68c5a59638fb56777eaa78f870fa18854a5c5038d1",
+    "url": "https://download.jetbrains.com/webide/PhpStorm-193.2956.42.exe#/cosi.7z",
+    "hash": "231d0d60e7ff0d809fec7ac435a571bcfcea40c96e9aa6a5321af00472ed9e6e",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
