@@ -1,9 +1,9 @@
 {
-    "version": "2019.2.2-192.6603.34",
+    "version": "2019.2.3-192.6817.19",
     "description": "PyCharm Community. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-community-2019.2.2.exe#/cosi.7z",
-    "hash": "e2b2c91a8c40adc7187568e364edd258598ba7d5334642d44d6cab889be92314",
+    "url": "https://download.jetbrains.com/python/pycharm-community-2019.2.3.exe#/cosi.7z",
+    "hash": "a460cd1c3b59efb8c7c8cc30e84a8033ec55600f290c18816c8634abb8e0384d",
     "extract_to": "IDE",
     "installer": {
         "script": [
