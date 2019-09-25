@@ -1,9 +1,9 @@
 {
-    "version": "2019.2.2-192.6603.29",
+    "version": "2019.2.3-192.6817.16",
     "description": "RubyMine. Cross-Platform Ruby on Rails IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rubymine/",
-    "url": "https://download.jetbrains.com/ruby/RubyMine-2019.2.2.exe#/cosi.7z",
-    "hash": "e65826962bb960ca7e3506e480a94e097905c4911821a0b9e615473f2542d74f",
+    "url": "https://download.jetbrains.com/ruby/RubyMine-2019.2.3.exe#/cosi.7z",
+    "hash": "21946ebb67d45024283c28924d951e451ec62ef1d75ef966beab484c71c6101f",
     "extract_to": "IDE",
     "installer": {
         "script": [
