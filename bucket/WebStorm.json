@@ -1,9 +1,9 @@
 {
-    "version": "2019.2.2-192.6603.19",
+    "version": "2019.2.3-192.6817.13",
     "description": "WebStorm. Cross-Platform, Smart JavaScript IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/webstorm/",
-    "url": "https://download.jetbrains.com/webstorm/WebStorm-2019.2.2.exe#/cosi.7z",
-    "hash": "fac1c75f66ca4a5e8405cc5389af7ad1713f834a328fee4d861d3f40220a4c22",
+    "url": "https://download.jetbrains.com/webstorm/WebStorm-2019.2.3.exe#/cosi.7z",
+    "hash": "d99d11588b5ab26fb686c7bfb2e68b443d4405834a6751edc956f884ab416c93",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
