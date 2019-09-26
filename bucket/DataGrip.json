@@ -1,9 +1,9 @@
 {
-    "version": "2019.2.4-192.6603.38",
+    "version": "2019.2.5-192.6817.21",
     "description": "DataGrip. Cross-Platform IDE for Databases & SQL by JetBrains.",
     "homepage": "https://www.jetbrains.com/datagrip/",
-    "url": "https://download.jetbrains.com/datagrip/datagrip-2019.2.4.exe#/cosi.7z",
-    "hash": "2503026bfdbfeec21f6af5b372a767f0150602dc3bc92b1bfd2b302b01a50983",
+    "url": "https://download.jetbrains.com/datagrip/datagrip-2019.2.5.exe#/cosi.7z",
+    "hash": "e475d0c7d1c1c0d71b2cb75c6a56cc199b94457b1d26e9bfb287cca00a54a4f8",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
