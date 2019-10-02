@@ -1,9 +1,9 @@
 {
-    "version": "2019.3-193.3793.21",
+    "version": "2019.3-193.4099.12",
     "description": "PhpStorm Early Access Program. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.",
     "homepage": "https://www.jetbrains.com/phpstorm/",
-    "url": "https://download.jetbrains.com/webide/PhpStorm-193.3793.21.exe#/cosi.7z",
-    "hash": "cbd35e708bfa889305be33264edbbb1c26c21977f1ad0621314f34a432979259",
+    "url": "https://download.jetbrains.com/webide/PhpStorm-193.4099.12.exe#/cosi.7z",
+    "hash": "3c24d0cdae2d582dd0a6b21629eb9ac1bbadb8a4d385325bab2810758b3e36a3",
     "extract_to": "IDE",
     "installer": {
         "script": [
