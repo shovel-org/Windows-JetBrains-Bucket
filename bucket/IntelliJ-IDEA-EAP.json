@@ -1,9 +1,9 @@
 {
-    "version": "2019.3-193.3793.14",
+    "version": "2019.3-193.4099.13",
     "description": "IntelliJ IDEA Community Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIC-193.3793.14.win.zip",
-    "hash": "994ecc7d5dbafba754b22289183b4d785508d10f35713bf543dbd7e28ca72efb",
+    "url": "https://download.jetbrains.com/idea/ideaIC-193.4099.13.win.zip",
+    "hash": "eb3e85900242e98e006160a0ecf9ac816b8bbca92a37c10a71edc9c6fbb6a5e2",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
