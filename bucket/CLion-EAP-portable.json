@@ -1,11 +1,11 @@
 {
-    "version": "2019.3-193.4099.17",
+    "version": "2019.3-193.4386.19",
     "description": "CLion Early Access Program. Cross-Platform IDE for C and C++ by JetBrains.",
     "homepage": "https://www.jetbrains.com/cpp/",
     "architecture": {
         "64bit": {
-            "url": "https://download.jetbrains.com/cpp/CLion-193.4099.17.win.zip",
-            "hash": "bb52d169e12e5fe04e8481127ca1da372c148f4dbe0429e5e141215dd13afbf4",
+            "url": "https://download.jetbrains.com/cpp/CLion-193.4386.19.win.zip",
+            "hash": "071dc086fa26dc103659f8403d1ec08d8fcdf009e8bd7aab1281ede31def7081",
             "shortcuts": [
                 [
                     "IDE\\bin\\clion64.exe",
