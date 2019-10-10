@@ -1,9 +1,9 @@
 {
-    "version": "2019.3-193.4099.14",
+    "version": "2019.3-193.4386.14",
     "description": "PyCharm Professional Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
-    "url": "https://download.jetbrains.com/python/pycharm-professional-193.4099.14.exe#/cosi.7z",
-    "hash": "4a534d71dfa43a082a79b2c770200bc94cf8bb24728e8f17c5dd17b007b3ceec",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-193.4386.14.exe#/cosi.7z",
+    "hash": "ef7c9b34b64b7659e9db6d010286c0e6229cf138509f5f58242557a2c7208843",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
