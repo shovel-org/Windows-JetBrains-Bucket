@@ -43,13 +43,13 @@
     ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=CL&latest=true&platform=zip&type=rc",
-        "regex": "(?<RC>RC[\\d]+)\\.zip.*version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
-        "replace": "${ver}-${build}-${RC}"
+        "regex": "RC(?<RC>[\\d]+)?\\.win\\.zip.*version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
+        "replace": "${ver}-${build}-RC${RC}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.jetbrains.com/cpp/CLion-$matchVer-$matchRC.zip"
+                "url": "https://download.jetbrains.com/cpp/CLion-$matchVer-RC$matchRC.win.zip"
             }
         },
         "hash": {
