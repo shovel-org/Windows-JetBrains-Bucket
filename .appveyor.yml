@@ -6,7 +6,6 @@ image: Visual Studio 2019
 environment:
   SCOOP: C:\projects\scoop
   SCOOP_HOME: C:\projects\scoop
-  SCOOP_HELPERS: C:\projects\helpers
   matrix:
     - PowerShell: 5
     - PowerShell: 6
