@@ -1,9 +1,9 @@
 {
-    "version": "2019.2.3-192.6817.9",
+    "version": "2019.2.4-192.7142.26",
     "description": "IntelliJ IDEA Community Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIC-192.6817.9.win.zip",
-    "hash": "dd5fc7f964916dd7f429976401a721273eb5ad9f2707a1281af8a599152964bd",
+    "url": "https://download.jetbrains.com/idea/ideaIC-192.7142.26.win.zip",
+    "hash": "382a69367de8f8b6be842b1bc87852dbf5a92e94f1611ffc958e85cc87927eff",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
