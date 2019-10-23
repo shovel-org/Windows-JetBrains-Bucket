@@ -1,9 +1,9 @@
 {
-    "version": "2019.3-193.4697.15",
+    "version": "2019.3-193.4778.7",
     "description": "IntelliJ IDEA Community Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
-    "url": "https://download.jetbrains.com/idea/ideaIC-193.4697.15.win.zip",
-    "hash": "4b7386ccd583fa19cdc1e3db6d452c37cf0ccec8a21b4aa0fa61b8662ad64b15",
+    "url": "https://download.jetbrains.com/idea/ideaIC-193.4778.7.win.zip",
+    "hash": "c881ee342fd846fce4f509a48afb5a65a144a1a1ffc80b64cbc93590f433c637",
     "extract_to": "IDE",
     "installer": {
         "script": [
