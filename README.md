@@ -6,7 +6,7 @@ Each IDE have all available releases. Pre-release versions do not contains bin p
 
 ## Portable suffix
 
-- All created files, which are generated (config, system, plugins, log) are moved into each application root folder `profile`
+- All created files, which are generated (config, system, plugins, log) are moved into each application root `profile` folder
 - Nothing will be saved into system path.
 
 TODO:
