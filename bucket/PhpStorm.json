@@ -1,9 +1,9 @@
 {
-    "version": "2019.2.4-192.7142.41",
+    "version": "2019.2.5-192.7142.51",
     "description": "PhpStorm. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.",
     "homepage": "https://www.jetbrains.com/phpstorm/",
-    "url": "https://download.jetbrains.com/webide/PhpStorm-2019.2.4.exe#/cosi.7z",
-    "hash": "11c5c5ea5aa6fb140fdbc3b2cf33b5d5b5a59377b560b5b86d45cadaa964d7fe",
+    "url": "https://download.jetbrains.com/webide/PhpStorm-2019.2.5.exe#/cosi.7z",
+    "hash": "efd8256615986462b28d07e2842822da147cfdea6537fce3f5dfc25b7eef1c78",
     "extract_to": "IDE",
     "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
