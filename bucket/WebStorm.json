@@ -2,21 +2,27 @@
     "version": "2019.2.4-192.7142.35",
     "description": "WebStorm. Cross-Platform, Smart JavaScript IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/webstorm/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/webstorm/WebStorm-2019.2.4.exe#/cosi.7z",
     "hash": "562d6b9cc426164919e3164bb970421ef05a7a54bafa17fd99878b2834077b82",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "bin": [
-                "IDE\\bin\\webstorm.bat",
-                "IDE\\bin\\webstorm64.exe"
+                "IDE\\bin\\webstorm64.exe",
+                [
+                    "IDE\\bin\\webstorm64.exe",
+                    "webstorm"
+                ]
             ],
             "shortcuts": [
                 [
                     "IDE\\bin\\webstorm64.exe",
-                    "WebStorm"
+                    "JetBrains\\WebStorm"
                 ]
             ]
         },
@@ -25,14 +31,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\webstorm.exe",
-                    "WebStorm"
+                    "JetBrains\\WebStorm"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=WS&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

@@ -1,10 +1,10 @@
 {
     "version": "2019.2.59309",
-    "description": "Youtrack. Free, online, easy-to-use, fully customizable issue tracking and agile project management tool.",
-    "homepage": "https://www.jetbrains.com/youtrack/",
+    "description": "Youtrack. Easy-to-use, fully customizable issue tracking and agile project management tool.",
+    "homepage": "https://jetbrains.com/youtrack/",
     "license": {
-        "identifier": "Freeware",
-        "url": "https://www.jetbrains.com/youtrack/buy/license.html"
+        "identifier": "Proprietary",
+        "url": "https://jetbrains.com/youtrack/buy/license.html"
     },
     "notes": "YouTrack could be runned from anywhere using 'youtrack' command.",
     "url": "https://download.jetbrains.com/charisma/youtrack-2019.2.59309.zip",
@@ -18,19 +18,19 @@
             "    '& .\\youtrack.bat @args'",
             "    'Pop-Location'",
             ")",
-            "Set-Content \"$dir\\youtrack.ps1\" ($cont -join \"`r`n\") -Encoding Ascii"
+            "Set-Content \"$dir\\youtrack.ps1\" $cont -Encoding Ascii"
         ]
     },
+    "bin": "youtrack.ps1",
     "persist": [
         "backup",
         "conf",
         "data",
         "logs"
     ],
-    "bin": "youtrack.ps1",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=YTD&platform=zip&latest=true&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d]+)\"",
         "replace": "${ver}.${build}"
     },
     "autoupdate": {

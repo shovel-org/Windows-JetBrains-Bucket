@@ -2,17 +2,20 @@
     "version": "2019.3-193.5233.13",
     "description": "WebStorm Early Access Program. Cross-Platform, Smart JavaScript IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/webstorm/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/webstorm/WebStorm-193.5233.13.exe#/cosi.7z",
     "hash": "8297314cf36a85be2eabd1e0deb70b725fe3e4ff9ca80783da17037bd993d489",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
                     "IDE\\bin\\webstorm64.exe",
-                    "WebStorm (Early Access Program)"
+                    "JetBrains\\WebStorm (Early Access Program)"
                 ]
             ]
         },
@@ -20,14 +23,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\webstorm.exe",
-                    "WebStorm (Early Access Program)"
+                    "JetBrains\\WebStorm (Early Access Program)"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=WS&latest=true&platform=zip&type=eap",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

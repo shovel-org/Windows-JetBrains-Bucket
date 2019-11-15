@@ -16,6 +16,10 @@ TODO:
 
 | Application | Stable |  RC   |  EAP  |
 | :---------- | :----: | :---: | :---: |
+| RubyMine    |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| TeamCity    |   ✔    |   ❌   |   ✔   |
+| WebStorm    |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| YouTrack    |   ✔    |   ❌   |   ❌   |
 
 <!-- TODO: Check and optimize all manifests
 | CLion                   |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
@@ -36,8 +40,4 @@ TODO:
 | PyCharm                 |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | PyCharm-Professional    |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | Rider                   |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
-| RubyMine                |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| TeamCity                |   ✔    |   ❌   |   ✔   |
-| WebStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
-| YouTrack                |   ✔    |   ❌   |   ❌   |
 -->

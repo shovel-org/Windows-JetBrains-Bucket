@@ -2,6 +2,10 @@
     "version": "2019.1.5.66605",
     "description": "TeamCity. Powerful Continuous Integration out of the box by JetBrains.",
     "homepage": "https://www.jetbrains.com/teamcity/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/teamcity/TeamCity-2019.1.exe#/cosi.7z",
     "hash": "d39d734d4af302344dc1826c8c1506ff64be67076329a0e33c00721db4e3418f",
     "notes": [
@@ -12,13 +16,13 @@
         "script": [
             "Remove-Item \"$dir\\`$*\" -Recurse",
             "    # Create custom shim like script",
-            "$ver_path = \"$original_dir\\bin\"",
+            "$ver_path = \"$dir\\bin\"",
             "$cont = @(",
             "    \"Push-Location \"\"$ver_path\"\"\"",
             "    '& .\\teamcity-server.bat @args'",
             "    'Pop-Location'",
             ")",
-            "Set-Content \"$dir\\teamcity.ps1\" ($cont -join \"`r`n\") -Encoding Ascii"
+            "Set-Content \"$dir\\teamcity.ps1\" $cont -Encoding Ascii"
         ]
     },
     "bin": [
@@ -31,7 +35,7 @@
     "persist": "conf",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=TC&latest=true&platform=windows&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}.${build}"
     },
     "autoupdate": {
