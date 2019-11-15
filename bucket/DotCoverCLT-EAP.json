@@ -8,7 +8,13 @@
     },
     "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.3.EAP4/JetBrains.dotCover.CommandLineTools.2019.3.EAP4.Checked.zip",
     "hash": "867387d948cf1799004cd3307910978c22b1f3ba48acc01b7b1f924b84ec84a1",
-    "bin": "dotCover.exe",
+    "bin": [
+        "dotCover.exe",
+        [
+            "dotCover.exe",
+            "dotCover-EAP"
+        ]
+    ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=DCCLT&latest=true&platform=zip&type=eap",
         "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\w\\.]+)\"",

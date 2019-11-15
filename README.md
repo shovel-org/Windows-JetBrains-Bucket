@@ -15,3 +15,11 @@ TODO:
 - MPS
 - TeamCity
 - UpSource
+
+| Application  | Stable |  RC   |  EAP  |
+| :----------- | :----: | :---: | :---: |
+| CLion        |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| DataGrip     |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| DotCoverCLT  |   ✔    |   ❌   |   ✔   |
+| DotMemory    |   ✔    |   ❌   |   ❌   |
+| DotMemoryCLT |   ✔    |   ❌   |   ✔   |
