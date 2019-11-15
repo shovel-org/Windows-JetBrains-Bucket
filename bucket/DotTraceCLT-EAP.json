@@ -8,7 +8,13 @@
     },
     "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.3.EAP4/JetBrains.dotTrace.CommandLineTools.Windows.2019.3.EAP4.Checked.zip",
     "hash": "05c5db00124b9ab1428547fad4020f5c2d148612f7cdc786dc5c74ad02c892d0",
-    "bin": "ConsoleProfiler.exe",
+    "bin": [
+        "ConsoleProfiler.exe",
+        [
+            "ConsoleProfiler.exe",
+            "ConsoleProfiler-EAP"
+        ]
+    ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=DPCLT&latest=true&platform=zip&type=eap",
         "jsonpath": "$..build"

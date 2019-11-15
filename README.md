@@ -12,14 +12,32 @@ Each IDE have all available releases. Pre-release versions do not contains bin p
 TODO:
 
 - Hub
-- MPS
-- TeamCity
 - UpSource
 
-| Application  | Stable |  RC   |  EAP  |
-| :----------- | :----: | :---: | :---: |
-| CLion        |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| DataGrip     |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| DotCoverCLT  |   ✔    |   ❌   |   ✔   |
-| DotMemory    |   ✔    |   ❌   |   ❌   |
-| DotMemoryCLT |   ✔    |   ❌   |   ✔   |
+| Application | Stable |  RC   |  EAP  |
+| :---------- | :----: | :---: | :---: |
+
+<!-- TODO: Check and optimize all manifests
+| CLion                   |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| DataGrip                |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| DotCoverCLT             |   ✔    |   ❌   |   ✔   |
+| DotMemory               |   ✔    |   ❌   |   ❌   |
+| DotMemoryCLT            |   ✔    |   ❌   |   ✔   |
+| DotPeek                 |   ✔    |   ❌   |   ❌   |
+| DotTrace                |   ✔    |   ❌   |   ❌   |
+| DotTraceCLT             |   ✔    |   ❌   |   ✔   |
+| DotTraceSDK             |   ✔    |   ❌   |   ❌   |
+| GoLand                  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| IntelliJ-IDEA           |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| IntelliJ-IDEA-Education |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| IntelliJ-IDEA-Ultimate  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| MPS                     |  ✔ ❓   |  ✔ ❓  |  ✔ ❓  |
+| PhpStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| PyCharm                 |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| PyCharm-Professional    |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| Rider                   |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| RubyMine                |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| TeamCity                |   ✔    |   ❌   |   ✔   |
+| WebStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| YouTrack                |   ✔    |   ❌   |   ❌   |
+-->
