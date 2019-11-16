@@ -9,11 +9,6 @@ Each IDE have all available releases. Pre-release versions do not contains bin p
 - All created files, which are generated (config, system, plugins, log) are moved into each application root `profile` folder
 - Nothing will be saved into system path
 
-TODO:
-
-- Hub
-- UpSource
-
 | Application             | Stable |  RC   |  EAP  |
 | :---------------------- | :----: | :---: | :---: |
 | CLion                   |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
@@ -37,5 +32,6 @@ TODO:
 | Rider                   |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 | RubyMine                |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | TeamCity                |   ✔    |   ❌   |   ✔   |
+| Upsource                |   ✔    |   ❌   |   ❌   |
 | WebStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 | YouTrack                |   ✔    |   ❌   |   ❌   |

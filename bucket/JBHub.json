@@ -7,6 +7,7 @@
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/hub/download/license.html"
     },
+    "notes": "Hub could be executed from anywhere using 'jbhub' command.",
     "url": "https://download.jetbrains.com/hub/hub-2019.1.11758.zip",
     "hash": "34a21dd0372c5a7587bf3d2aebfb48b47d6969c7f2969f776071bee18e0e7d1e",
     "extract_dir": "hub-2019.1.11758",
