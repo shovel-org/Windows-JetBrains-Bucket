@@ -2,28 +2,35 @@
     "version": "2019.2.5-192.7142.39",
     "description": "CLion. Cross-Platform IDE for C and C++ by JetBrains.",
     "homepage": "https://www.jetbrains.com/cpp/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "architecture": {
         "64bit": {
             "url": "https://download.jetbrains.com/cpp/CLion-2019.2.5.win.zip",
             "hash": "dc2cdb03957c6dd3fc8f4fbff1c0a633aa7679ecb0a41eb5620036bdc3e086ab",
             "bin": [
-                "IDE\\bin\\clion.bat",
-                "IDE\\bin\\clion64.exe"
+                "IDE\\bin\\clion64.exe",
+                [
+                    "IDE\\bin\\clion64.exe",
+                    "clion"
+                ]
             ],
             "shortcuts": [
                 [
                     "IDE\\bin\\clion64.exe",
-                    "CLion"
+                    "JetBrains\\CLion"
                 ]
             ]
         }
     },
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=CL&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

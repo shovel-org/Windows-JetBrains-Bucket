@@ -2,17 +2,20 @@
     "version": "2019.2-192.5728.110",
     "description": "DataGrip Release Candidate. Cross-Platform IDE for Databases & SQL by JetBrains.",
     "homepage": "https://www.jetbrains.com/datagrip/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/datagrip/datagrip-192.5728.110.exe#/cosi.7z",
     "hash": "c7b47409b287a24e27158b3f62b941835ab51f74c53c1a540ed99e07ac10093e",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
                     "IDE\\bin\\datagrip64.exe",
-                    "DataGrip (Release Candidate)"
+                    "JetBrains\\DataGrip (Release Candidate)"
                 ]
             ]
         },
@@ -20,14 +23,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\datagrip.exe",
-                    "DataGrip (Release Candidate)"
+                    "JetBrains\\DataGrip (Release Candidate)"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=DG&latest=true&platform=zip&type=rc",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

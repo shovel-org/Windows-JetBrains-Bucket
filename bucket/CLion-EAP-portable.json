@@ -2,6 +2,10 @@
     "version": "2019.3-193.5233.10",
     "description": "CLion Early Access Program. Cross-Platform IDE for C and C++ by JetBrains.",
     "homepage": "https://www.jetbrains.com/cpp/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "architecture": {
         "64bit": {
             "url": "https://download.jetbrains.com/cpp/CLion-193.5233.10.win.zip",
@@ -9,7 +13,7 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\clion64.exe",
-                    "CLion (Early Access Program)"
+                    "JetBrains\\CLion (Early Access Program)"
                 ]
             ]
         }
@@ -17,22 +21,22 @@
     "extract_to": "IDE",
     "installer": {
         "script": [
-            "$currentDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
-            "$newDir = \"$(Split-Path \"$dir\")\\current\\IDE\" -replace '\\\\', '/'",
+            "$split = Split-Path $dir",
+            "$currentDir = \"$split\\current\" -replace '\\\\', '/'",
             "$IDE = \"$dir\\IDE\"",
             "$file = 'IDE\\bin\\idea.properties'",
             "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
             "    $file = \"$dir\\$file\"",
             "    $profileDir = \"$currentDir/profile\"",
-            "    $CONT = Get-Content \"$file\"",
+            "    $CONT = Get-Content $file",
             "        # Replacing config options",
-            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
-            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
-            "    $CONT = $CONT -replace '^# idea.plugins.path=', 'idea.plugins.path='",
-            "    $CONT = $CONT -replace '^# idea.log.path=', 'idea.log.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.plugins.path=', 'idea.plugins.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.log.path=', 'idea.log.path='",
             "        # Rewrite properties file",
-            "    Set-Content \"$file\" ($CONT -join \"`r`n\") -Force -Encoding Ascii",
+            "    Set-Content $file $CONT -Encoding Ascii -Force",
             "}",
             "Remove-Item \"$IDE\\`$*\" -Force -Recurse"
         ]
@@ -43,7 +47,7 @@
     ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=CL&latest=true&platform=zip&type=eap",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
