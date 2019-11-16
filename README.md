@@ -14,12 +14,15 @@ TODO:
 - Hub
 - UpSource
 
-| Application | Stable |  RC   |  EAP  |
-| :---------- | :----: | :---: | :---: |
-| RubyMine    |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| TeamCity    |   ✔    |   ❌   |   ✔   |
-| WebStorm    |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
-| YouTrack    |   ✔    |   ❌   |   ❌   |
+| Application          | Stable |  RC   |  EAP  |
+| :------------------- | :----: | :---: | :---: |
+| PyCharm-Professional |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| PyCharm              |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| Rider                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| RubyMine             |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| TeamCity             |   ✔    |   ❌   |   ✔   |
+| WebStorm             |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| YouTrack             |   ✔    |   ❌   |   ❌   |
 
 <!-- TODO: Check and optimize all manifests
 | CLion                   |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
@@ -37,7 +40,4 @@ TODO:
 | IntelliJ-IDEA-Ultimate  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | MPS                     |  ✔ ❓   |  ✔ ❓  |  ✔ ❓  |
 | PhpStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
-| PyCharm                 |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| PyCharm-Professional    |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| Rider                   |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 -->

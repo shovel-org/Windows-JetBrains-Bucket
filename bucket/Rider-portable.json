@@ -2,18 +2,25 @@
     "version": "2019.2.3-192.7317.11",
     "description": "Rider. Fast, powerful and cross-platform .NET IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/rider/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "architecture": {
         "64bit": {
             "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2019.2.3.exe#/cosi.7z",
             "hash": "8441f9087f9a90d66300cf904f291031cfdc43a01fcfe830130d16476de484f7",
             "bin": [
-                "IDE\\bin\\rider.bat",
-                "IDE\\bin\\rider64.exe"
+                "IDE\\bin\\rider64.exe",
+                [
+                    "IDE\\bin\\rider64.exe",
+                    "rider"
+                ]
             ],
             "shortcuts": [
                 [
                     "IDE\\bin\\rider64.exe",
-                    "Rider"
+                    "JetBrains\\Rider"
                 ]
             ]
         }
@@ -21,22 +28,22 @@
     "extract_to": "IDE",
     "installer": {
         "script": [
-            "$currentDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
-            "$newDir = \"$(Split-Path \"$dir\")\\current\\IDE\" -replace '\\\\', '/'",
+            "$split = Split-Path $dir",
+            "$currentDir = \"$split\\current\" -replace '\\\\', '/'",
             "$IDE = \"$dir\\IDE\"",
             "$file = 'IDE\\bin\\idea.properties'",
             "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
             "    $file = \"$dir\\$file\"",
             "    $profileDir = \"$currentDir/profile\"",
-            "    $CONT = Get-Content \"$file\"",
+            "    $CONT = Get-Content $file",
             "        # Replacing config options",
-            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
-            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
-            "    $CONT = $CONT -replace '^# idea.plugins.path=', 'idea.plugins.path='",
-            "    $CONT = $CONT -replace '^# idea.log.path=', 'idea.log.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.plugins.path=', 'idea.plugins.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.log.path=', 'idea.log.path='",
             "        # Rewrite properties file",
-            "    Set-Content \"$file\" ($CONT -join \"`r`n\") -Force -Encoding Ascii",
+            "    Set-Content $file $CONT -Encoding Ascii -Force",
             "}",
             "Remove-Item \"$IDE\\`$*\" -Force -Recurse"
         ]
@@ -47,7 +54,7 @@
     ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=RD&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

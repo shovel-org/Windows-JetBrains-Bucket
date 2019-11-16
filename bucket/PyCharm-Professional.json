@@ -2,21 +2,27 @@
     "version": "2019.2.4-192.7142.42",
     "description": "PyCharm Professional. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/python/pycharm-professional-2019.2.4.exe#/cosi.7z",
     "hash": "e581ab5a0eb4e88fd1773e67afc1b55381fc9987cee756083de55d38db9abf8e",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "bin": [
-                "IDE\\bin\\pycharm.bat",
-                "IDE\\bin\\pycharm64.exe"
+                "IDE\\bin\\pycharm64.exe",
+                [
+                    "IDE\\bin\\pycharm64.exe",
+                    "pycharm"
+                ]
             ],
             "shortcuts": [
                 [
                     "IDE\\bin\\pycharm64.exe",
-                    "PyCharm Professional"
+                    "JetBrains\\PyCharm Professional"
                 ]
             ]
         },
@@ -25,14 +31,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\pycharm.exe",
-                    "PyCharm Professional"
+                    "JetBrains\\PyCharm Professional"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=PCP&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

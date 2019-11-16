@@ -2,17 +2,20 @@
     "version": "2019.2.5-192.7142.46",
     "description": "PyCharm Community Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/python/pycharm-community-192.7142.46.exe#/cosi.7z",
     "hash": "5392fd26d1d37e0454204809a30bd7525525ad6df090850b248f38dbafc27ba7",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
                     "IDE\\bin\\pycharm64.exe",
-                    "PyCharm Community (Release Candidate)"
+                    "JetBrains\\PyCharm Community (Release Candidate)"
                 ]
             ]
         },
@@ -20,14 +23,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\pycharm.exe",
-                    "PyCharm Community (Release Candidate)"
+                    "JetBrains\\PyCharm Community (Release Candidate)"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=PCC&latest=true&platform=zip&type=rc",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

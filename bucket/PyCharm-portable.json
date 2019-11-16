@@ -2,45 +2,48 @@
     "version": "2019.2.4-192.7142.42",
     "description": "PyCharm Community. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/python/pycharm-community-2019.2.4.exe#/cosi.7z",
     "hash": "31adbe1aae81ed00153e517dd558bb711ee0f0000aee236b047a05813dd4ab4b",
     "extract_to": "IDE",
     "installer": {
         "script": [
-            "$currentDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
-            "$newDir = \"$(Split-Path \"$dir\")\\current\\IDE\" -replace '\\\\', '/'",
+            "$split = Split-Path $dir",
+            "$currentDir = \"$split\\current\" -replace '\\\\', '/'",
             "$IDE = \"$dir\\IDE\"",
             "$file = 'IDE\\bin\\idea.properties'",
             "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
             "    $file = \"$dir\\$file\"",
             "    $profileDir = \"$currentDir/profile\"",
-            "    $CONT = Get-Content \"$file\"",
+            "    $CONT = Get-Content $file",
             "        # Replacing config options",
-            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
-            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
-            "    $CONT = $CONT -replace '^# idea.plugins.path=', 'idea.plugins.path='",
-            "    $CONT = $CONT -replace '^# idea.log.path=', 'idea.log.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.plugins.path=', 'idea.plugins.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.log.path=', 'idea.log.path='",
             "        # Rewrite properties file",
-            "    Set-Content \"$file\" ($CONT -join \"`r`n\") -Force -Encoding Ascii",
+            "    Set-Content $file $CONT -Encoding Ascii -Force",
             "}",
             "Remove-Item \"$IDE\\`$*\" -Force -Recurse"
         ]
     },
-    "persist": [
-        "IDE\\bin\\idea.properties",
-        "profile"
-    ],
     "architecture": {
         "64bit": {
             "bin": [
-                "IDE\\bin\\pycharm.bat",
-                "IDE\\bin\\pycharm64.exe"
+                "IDE\\bin\\pycharm64.exe",
+                [
+                    "IDE\\bin\\pycharm64.exe",
+                    "pycharm"
+                ]
             ],
             "shortcuts": [
                 [
                     "IDE\\bin\\pycharm64.exe",
-                    "PyCharm Community"
+                    "JetBrains\\PyCharm Community"
                 ]
             ]
         },
@@ -49,14 +52,18 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\pycharm.exe",
-                    "PyCharm Community"
+                    "JetBrains\\PyCharm Community"
                 ]
             ]
         }
     },
+    "persist": [
+        "IDE\\bin\\idea.properties",
+        "profile"
+    ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=PCC&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
