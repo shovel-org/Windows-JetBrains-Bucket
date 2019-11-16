@@ -14,17 +14,20 @@ TODO:
 - Hub
 - UpSource
 
-| Application          | Stable |  RC   |  EAP  |
-| :------------------- | :----: | :---: | :---: |
-| MPS                  |  ✔ ❓   |  ✔ ❓  |  ✔ ❓  |
-| PhpStorm             |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
-| PyCharm-Professional |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| PyCharm              |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| Rider                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
-| RubyMine             |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| TeamCity             |   ✔    |   ❌   |   ✔   |
-| WebStorm             |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
-| YouTrack             |   ✔    |   ❌   |   ❌   |
+| Application             | Stable |  RC   |  EAP  |
+| :---------------------- | :----: | :---: | :---: |
+| IntelliJ-IDEA-Education |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| IntelliJ-IDEA-Ultimate  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| IntelliJ-IDEA           |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| MPS                     |  ✔ ❓   |  ✔ ❓  |  ✔ ❓  |
+| PhpStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| PyCharm-Professional    |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| PyCharm                 |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| Rider                   |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| RubyMine                |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| TeamCity                |   ✔    |   ❌   |   ✔   |
+| WebStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| YouTrack                |   ✔    |   ❌   |   ❌   |
 
 <!-- TODO: Check and optimize all manifests
 | CLion                   |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
@@ -37,7 +40,4 @@ TODO:
 | DotTraceCLT             |   ✔    |   ❌   |   ✔   |
 | DotTraceSDK             |   ✔    |   ❌   |   ❌   |
 | GoLand                  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| IntelliJ-IDEA           |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| IntelliJ-IDEA-Education |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
-| IntelliJ-IDEA-Ultimate  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 -->

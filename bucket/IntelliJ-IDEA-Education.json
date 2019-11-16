@@ -1,18 +1,21 @@
 {
     "version": "2019.2.2-192.6817.30",
     "description": "IntelliJ IDEA Education. Cross-Platform Java IDE for professional developers by JetBrains.",
-    "homepage": "https://www.jetbrains.com/education/learning",
+    "homepage": "https://www.jetbrains.com/education/learning/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/idea/ideaIE-2019.2.2.exe#/cosi.7z",
     "hash": "9740965c5991cf82037faa351e28af1a5438b3775ebbb00dc1f1dbf054166012",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
                     "IDE\\bin\\idea64.exe",
-                    "IntelliJ IDEA Education"
+                    "JetBrains\\IntelliJ IDEA Education"
                 ]
             ]
         },
@@ -20,11 +23,12 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\idea.exe",
-                    "IntelliJ IDEA Education"
+                    "JetBrains\\IntelliJ IDEA Education"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=IIE&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",

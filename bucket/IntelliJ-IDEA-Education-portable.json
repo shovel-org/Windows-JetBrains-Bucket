@@ -1,43 +1,42 @@
 {
     "version": "2019.2.2-192.6817.30",
     "description": "IntelliJ IDEA Education. Cross-Platform Java IDE for professional developers by JetBrains.",
-    "homepage": "https://www.jetbrains.com/education/learning",
+    "homepage": "https://www.jetbrains.com/education/learning/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/idea/ideaIE-2019.2.2.exe#/cosi.7z",
     "hash": "9740965c5991cf82037faa351e28af1a5438b3775ebbb00dc1f1dbf054166012",
     "extract_to": "IDE",
-    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "installer": {
         "script": [
-            "$currentDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
-            "$newDir = \"$(Split-Path \"$dir\")\\current\\IDE\" -replace '\\\\', '/'",
+            "$split = Split-Path $dir",
+            "$currentDir = \"$split\\current\" -replace '\\\\', '/'",
             "$IDE = \"$dir\\IDE\"",
             "$file = 'IDE\\bin\\idea.properties'",
             "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
             "    $file = \"$dir\\$file\"",
             "    $profileDir = \"$currentDir/profile\"",
-            "    $CONT = Get-Content \"$file\"",
+            "    $CONT = Get-Content $file",
             "        # Replacing config options",
-            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
-            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
-            "    $CONT = $CONT -replace '^# idea.plugins.path=', 'idea.plugins.path='",
-            "    $CONT = $CONT -replace '^# idea.log.path=', 'idea.log.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.plugins.path=', 'idea.plugins.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.log.path=', 'idea.log.path='",
             "        # Rewrite properties file",
-            "    Set-Content \"$file\" ($CONT -join \"`r`n\") -Force -Encoding Ascii",
+            "    Set-Content $file $CONT -Encoding Ascii -Force",
             "}",
             "Remove-Item \"$IDE\\`$*\" -Force -Recurse"
         ]
     },
-    "persist": [
-        "IDE\\bin\\idea.properties",
-        "profile"
-    ],
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
                     "IDE\\bin\\idea64.exe",
-                    "IntelliJ IDEA Education"
+                    "JetBrains\\IntelliJ IDEA Education"
                 ]
             ]
         },
@@ -45,11 +44,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\idea.exe",
-                    "IntelliJ IDEA Education"
+                    "JetBrains\\IntelliJ IDEA Education"
                 ]
             ]
         }
     },
+    "persist": [
+        "IDE\\bin\\idea.properties",
+        "profile"
+    ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=IIE&latest=true&platform=zip&type=release",
         "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",

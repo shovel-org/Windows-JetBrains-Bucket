@@ -2,41 +2,41 @@
     "version": "2019.3-193.5233.12",
     "description": "IntelliJ IDEA Ultimate Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/idea/ideaIU-193.5233.12.win.zip",
     "hash": "2d55d3b250560b9b092d53f855d3a0f788b3b12aef4e683200aab640e44a1363",
     "extract_to": "IDE",
     "installer": {
         "script": [
-            "$currentDir = \"$(Split-Path \"$dir\")\\current\" -replace '\\\\', '/'",
-            "$newDir = \"$(Split-Path \"$dir\")\\current\\IDE\" -replace '\\\\', '/'",
+            "$split = Split-Path $dir",
+            "$currentDir = \"$split\\current\" -replace '\\\\', '/'",
             "$IDE = \"$dir\\IDE\"",
             "$file = 'IDE\\bin\\idea.properties'",
             "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' \"$file\" 'does not exists. Creating.' -f Yellow",
+            "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
             "    $file = \"$dir\\$file\"",
             "    $profileDir = \"$currentDir/profile\"",
-            "    $CONT = Get-Content \"$file\"",
+            "    $CONT = Get-Content $file",
             "        # Replacing config options",
-            "    $CONT = $CONT -replace '^# idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
-            "    $CONT = $CONT -replace '^# idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
-            "    $CONT = $CONT -replace '^# idea.plugins.path=', 'idea.plugins.path='",
-            "    $CONT = $CONT -replace '^# idea.log.path=', 'idea.log.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
+            "    $CONT = $CONT -replace '^#\\s*idea.plugins.path=', 'idea.plugins.path='",
+            "    $CONT = $CONT -replace '^#\\s*idea.log.path=', 'idea.log.path='",
             "        # Rewrite properties file",
-            "    Set-Content \"$file\" ($CONT -join \"`r`n\") -Force -Encoding Ascii",
+            "    Set-Content $file $CONT -Encoding Ascii -Force",
             "}",
             "Remove-Item \"$IDE\\`$*\" -Force -Recurse"
         ]
     },
-    "persist": [
-        "IDE\\bin\\idea.properties",
-        "profile"
-    ],
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
                     "IDE\\bin\\idea64.exe",
-                    "IntelliJ IDEA Ultimate (Early Access Program)"
+                    "JetBrains\\IntelliJ IDEA Ultimate (Early Access Program)"
                 ]
             ]
         },
@@ -44,14 +44,18 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\idea.exe",
-                    "IntelliJ IDEA Ultimate (Early Access Program)"
+                    "JetBrains\\IntelliJ IDEA Ultimate (Early Access Program)"
                 ]
             ]
         }
     },
+    "persist": [
+        "IDE\\bin\\idea.properties",
+        "profile"
+    ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&platform=zip&type=eap",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

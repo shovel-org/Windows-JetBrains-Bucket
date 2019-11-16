@@ -2,17 +2,20 @@
     "version": "2019.3-193.5233.12",
     "description": "IntelliJ IDEA Community Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/idea/ideaIC-193.5233.12.win.zip",
     "hash": "9aa8b7b38cd2c4d1bd519918529c63d0f0b6dee77f801500ad48244290844bc0",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "shortcuts": [
                 [
                     "IDE\\bin\\idea64.exe",
-                    "IntelliJ IDEA Community (Early Access Program)"
+                    "JetBrains\\IntelliJ IDEA Community (Early Access Program)"
                 ]
             ]
         },
@@ -20,14 +23,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\idea.exe",
-                    "IntelliJ IDEA Community (Early Access Program)"
+                    "JetBrains\\IntelliJ IDEA Community (Early Access Program)"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&platform=zip&type=eap",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

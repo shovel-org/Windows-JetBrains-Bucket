@@ -2,21 +2,27 @@
     "version": "2019.2.4-192.7142.36",
     "description": "IntelliJ IDEA Community. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/idea/ideaIC-2019.2.4.win.zip",
     "hash": "df27466bf2ef6fa162e924c74d8ce697d011da5d44f5fd213ab31f43d6d4eeaf",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "bin": [
-                "IDE\\bin\\idea.bat",
-                "IDE\\bin\\idea64.exe"
+                "IDE\\bin\\idea64.exe",
+                [
+                    "IDE\\bin\\idea64.exe",
+                    "idea"
+                ]
             ],
             "shortcuts": [
                 [
                     "IDE\\bin\\idea64.exe",
-                    "IntelliJ IDEA Community"
+                    "JetBrains\\IntelliJ IDEA Community"
                 ]
             ]
         },
@@ -25,14 +31,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\idea.exe",
-                    "IntelliJ IDEA Community"
+                    "JetBrains\\IntelliJ IDEA Community"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
