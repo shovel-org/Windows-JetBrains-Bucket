@@ -2,21 +2,27 @@
     "version": "2019.2.5-192.7142.51",
     "description": "PhpStorm. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.",
     "homepage": "https://www.jetbrains.com/phpstorm/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/webide/PhpStorm-2019.2.5.exe#/cosi.7z",
     "hash": "efd8256615986462b28d07e2842822da147cfdea6537fce3f5dfc25b7eef1c78",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "bin": [
-                "IDE\\bin\\phpstorm.bat",
-                "IDE\\bin\\phpstorm64.exe"
+                "IDE\\bin\\phpstorm64.exe",
+                [
+                    "IDE\\bin\\phpstorm64.exe",
+                    "phpstorm"
+                ]
             ],
             "shortcuts": [
                 [
                     "IDE\\bin\\phpstorm64.exe",
-                    "PhpStorm"
+                    "JetBrains\\PhpStorm"
                 ]
             ]
         },
@@ -25,14 +31,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\phpstorm.exe",
-                    "PhpStorm"
+                    "JetBrains\\PhpStorm"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=PS&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

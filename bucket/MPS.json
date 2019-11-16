@@ -2,23 +2,27 @@
     "version": "2019.2.3-192.2321",
     "description": "MPS. The Domain-Specific language creator by JetBrains.",
     "homepage": "https://www.jetbrains.com/mps/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/mps/2019.2/MPS-2019.2.3.exe#/cosi.7z",
     "hash": "a4e5d7935f6ff721a6bc2b0d9e06e7429b4eb48737a1b8a7307849bebb1ce42b",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "bin": "IDE\\bin\\mps.bat",
     "shortcuts": [
         [
             "IDE\\bin\\mps.bat",
-            "MPS",
+            "JetBrains\\MPS",
             "",
             "IDE\\bin\\mps.ico"
         ]
     ],
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=MPS&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

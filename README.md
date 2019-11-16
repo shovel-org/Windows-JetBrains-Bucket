@@ -16,6 +16,8 @@ TODO:
 
 | Application          | Stable |  RC   |  EAP  |
 | :------------------- | :----: | :---: | :---: |
+| MPS                  |  ✔ ❓   |  ✔ ❓  |  ✔ ❓  |
+| PhpStorm             |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 | PyCharm-Professional |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | PyCharm              |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | Rider                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
@@ -38,6 +40,4 @@ TODO:
 | IntelliJ-IDEA           |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | IntelliJ-IDEA-Education |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 | IntelliJ-IDEA-Ultimate  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| MPS                     |  ✔ ❓   |  ✔ ❓  |  ✔ ❓  |
-| PhpStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 -->
