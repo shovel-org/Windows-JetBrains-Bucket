@@ -12,7 +12,7 @@
     "extract_dir": "youtrack-2019.2.59309",
     "installer": {
         "script": [
-            "$ver_path = \"$original_dir\\bin\"",
+            "$ver_path = \"$dir\\bin\"",
             "$cont = @(",
             "    \"Push-Location \"\"$ver_path\"\"\"",
             "    '& .\\youtrack.bat @args'",

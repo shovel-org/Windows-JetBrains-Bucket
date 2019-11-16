@@ -26,6 +26,7 @@ TODO:
 | DotTraceCLT             |   ✔    |   ❌   |   ✔   |
 | DotTraceSDK             |   ✔    |   ❌   |   ❌   |
 | GoLand                  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| JBHub                   |   ✔    |   ❌   |   ❌   |
 | IntelliJ-IDEA-Education |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 | IntelliJ-IDEA-Ultimate  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | IntelliJ-IDEA           |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |

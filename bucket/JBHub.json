@@ -1,0 +1,49 @@
+{
+    "##": "JBHub name do not conflict with Hub (github) command line utility",
+    "version": "2019.1.11758",
+    "description": "Hub. Integration Across Team Collaboration Tools by JetBrains.",
+    "homepage": "https://www.jetbrains.com/hub/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/hub/download/license.html"
+    },
+    "url": "https://download.jetbrains.com/hub/hub-2019.1.11758.zip",
+    "hash": "34a21dd0372c5a7587bf3d2aebfb48b47d6969c7f2969f776071bee18e0e7d1e",
+    "extract_dir": "hub-2019.1.11758",
+    "installer": {
+        "script": [
+            "$ver_path = \"$dir\\bin\"",
+            "$cont = @(",
+            "    \"Push-Location \"\"$ver_path\"\"\"",
+            "    '& .\\hub.bat @args'",
+            "    'Pop-Location'",
+            ")",
+            "Set-Content \"$dir\\jbhub.ps1\" $cont -Encoding Ascii"
+        ]
+    },
+    "bin": [
+        "jbhub.ps1",
+        [
+            "jbhub.ps1",
+            "hub"
+        ]
+    ],
+    "persist": [
+        "backups",
+        "conf",
+        "data",
+        "logs"
+    ],
+    "checkver": {
+        "url": "https://data.services.jetbrains.com/products/releases?code=HB&latest=true&type=release",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
+        "replace": "${ver}.${build}"
+    },
+    "autoupdate": {
+        "url": "https://download.jetbrains.com/hub/hub-$version.zip",
+        "hash": {
+            "url": "$url.sha256"
+        },
+        "extract_dir": "hub-$version"
+    }
+}
