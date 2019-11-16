@@ -3,8 +3,8 @@
     "description": "IntelliJ IDEA Community. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
     "license": {
-        "identifier": "Proprietary",
-        "url": "https://www.jetbrains.com/store/license.html"
+        "identifier": "Apache-2.0",
+        "url": "https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-"
     },
     "url": "https://download.jetbrains.com/idea/ideaIC-2019.2.4.win.zip",
     "hash": "df27466bf2ef6fa162e924c74d8ce697d011da5d44f5fd213ab31f43d6d4eeaf",

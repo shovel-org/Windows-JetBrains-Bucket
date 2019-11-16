@@ -3,8 +3,8 @@
     "description": "PyCharm Community Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
     "license": {
-        "identifier": "Proprietary",
-        "url": "https://www.jetbrains.com/store/license.html"
+        "identifier": "Apache-2.0",
+        "url": "https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-"
     },
     "url": "https://download.jetbrains.com/python/pycharm-community-192.7142.46.exe#/cosi.7z",
     "hash": "5392fd26d1d37e0454204809a30bd7525525ad6df090850b248f38dbafc27ba7",
