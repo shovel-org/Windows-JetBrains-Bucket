@@ -2,21 +2,27 @@
     "version": "2019.2.5-192.7142.48",
     "description": "GoLand. Cross-Platform, Clever IDE to Go by JetBrains.",
     "homepage": "https://www.jetbrains.com/goland/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "url": "https://download.jetbrains.com/go/goland-2019.2.5.exe#/cosi.7z",
     "hash": "06080b74909ee1b54e349374f8d6dab63da92e72275d8b63e9d600f31d39e608",
     "extract_to": "IDE",
-    "post_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "persist": "IDE\\bin\\idea.properties",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
             "bin": [
-                "IDE\\bin\\goland.bat",
-                "IDE\\bin\\goland64.exe"
+                "IDE\\bin\\goland64.exe",
+                [
+                    "IDE\\bin\\goland64.exe",
+                    "goland"
+                ]
             ],
             "shortcuts": [
                 [
                     "IDE\\bin\\goland64.exe",
-                    "GoLand"
+                    "JetBrains\\GoLand"
                 ]
             ]
         },
@@ -25,14 +31,15 @@
             "shortcuts": [
                 [
                     "IDE\\bin\\goland.exe",
-                    "GoLand"
+                    "JetBrains\\GoLand"
                 ]
             ]
         }
     },
+    "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=GO&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\d\\.]+)\"",
+        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {

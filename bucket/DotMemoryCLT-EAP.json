@@ -17,8 +17,7 @@
     ],
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=DMCLP&latest=true&platform=zip&type=eap",
-        "regex": "version\":\"(?<ver>[\\d\\.]+)\".*\"build\":\"(?<build>[\\w\\.]+)\"",
-        "replace": "${build}"
+        "jsonpath": "$..build"
     },
     "autoupdate": {
         "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.$version/JetBrains.dotMemoryConsole.$version.Checked.zip",

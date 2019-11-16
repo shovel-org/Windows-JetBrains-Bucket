@@ -2,6 +2,10 @@
     "version": "2019.2.3",
     "description": "DotMemory. Memory Profile & Unit testing framework for .NET by JetBrains.",
     "homepage": "https://www.jetbrains.com/dotmemory/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "architecture": {
         "64bit": {
             "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.2.3/dotMemory.UI.64.2019.2.3.exe#/dotMemory.exe",

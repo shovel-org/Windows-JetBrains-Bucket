@@ -16,6 +16,14 @@ TODO:
 
 | Application             | Stable |  RC   |  EAP  |
 | :---------------------- | :----: | :---: | :---: |
+| DotCoverCLT             |   ✔    |   ❌   |   ✔   |
+| DotMemory               |   ✔    |   ❌   |   ❌   |
+| DotMemoryCLT            |   ✔    |   ❌   |   ✔   |
+| DotPeek                 |   ✔    |   ❌   |   ❌   |
+| DotTrace                |   ✔    |   ❌   |   ❌   |
+| DotTraceCLT             |   ✔    |   ❌   |   ✔   |
+| DotTraceSDK             |   ✔    |   ❌   |   ❌   |
+| GoLand                  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | IntelliJ-IDEA-Education |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 | IntelliJ-IDEA-Ultimate  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | IntelliJ-IDEA           |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
@@ -32,12 +40,4 @@ TODO:
 <!-- TODO: Check and optimize all manifests
 | CLion                   |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | DataGrip                |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| DotCoverCLT             |   ✔    |   ❌   |   ✔   |
-| DotMemory               |   ✔    |   ❌   |   ❌   |
-| DotMemoryCLT            |   ✔    |   ❌   |   ✔   |
-| DotPeek                 |   ✔    |   ❌   |   ❌   |
-| DotTrace                |   ✔    |   ❌   |   ❌   |
-| DotTraceCLT             |   ✔    |   ❌   |   ✔   |
-| DotTraceSDK             |   ✔    |   ❌   |   ❌   |
-| GoLand                  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 -->

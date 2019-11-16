@@ -2,6 +2,10 @@
     "version": "2019.2.3",
     "description": "DotTrace. .NET Performace Profiler by JetBrains.",
     "homepage": "https://www.jetbrains.com/profiler/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/store/license.html"
+    },
     "architecture": {
         "64bit": {
             "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.2.3/dotTrace64.2019.2.3.exe#/dotTrace.exe",
