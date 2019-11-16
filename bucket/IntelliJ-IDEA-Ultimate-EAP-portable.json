@@ -6,29 +6,19 @@
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
     },
-    "url": "https://download.jetbrains.com/idea/ideaIU-193.5233.12.win.zip",
-    "hash": "2d55d3b250560b9b092d53f855d3a0f788b3b12aef4e683200aab640e44a1363",
+    "url": [
+        "https://download.jetbrains.com/idea/ideaIU-193.5233.12.win.zip",
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+    ],
+    "hash": [
+        "2d55d3b250560b9b092d53f855d3a0f788b3b12aef4e683200aab640e44a1363",
+        "196d75d69940f3d2f203c02e1105cf80ab1a15558844a30fae2e84284ff26d0c"
+    ],
     "extract_to": "IDE",
     "installer": {
         "script": [
-            "$split = Split-Path $dir",
-            "$currentDir = \"$split\\current\" -replace '\\\\', '/'",
-            "$IDE = \"$dir\\IDE\"",
-            "$file = 'IDE\\bin\\idea.properties'",
-            "if (-not (Test-Path \"$persist_dir\\$file\")) {",
-            "    Write-Host 'File' $file 'does not exists. Creating.' -f Yellow",
-            "    $file = \"$dir\\$file\"",
-            "    $profileDir = \"$currentDir/profile\"",
-            "    $CONT = Get-Content $file",
-            "        # Replacing config options",
-            "    $CONT = $CONT -replace '^#\\s*idea.config.path=.*$', \"idea.config.path=$profileDir/config\"",
-            "    $CONT = $CONT -replace '^#\\s*idea.system.path=.*$', \"idea.system.path=$profileDir/system\"",
-            "    $CONT = $CONT -replace '^#\\s*idea.plugins.path=', 'idea.plugins.path='",
-            "    $CONT = $CONT -replace '^#\\s*idea.log.path=', 'idea.log.path='",
-            "        # Rewrite properties file",
-            "    Set-Content $file $CONT -Encoding Ascii -Force",
-            "}",
-            "Remove-Item \"$IDE\\`$*\" -Force -Recurse"
+            "& \"$dir\\portable.ps1\" $dir $persist_dir",
+            "Remove-Item \"$dir\\IDE\\`$*\", \"$dir\\portable.ps1\" -Force -Recurse"
         ]
     },
     "architecture": {
