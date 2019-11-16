@@ -3,8 +3,8 @@
     "description": "DotMemory Command Line Tool Early Access Program. Free package for profiling .NET memory usage from the command line by JetBrains.",
     "homepage": "https://www.jetbrains.com/dotmemory/download/#section=command-line-profiler",
     "license": {
-        "identifier": "Freeware",
-        "url": "https://www.jetbrains.com/dotmemory/download/dotmemory_clt_license.html"
+        "identifier": "Proprietary",
+        "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
     },
     "url": "https://download.jetbrains.com/resharper/ReSharperUltimate.2019.3.EAP4/JetBrains.dotMemoryConsole.2019.3.EAP4.Checked.zip",
     "hash": "085b66ba97e009e04bc4cd9016058c113e9c199c975833ab52c4d6021d94e9b7",
