@@ -1,13 +1,13 @@
 {
-    "version": "2019.2.4-192.7142.42",
+    "version": "2019.2.5-192.7142.56",
     "description": "PyCharm Community. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
     "license": {
         "identifier": "Apache-2.0",
         "url": "https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-"
     },
-    "url": "https://download.jetbrains.com/python/pycharm-community-2019.2.4.exe#/cosi.7z",
-    "hash": "31adbe1aae81ed00153e517dd558bb711ee0f0000aee236b047a05813dd4ab4b",
+    "url": "https://download.jetbrains.com/python/pycharm-community-2019.2.5.exe#/cosi.7z",
+    "hash": "cfbafe557c949e64eef2b06792dbfc39d0e809630a5051b15e2d1c677690716f",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
