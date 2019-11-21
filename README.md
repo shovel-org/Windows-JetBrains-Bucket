@@ -26,7 +26,7 @@ Each IDE have all available releases. Pre-release versions do not contains bin p
 | IntelliJ-IDEA-Ultimate  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | IntelliJ-IDEA           |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | MPS                     |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| PhpStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
+| PhpStorm                |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | PyCharm-Professional    |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | PyCharm                 |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | Rider                   |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
