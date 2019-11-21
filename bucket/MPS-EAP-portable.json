@@ -1,5 +1,5 @@
 {
-    "version": "2019.3-193.742-EAP3",
+    "version": "2019.3-193.866-EAP4",
     "description": "MPS Early Access Program. The Domain-Specific language creator by JetBrains.",
     "homepage": "https://www.jetbrains.com/mps/",
     "license": {
@@ -7,11 +7,11 @@
         "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
     },
     "url": [
-        "https://download.jetbrains.com/mps/2019.3/MPS-2019.3-EAP3.exe#/cosi.7z",
+        "https://download.jetbrains.com/mps/2019.3/MPS-2019.3-EAP4.exe#/cosi.7z",
         "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
     ],
     "hash": [
-        "bb83bda90cf6355c5b543ab783f9b78a7a8b589c21ff9f03cf910ade4511c62a",
+        "a6edffef7278c8c7927df8a653819dd05acd8ca7adc27fd737c2c578f7bc43b4",
         "5b43fc8a57d7d8d519071a50849a5db92c90ecdf56b64ac57f15fdae5b4f0572"
     ],
     "extract_to": "IDE",
