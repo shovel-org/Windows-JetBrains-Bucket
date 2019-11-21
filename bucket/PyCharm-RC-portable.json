@@ -1,5 +1,5 @@
 {
-    "version": "2019.2.5-192.7142.46",
+    "version": "2019.3-193.5233.62",
     "description": "PyCharm Community Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
     "license": {
@@ -7,11 +7,11 @@
         "url": "https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-"
     },
     "url": [
-        "https://download.jetbrains.com/python/pycharm-community-192.7142.46.exe#/cosi.7z",
+        "https://download.jetbrains.com/python/pycharm-community-193.5233.62.exe#/cosi.7z",
         "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
     ],
     "hash": [
-        "5392fd26d1d37e0454204809a30bd7525525ad6df090850b248f38dbafc27ba7",
+        "aba51708b4f5f7190abef0466db0ccb24520791ffdf114775425e567f28ffc6c",
         "5b43fc8a57d7d8d519071a50849a5db92c90ecdf56b64ac57f15fdae5b4f0572"
     ],
     "extract_to": "IDE",
