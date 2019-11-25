@@ -1,5 +1,5 @@
 {
-    "version": "2019.1.1519",
+    "version": "2019.1.1556",
     "description": "Upsource. Code Review, Project Analytics, and Team Collaboration by JetBrains.",
     "homepage": "https://jetbrains.com/upsource/",
     "license": {
@@ -7,9 +7,9 @@
         "url": "https://www.jetbrains.com/upsource/buy/license.html"
     },
     "notes": "Upsource could be executed from anywhere using 'upsource' command.",
-    "url": "https://download.jetbrains.com/upsource/upsource-2019.1.1519.zip",
-    "hash": "8c13768695495e67b2db2423084d5674df20231387e275bac5c720f58b031145",
-    "extract_dir": "upsource-2019.1.1519",
+    "url": "https://download.jetbrains.com/upsource/upsource-2019.1.1556.zip",
+    "hash": "39ecdc290df1aa1412830addeb2b65ef000726f20b49f19340f753b5efe17b52",
+    "extract_dir": "upsource-2019.1.1556",
     "installer": {
         "script": [
             "$ver_path = \"$dir\\bin\"",
