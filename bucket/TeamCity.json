@@ -9,7 +9,7 @@
     "url": "https://download.jetbrains.com/teamcity/TeamCity-2019.1.exe#/cosi.7z",
     "hash": "d39d734d4af302344dc1826c8c1506ff64be67076329a0e33c00721db4e3418f",
     "notes": [
-        "TeamCity could be runned from anywhere using 'teamcity' command.",
+        "TeamCity could be executed from anywhere using 'teamcity' command.",
         "Run 'teamcity --help' to get more info."
     ],
     "installer": {
