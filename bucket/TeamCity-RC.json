@@ -1,15 +1,14 @@
 {
-    "version": "2019.2.EAP3-71010",
-    "description": "TeamCity Early Access Program (Kanpur). Powerful Continuous Integration out of the box by JetBrains.",
+    "version": "2019.2.RC-71364",
+    "description": "TeamCity Release Candidate (Kanpur). Powerful Continuous Integration out of the box by JetBrains.",
     "homepage": "https://www.jetbrains.com/teamcity/",
     "license": {
         "identifier": "Proprietary",
-        "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
+        "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/teamcity/eap/TeamCity-71010.exe#/cosi.7z",
-    "hash": "fd51c7f25169049ee203786b4948d45a0dd851097258610bd77dae6f05b8f4b0",
+    "url": "https://download.jetbrains.com/teamcity/eap/TeamCity-71364.exe#/cosi.7z",
+    "hash": "7cdd6c0cac75a06694f852f670ab7519b21ff000a9900a5fa4b933533aee5399",
     "notes": [
-        "EAP releases come with 60 day evaluation license with unlimited agents.",
         "TeamCity could be executed from anywhere using 'teamcity' command.",
         "Run 'teamcity --help' to get more info."
     ],
@@ -30,7 +29,7 @@
         "teamcity.ps1",
         [
             "teamcity.ps1",
-            "teamcity-eap"
+            "teamcity-rc"
         ],
         [
             "teamcity.ps1",
@@ -38,14 +37,14 @@
         ],
         [
             "teamcity.ps1",
-            "teamcity-server-eap"
+            "teamcity-server-rc"
         ]
     ],
     "persist": "conf",
     "checkver": {
         "url": "https://confluence.jetbrains.com/display/TW/ChangeLog",
-        "regex": ">Kanpur\\s+([\\d.]+)\\s+EAP(?<eap>\\d+)\\s+\\(build\\s+(?<build>[\\d.]+)\\)\\s+Release\\s+Notes</a>",
-        "replace": "$1.EAP${eap}-${build}"
+        "regex": ">Kanpur\\s+([\\d.]+)\\s+RC(?<rc>\\d+)?\\s+\\(build\\s+(?<build>[\\d.]+)\\)\\s+Release\\s+Notes</a>",
+        "replace": "$1.RC${rc}-${build}"
     },
     "autoupdate": {
         "url": "https://download.jetbrains.com/teamcity/eap/TeamCity-$preReleaseVersion.exe#/cosi.7z",
