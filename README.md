@@ -21,17 +21,18 @@ Each IDE have all available releases. Pre-release versions do not contains bin p
 | DotTraceCLT             |   ✔    |   ❌   |   ✔   |
 | DotTraceSDK             |   ✔    |   ❌   |   ❌   |
 | GoLand                  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| JBHub                   |   ✔    |   ❌   |   ❌   |
+| IntelliJ-IDEA           |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | IntelliJ-IDEA-Education |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 | IntelliJ-IDEA-Ultimate  |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| IntelliJ-IDEA           |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| JBHub                   |   ✔    |   ❌   |   ❌   |
+| FloatingLicenseServer   |   ✔    |   ❌   |   ❌   |
 | MPS                     |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | PhpStorm                |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| PyCharm-Professional    |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | PyCharm                 |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
+| PyCharm-Professional    |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
 | Rider                   |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 | RubyMine                |  ✔ ✔   |  ✔ ✔  |  ✔ ✔  |
-| TeamCity                |   ✔    |   ❌   |   ✔   |
+| TeamCity                |   ✔    |   ✔   |   ✔   |
 | Upsource                |   ✔    |   ❌   |   ❌   |
 | WebStorm                |  ✔ ✔   |  ❌ ❌  |  ✔ ✔  |
 | YouTrack                |   ✔    |   ❌   |   ❌   |
