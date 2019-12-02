@@ -1,13 +1,13 @@
 {
-    "version": "2019.2.5-192.7142.56",
+    "version": "2019.3-193.5233.109",
     "description": "PyCharm Professional. Cross-Platform Python IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/pycharm/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/python/pycharm-professional-2019.2.5.exe#/cosi.7z",
-    "hash": "9d9f81e80e36dc7121a1cd71d13a043eb77387b8f95db6944a0499877476c88c",
+    "url": "https://download.jetbrains.com/python/pycharm-professional-2019.3.exe#/cosi.7z",
+    "hash": "68ad8a3d8340490d088c0f16b5161a86ae4031c88b4414c9f0a9308a11ba8b07",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
