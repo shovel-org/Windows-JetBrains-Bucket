@@ -1,13 +1,13 @@
 {
-    "version": "2019.2.2-192.6817.30",
+    "version": "2019.3-193.5233.131",
     "description": "IntelliJ IDEA Education. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/education/learning/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/idea/ideaIE-2019.2.2.exe#/cosi.7z",
-    "hash": "9740965c5991cf82037faa351e28af1a5438b3775ebbb00dc1f1dbf054166012",
+    "url": "https://download.jetbrains.com/idea/ideaIE-2019.3.exe#/cosi.7z",
+    "hash": "08aaf765f8f851111e1afc231592624d12264ac6514899c9d0df9b6e7b0b5b1c",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
