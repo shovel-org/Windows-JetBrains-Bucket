@@ -1,0 +1,17 @@
+{
+    "normal and portable checks": {
+        "scope": "md,markdown",
+        "prefix": "both",
+        "body": "[✔](./bucket/$1${2| ,-RC,-EAP|}.json) [✔](./bucket/$1$2-portable.json)",
+    },
+    "normal only": {
+        "scope": "md,markdown",
+        "prefix": "normal",
+        "body": "[✔](./bucket/$1${2| , -RC,-EAP|}.json)",
+    },
+    "portable only": {
+        "scope": "md,markdown",
+        "prefix": "portable",
+        "body": "[✔](./bucket/$1${2| ,-RC,-EAP|}-portable.json)",
+    },
+}
