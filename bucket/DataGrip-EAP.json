@@ -1,13 +1,13 @@
 {
-    "version": "2020.1-201.6668.27",
+    "version": "2020.2-202.5103.3",
     "description": "DataGrip Early Access Program. Cross-Platform IDE for Databases & SQL by JetBrains.",
     "homepage": "https://www.jetbrains.com/datagrip/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
     },
-    "url": "https://download.jetbrains.com/datagrip/datagrip-201.6668.27.exe#/cosi.7z",
-    "hash": "68931c5f821858c207104d15bc7b52f92845ce7e7f9f1ae780a0e072475a0720",
+    "url": "https://download.jetbrains.com/datagrip/datagrip-202.5103.3.exe#/cosi.7z",
+    "hash": "5f4d1798c6fa71676e4434d2b5ca843156ab398874fc48a47d4a9faf4c6df37f",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
