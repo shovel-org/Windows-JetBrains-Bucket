@@ -1,5 +1,5 @@
 {
-    "version": "2020.1.1-201.7223.91",
+    "version": "2020.1.2-201.7846.76",
     "description": "IntelliJ IDEA Community. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
     "license": {
@@ -7,11 +7,11 @@
         "url": "https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-"
     },
     "url": [
-        "https://download.jetbrains.com/idea/ideaIC-2020.1.1.win.zip",
+        "https://download.jetbrains.com/idea/ideaIC-2020.1.2.win.zip",
         "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
     ],
     "hash": [
-        "1a9db34d0d64ce6825351a768d0a487781231ae9defe616b6e6391b4e01de696",
+        "b1b2ecc68d6593f5994be556441544da65a51e78df401bba7c1a0bb9da553ce3",
         "5b43fc8a57d7d8d519071a50849a5db92c90ecdf56b64ac57f15fdae5b4f0572"
     ],
     "extract_to": "IDE",
