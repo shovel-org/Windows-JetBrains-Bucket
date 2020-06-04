@@ -1,5 +1,5 @@
 {
-    "version": "2020.1.1-201.7223.93",
+    "version": "2020.1.2-201.7846.79",
     "description": "WebStorm. Cross-Platform, Smart JavaScript IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/webstorm/",
     "license": {
@@ -7,11 +7,11 @@
         "url": "https://www.jetbrains.com/store/license.html"
     },
     "url": [
-        "https://download.jetbrains.com/webstorm/WebStorm-2020.1.1.exe#/cosi.7z",
+        "https://download.jetbrains.com/webstorm/WebStorm-2020.1.2.exe#/cosi.7z",
         "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
     ],
     "hash": [
-        "0b5525d03eb7609c692443a7e776b2e0f679a60f923089ee3be0c700e51fc7da",
+        "b7b7eb8982f3fe5d385710707d7710e910efb7a87924485009373024589819ba",
         "5b43fc8a57d7d8d519071a50849a5db92c90ecdf56b64ac57f15fdae5b4f0572"
     ],
     "extract_to": "IDE",
