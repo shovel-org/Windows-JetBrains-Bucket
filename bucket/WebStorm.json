@@ -1,13 +1,13 @@
 {
-    "version": "2020.1.1-201.7223.93",
+    "version": "2020.1.2-201.7846.79",
     "description": "WebStorm. Cross-Platform, Smart JavaScript IDE by JetBrains.",
     "homepage": "https://www.jetbrains.com/webstorm/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/webstorm/WebStorm-2020.1.1.exe#/cosi.7z",
-    "hash": "0b5525d03eb7609c692443a7e776b2e0f679a60f923089ee3be0c700e51fc7da",
+    "url": "https://download.jetbrains.com/webstorm/WebStorm-2020.1.2.exe#/cosi.7z",
+    "hash": "b7b7eb8982f3fe5d385710707d7710e910efb7a87924485009373024589819ba",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
