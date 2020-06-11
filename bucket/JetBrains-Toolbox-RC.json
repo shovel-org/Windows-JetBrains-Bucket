@@ -26,6 +26,7 @@
         "}"
     ],
     "bin": [
+        "jetbrains-toolbox.exe",
         [
             "jetbrains-toolbox.exe",
             "jetbrains-toolbox-rc"
