@@ -2,6 +2,8 @@
 
 `scoop bucket add JetBrains`
 
+❗❗ [For the most optimized scoop experience use "shovel" implementation](https://github.com/Ash258/Scoop-Core) ❗❗
+
 Each IDE have all available releases. Pre-release versions do not contains bin property (stable release binaries will not be overriden)
 
 ## Portable suffix
