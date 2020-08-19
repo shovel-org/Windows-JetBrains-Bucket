@@ -1,13 +1,13 @@
 {
-    "version": "2020.2-202.6397.93",
+    "version": "2020.2.1-202.6948.45",
     "description": "DataGrip. Cross-Platform IDE for Databases & SQL by JetBrains.",
     "homepage": "https://www.jetbrains.com/datagrip/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/datagrip/datagrip-2020.2.exe#/cosi.7z",
-    "hash": "4bf86e8f685bbd5e4cea81d6253d3df880e12bef60f5d5fda74b947b8b037e9c",
+    "url": "https://download.jetbrains.com/datagrip/datagrip-2020.2.1.exe#/cosi.7z",
+    "hash": "152a399eb35baa36b777d8d8e4eb60974a26a4e279c7411a57bec128fb69eea3",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
