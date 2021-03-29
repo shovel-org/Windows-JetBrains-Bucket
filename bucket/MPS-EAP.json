@@ -1,13 +1,13 @@
 {
-    "version": "2021.1-211.6085.475-EAP2",
+    "version": "2021.1-211.6556.759-EAP3",
     "description": "MPS Early Access Program. The Domain-Specific language creator by JetBrains.",
     "homepage": "https://www.jetbrains.com/mps/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
     },
-    "url": "https://download.jetbrains.com/mps/2021.1/MPS-2021.1-EAP2.exe#/cosi.7z",
-    "hash": "d58e02d08dd1f3d40bda452091b1d60deedb882a6a8292bb73f792ec4ba4b4f2",
+    "url": "https://download.jetbrains.com/mps/2021.1/MPS-2021.1-EAP3.exe#/cosi.7z",
+    "hash": "e579d9dde520a196366e14edeb7181d3da3e91562e08e9caecb1217d11e540e2",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "shortcuts": [
