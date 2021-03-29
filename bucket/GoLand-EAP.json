@@ -1,13 +1,13 @@
 {
-    "version": "2021.1-211.6556.11",
+    "version": "2021.1-211.6693.34",
     "description": "GoLand Early Access Program. Cross-Platform, Clever IDE to Go by JetBrains.",
     "homepage": "https://www.jetbrains.com/goland/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
     },
-    "url": "https://download.jetbrains.com/go/goland-211.6556.11.exe#/cosi.7z",
-    "hash": "e27a6a7bd47bcb9a2cf78bb3da6e9c289108080b70a1be8efd8ab3821b394d61",
+    "url": "https://download.jetbrains.com/go/goland-211.6693.34.exe#/cosi.7z",
+    "hash": "a782c41c3a64c0abba555c5c88ef2a48c66eeb73995cdfd6c0d8a3e27f520560",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
