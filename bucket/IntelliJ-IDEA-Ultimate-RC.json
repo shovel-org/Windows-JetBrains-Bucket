@@ -1,13 +1,13 @@
 {
-    "version": "2020.3.3-203.7717.45",
+    "version": "2021.1-211.6693.65",
     "description": "IntelliJ IDEA Ultimate Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": "https://download.jetbrains.com/idea/ideaIU-203.7717.45.win.zip",
-    "hash": "e9e8dc823b9e3342562c5f7f309b42e3598f3ddaa6a04ca43c280b003fe4026b",
+    "url": "https://download.jetbrains.com/idea/ideaIU-211.6693.65.win.zip",
+    "hash": "1c4a0f59332fb67bdfab64f4877ba1a58ed7d5d99252712565b7043e227aa5a3",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
