@@ -1,13 +1,13 @@
 {
-    "version": "2020.3.3-203.7717.45",
+    "version": "2021.1-211.6693.65",
     "description": "IntelliJ IDEA Community Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.",
     "homepage": "https://www.jetbrains.com/idea/",
     "license": {
         "identifier": "Apache-2.0",
         "url": "https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-"
     },
-    "url": "https://download.jetbrains.com/idea/ideaIC-203.7717.45.win.zip",
-    "hash": "aad760b1b24ee7f85d7949fdbd93d580ea1eb68966ce3b5e9038f635bb51dd04",
+    "url": "https://download.jetbrains.com/idea/ideaIC-211.6693.65.win.zip",
+    "hash": "2099f2f098883e3abd5469805a8bedfe42b5e56806d2573242a0dd7634352e4d",
     "extract_to": "IDE",
     "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
