@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/idea/ideaIU-212.5080.17.win.zip",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "2f2f37db07968dc7a02020f47e7448229cd5e03f4453cb8c99327e04e1353256",

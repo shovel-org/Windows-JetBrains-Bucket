@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/idea/ideaIC-2021.2.win.zip",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "1d5e3b82923f808611d0178d603bbf81b777754ba07e17057098013effb41129",

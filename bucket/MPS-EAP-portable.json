@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/mps/2021.2/MPS-2021.2-EAP1.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "1c0e56ef95d581e0883a934e2ee99822cbde0ca0a87a2067e60e14611ae4d7c7",

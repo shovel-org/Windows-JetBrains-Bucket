@@ -10,7 +10,7 @@
         "64bit": {
             "url": [
                 "https://download.jetbrains.com/cpp/CLion-212.4746.15.win.zip",
-                "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+                "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
             ],
             "hash": [
                 "fa051fef2e8e69e4e9ca853228ce6524102a34bb5b47706869767f13ec86cacb",

@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/ruby/RubyMine-191.7141.46.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "cbc24b10b5709850499832b73fcc60c7d843418b40cd6faeafdad4236216b2e4",

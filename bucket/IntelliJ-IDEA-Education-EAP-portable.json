@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/idea/ideaIE-193.4697.23.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "175a8682531f026a446b0b88ffb92eb33085bcf2bc498fde19fb34d19e8ae369",

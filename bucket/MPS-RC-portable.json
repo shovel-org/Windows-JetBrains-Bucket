@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/mps/2019.3/MPS-2019.3-RC1.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "06afe3ecad9da302609d3d7f385593ccc7081a5bcbbf4d3443590e0956d4529e",

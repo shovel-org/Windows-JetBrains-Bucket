@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/python/pycharm-professional-2021.2.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "df300d3afc6fa31b4737ec8a626c2d6dc36937e4d76c95aa0c3c5c926d6abef0",

@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/webstorm/WebStorm-212.5080.40.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "20641c4653b86084e1c4da0d8df6f04b25bdfd964db89dad4e542a90138aa92d",

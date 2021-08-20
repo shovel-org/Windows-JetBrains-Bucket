@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/python/pycharm-community-212.5080.18.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "6661a46eeb56388c339b5d70add7603eff9e456b1342f24c8396402d41a4b0d4",

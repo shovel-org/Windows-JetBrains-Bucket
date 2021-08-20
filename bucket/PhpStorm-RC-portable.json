@@ -8,7 +8,7 @@
     },
     "url": [
         "https://download.jetbrains.com/webide/PhpStorm-212.5080.45.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
     ],
     "hash": [
         "82431e49949e8c04cb7907f316873302962696a29b3b532b5471faddb9c02b17",

@@ -10,7 +10,7 @@
         "64bit": {
             "url": [
                 "https://download.jetbrains.com/rider/JetBrains.Rider-2021.2-EAP9-212.4746.97.Checked.win.zip",
-                "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/master/scripts/portable.ps1"
+                "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
             ],
             "hash": [
                 "ae820fd9ba92a95bb39b453789b7c6afb69d7b637bddca69492d0392489bd0aa",
