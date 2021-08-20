@@ -6,6 +6,7 @@
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
+    "changelog": "https://www.jetbrains.com/goland/whatsnew/",
     "url": "https://download.jetbrains.com/go/goland-2021.2.1.exe#/cosi.7z",
     "hash": "a230be2ea4631319a648d53f1f0f8bf3b884d3de301d3f6469c9193b4ac9f63f",
     "extract_to": "IDE",

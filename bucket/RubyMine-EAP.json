@@ -1,7 +1,7 @@
 {
     "version": "2021.2.1-212.5080.43",
     "description": "RubyMine Early Access Program. Cross-Platform Ruby on Rails IDE by JetBrains.",
-    "homepage": "https://www.jetbrains.com/rubymine/",
+    "homepage": "https://www.jetbrains.com/ruby/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
