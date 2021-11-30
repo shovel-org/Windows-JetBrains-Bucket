@@ -1,7 +1,7 @@
 {
     "version": "2021.3-213.5352.7",
     "description": "DataSpell Early Access Program. Cross-Platform IDE for Data Scientists by JetBrains.",
-    "homepage": "https://www.jetbrains.com/datagrip/",
+    "homepage": "https://www.jetbrains.com/dataspell/",
     "license": {
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
@@ -36,7 +36,7 @@
         "profile"
     ],
     "checkver": {
-        "url": "https://data.services.jetbrains.com/products/releases?code=PCD&latest=true&platform=zip&type=eap",
+        "url": "https://data.services.jetbrains.com/products/releases?code=DS&latest=true&platform=zip&type=eap",
         "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
