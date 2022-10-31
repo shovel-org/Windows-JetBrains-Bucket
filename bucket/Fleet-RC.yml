@@ -1,17 +1,17 @@
 '##': '//TODO: Find out portable mode; Migrate to proper RC'
-version: 1.9.237
+version: 1.10.189
 description: Hybrid IDE and text editor
 homepage: https://www.jetbrains.com/fleet/
 license: Unknown
 notes: Currently using preview as RC, until proper RC release is done
 architecture:
   64bit:
-    url: https://download.jetbrains.com/fleet/installers/windows_x64/Fleet-1.9.237.zip
-    hash: de3dfe07b17604ecc1a1038b6f9d3db151d178cfc20cdf1ec02c3ba530aca5f2
+    url: https://download.jetbrains.com/fleet/installers/windows_x64/Fleet-1.10.189.zip
+    hash: b001be246c50e02980bcdb63a0fe633ea088eedaffefd132d576bfd5429415c0
 bin: Fleet.exe
 shortcuts:
-  - - Fleet.exe
-    - Fleet
+- - Fleet.exe
+  - Fleet
 checkver:
   url: https://data.services.jetbrains.com/products/releases?code=FL&latest=true&type=preview
   jsonpath: $.FL..version
