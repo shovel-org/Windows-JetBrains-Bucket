@@ -14,6 +14,10 @@
         "32bit": {
             "url": "https://download.jetbrains.com/resharper/dotUltimate.2022.3.1/dotTrace32.2022.3.1.exe#/dotTrace.exe",
             "hash": "68e2d3b6fbb4da9c509ec8685508e054de71545df861713213555a979ed6b852"
+        },
+        "arm64": {
+            "url": "https://download.jetbrains.com/resharper/dotUltimate.2022.3.1/dotTrace64a.2022.3.1.exe#/dotTrace.exe",
+            "hash": "fc50bf1c09e470fb47e700b09f69d7e185dc989f36ec0fbafeb573c34405ee5f"
         }
     },
     "shortcuts": [
@@ -33,6 +37,9 @@
             },
             "32bit": {
                 "url": "https://download.jetbrains.com/resharper/dotUltimate.$version/dotTrace32.$version.exe#/dotTrace.exe"
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/resharper/dotUltimate.$version/dotTrace64a.$version.exe#/dotTrace.exe"
             }
         },
         "hash": {
