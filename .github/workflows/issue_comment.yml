@@ -12,5 +12,4 @@ jobs:
       uses: shovel-org/GithubActions@main
       if: startsWith(github.event.comment.body, '/verify') && contains(fromJSON('["Ash258"]'), github.event.comment.user.login)
       env:
-        GITH_EMAIL: cabera.jakub@gmail.com
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
