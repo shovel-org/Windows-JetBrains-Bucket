@@ -1,6 +1,6 @@
 {
     "##": "JBHub name do not conflict with Hub (github) command line utility",
-    "version": "2022.3.15435",
+    "version": "2022.3.15453",
     "description": "Hub. Integration Across Team Collaboration Tools by JetBrains.",
     "homepage": "https://www.jetbrains.com/hub/",
     "license": {
@@ -8,9 +8,9 @@
         "url": "https://www.jetbrains.com/hub/download/license.html"
     },
     "notes": "Hub could be executed from anywhere using 'jbhub' command.",
-    "url": "https://download.jetbrains.com/hub/hub-2022.3.15435.zip",
-    "hash": "b7e72e572fcf35ff4193ad1a168149dacd990f1e9e97f350dc4ff7e1f74f6500",
-    "extract_dir": "hub-2022.3.15435",
+    "url": "https://download.jetbrains.com/hub/hub-2022.3.15453.zip",
+    "hash": "dc3f8019a6179dbee7005d45a1015c38dcacca96bdb90f10afdf95e37212b76a",
+    "extract_dir": "hub-2022.3.15453",
     "installer": {
         "script": [
             "$ver_path = \"$dir\\bin\"",
