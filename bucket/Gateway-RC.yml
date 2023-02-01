@@ -1,0 +1,31 @@
+version: 2022.3.2-223.8617.24
+description: JetBrains Gateway Release Candidate. Launcher that brings a backend server and local environment together.
+homepage: https://www.jetbrains.com/help/idea/2021.3/remote-development-starting-page.html
+license:
+  identifier: Freeware
+  url: https://www.jetbrains.com/help/idea/2021.3/remote-development-starting-page.html#licensing
+architecture:
+  64bit:
+    url: https://download.jetbrains.com/idea/gateway/JetBrainsGateway-223.8617.24.exe#/cosi.7z
+    hash: 5c5730fcdda563869081f3161acfd5a52503fdb85b796a809245ac22709b79a1
+  arm64:
+    url: https://download.jetbrains.com/idea/gateway/JetBrainsGateway-223.8617.24-aarch64.exe#/cosi.7z
+    hash: b9c6a4062b02ee99ff331336cd8ef1afa718db93e8dd4b4e3280d09bf0f1f4d6
+extract_to: IDE
+pre_install: Remove-AppDirItem 'IDE\$*'
+shortcuts:
+- - IDE\bin\gateway64.exe
+  - JetBrains\Gateway (Release Candidate)
+persist: IDE\bin\idea.properties
+checkver:
+  url: https://data.services.jetbrains.com/products/releases?code=GW&latest=true&type=rc
+  regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
+  replace: ${ver}-${build}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/idea/gateway/JetBrainsGateway-${preReleaseVersion}.exe#/cosi.7z
+    arm64:
+      url: https://download.jetbrains.com/idea/gateway/JetBrainsGateway-${preReleaseVersion}-aarch64.exe#/cosi.7z
+  hash:
+    url: $url.sha256
