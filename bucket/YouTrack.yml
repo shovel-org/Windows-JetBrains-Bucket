@@ -25,7 +25,7 @@ persist:
 - data
 - logs
 checkver:
-  url: https://data.services.jetbrains.com/products/releases?code=YTD&platform=zip&latest=true&type=release
+  url: https://data.services.jetbrains.com/products/releases?code=YTD&latest=true&type=release
   regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d]+)"
   replace: ${ver}.${build}
 autoupdate:
