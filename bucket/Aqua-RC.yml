@@ -1,0 +1,42 @@
+version: 2022.3-223.8617.51
+description: JetBrains Aqua Preview. A powerful IDE for test automation
+homepage: https://www.jetbrains.com/aqua/
+license: Unknown
+architecture:
+  64bit:
+    url:
+    - https://download.jetbrains.com/aqua/aqua-223.8617.51.exe#/cosi.7z
+    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    hash:
+    - d26b405a1c04df2f583b79b96b750be046241c1b68bc2668a7d30102612ebdd8
+    - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
+  arm64:
+    url:
+    - https://download.jetbrains.com/aqua/aqua-223.8617.51-aarch64.exe#/cosi.7z
+    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    hash:
+    - 02303e803492e1fd40669bb4149cb49529dbb7e08c900c2f1ac69f5cf4b65d6d
+    - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
+extract_to: IDE
+installer:
+  script: |
+    & "$dir\portable.ps1" $dir $persist_dir
+    Remove-AppDirItem 'IDE\$*', 'portable.ps1'
+shortcuts:
+- - IDE\bin\aqua64.exe
+  - JetBrains\Aqua (Preview)
+persist:
+- IDE\bin\idea.properties
+- profile
+checkver:
+  url: https://data.services.jetbrains.com/products/releases?code=QA&latest=true&platform=windows&type=preview
+  regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
+  replace: ${ver}-${build}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/aqua/aqua-${matchBuild}.exe#/cosi.7z
+    arm64:
+      url: https://download.jetbrains.com/aqua/aqua-${matchBuild}-aarch64.exe#/cosi.7z
+  hash:
+    url: $url.sha256
