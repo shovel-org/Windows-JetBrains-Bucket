@@ -1,57 +1,44 @@
-{
-    "version": "2023.1-231.5920.17",
-    "description": "PhpStorm Early Access Program. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.",
-    "homepage": "https://www.jetbrains.com/phpstorm/",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
-    },
-    "url": [
-        "https://download.jetbrains.com/webide/PhpStorm-231.5920.17.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
-    ],
-    "hash": [
-        "449813ab5f4df508497caa32366f70b57346ca13951d555396f0cf22e0fc36d7",
-        "2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8"
-    ],
-    "extract_to": "IDE",
-    "installer": {
-        "script": [
-            "& \"$dir\\portable.ps1\" $dir $persist_dir",
-            "Remove-Item \"$dir\\IDE\\`$*\", \"$dir\\portable.ps1\" -Force -Recurse"
-        ]
-    },
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\phpstorm64.exe",
-                    "JetBrains\\PhpStorm (Early Access Program)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\phpstorm.exe",
-                    "JetBrains\\PhpStorm (Early Access Program)"
-                ]
-            ]
-        }
-    },
-    "persist": [
-        "IDE\\bin\\idea.properties",
-        "profile"
-    ],
-    "checkver": {
-        "url": "https://data.services.jetbrains.com/products/releases?code=PS&latest=true&platform=zip&type=eap",
-        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
-        "replace": "${ver}-${build}"
-    },
-    "autoupdate": {
-        "url": "https://download.jetbrains.com/webide/PhpStorm-$preReleaseVersion.exe#/cosi.7z",
-        "hash": {
-            "url": "$url.sha256"
-        }
-    }
-}
+version: 2023.1-231.5920.17
+description: PhpStorm Early Access Program. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.
+homepage: https://www.jetbrains.com/phpstorm/
+license:
+  identifier: Proprietary
+  url: https://www.jetbrains.com/legal/agreements/user_eap.html
+architecture:
+  64bit:
+    url:
+    - https://download.jetbrains.com/webide/PhpStorm-231.5920.17.exe#/cosi.7z
+    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    hash:
+    - 449813ab5f4df508497caa32366f70b57346ca13951d555396f0cf22e0fc36d7
+    - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
+  arm64:
+    url:
+    - https://download.jetbrains.com/webide/PhpStorm-231.5920.17-aarch64.exe#/cosi.7z
+    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    hash:
+    - cf481ae934bed686aaaf1d02e3372fd727d6c749b924009904bcb40cfef43c11
+    - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
+extract_to: IDE
+installer:
+  script: |
+    & "$dir\portable.ps1" $dir $persist_dir
+    Remove-AppDirItem 'IDE\$*', 'portable.ps1'
+shortcuts:
+- - IDE\bin\phpstorm64.exe
+  - JetBrains\PhpStorm (Early Access Program)
+persist:
+- IDE\bin\idea.properties
+- profile
+checkver:
+  url: https://data.services.jetbrains.com/products/releases?code=PS&latest=true&type=eap
+  regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
+  replace: ${ver}-${build}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/webide/PhpStorm-${preReleaseVersion}.exe#/cosi.7z
+    arm64:
+      url: https://download.jetbrains.com/webide/PhpStorm-${preReleaseVersion}-aarch64.exe#/cosi.7z
+  hash:
+    url: $url.sha256
