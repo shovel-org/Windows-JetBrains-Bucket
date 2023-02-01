@@ -7,14 +7,14 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/python/dataspell-2022.3.2.exe#/dl.7z
+    - https://download.jetbrains.com/python/dataspell-2022.3.2.exe#/cosi.7z
     - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
     hash:
     - 6d405ec6de945b3ef2cb8a96f9afbbe484c078dc889d947d7925793a87f8a7fb
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/python/dataspell-2022.3.2-aarch64.exe#/dl.7z
+    - https://download.jetbrains.com/python/dataspell-2022.3.2-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
     hash:
     - 7ca9a42cc658c3fe16a90aa464d16087ac31b59e8a620c47adc14d8585d90be7
@@ -37,8 +37,8 @@ checkver:
 autoupdate:
   architecture:
     64bit:
-      url: https://download.jetbrains.com/python/dataspell-${headVersion}.exe#/dl.7z
+      url: https://download.jetbrains.com/python/dataspell-${headVersion}.exe#/cosi.7z
     arm64:
-      url: https://download.jetbrains.com/python/dataspell-${headVersion}-aarch64.exe#/dl.7z
+      url: https://download.jetbrains.com/python/dataspell-${headVersion}-aarch64.exe#/cosi.7z
   hash:
     url: $url.sha256
