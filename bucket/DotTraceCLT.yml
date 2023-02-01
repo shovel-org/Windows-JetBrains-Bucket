@@ -18,7 +18,7 @@ bin:
 - dottrace.exe
 - Reporter.exe
 checkver:
-  url: https://data.services.jetbrains.com/products/releases?code=DPCLT&latest=true&platform=zip&type=release
+  url: https://data.services.jetbrains.com/products/releases?code=DPCLT&latest=true&type=release
   jsonpath: $..version
 autoupdate:
   architecture:

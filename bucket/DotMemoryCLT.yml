@@ -16,7 +16,7 @@ architecture:
     hash: a5484871753388ed168af9140407eecf0c617944b662836ab1c653c250f8257c
 bin: dotMemory.exe
 checkver:
-  url: https://data.services.jetbrains.com/products/releases?code=DMCLP&latest=true&platform=zip&type=release
+  url: https://data.services.jetbrains.com/products/releases?code=DMCLP&latest=true&type=release
   jsonpath: $..version
 autoupdate:
   architecture:

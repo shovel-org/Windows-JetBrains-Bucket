@@ -23,7 +23,7 @@ shortcuts:
   - JetBrains\DataGrip
 persist: IDE\bin\idea.properties
 checkver:
-  url: https://data.services.jetbrains.com/products/releases?code=DG&latest=true&platform=zip&type=release
+  url: https://data.services.jetbrains.com/products/releases?code=DG&latest=true&type=release
   regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
   replace: ${ver}-${build}
 autoupdate:

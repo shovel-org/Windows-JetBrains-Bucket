@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/store/license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/cpp/CLion-223.7571.113.win.zip
-    hash: b9f658e51616b8910d04a8df1ea2851cfc2862df971a6689741a4c31c8d77be8
+    url: https://download.jetbrains.com/cpp/CLion-223.7571.113.exe#/cosi.7z
+    hash: cde5c9d766552c90ef7717f160064ee08436d87e5f13231904c7c25f22add572
   arm64:
-    url: https://download.jetbrains.com/cpp/CLion-223.7571.113.win.zip
-    hash: b9f658e51616b8910d04a8df1ea2851cfc2862df971a6689741a4c31c8d77be8
+    url: https://download.jetbrains.com/cpp/CLion-223.7571.113-aarch64.exe#/cosi.7z
+    hash: 21e21eb17db4fea2eb1d57558d050573d893219bd71ed8c7480d7a212336a50c
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:

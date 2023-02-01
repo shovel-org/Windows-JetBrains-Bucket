@@ -19,7 +19,7 @@ shortcuts:
 - - dotPeek.exe
   - dotPeek
 checkver:
-  url: https://data.services.jetbrains.com/products/releases?code=DPK&latest=true&platform=zip&type=release
+  url: https://data.services.jetbrains.com/products/releases?code=DPK&latest=true&type=release
   jsonpath: $..version
 autoupdate:
   architecture:

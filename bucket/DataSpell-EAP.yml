@@ -18,7 +18,7 @@ shortcuts:
   - JetBrains\DataSpell (Early Access Program)
 persist: IDE\bin\idea.properties
 checkver:
-  url: https://data.services.jetbrains.com/products/releases?code=DS&latest=true&platform=zip&type=eap
+  url: https://data.services.jetbrains.com/products/releases?code=DS&latest=true&type=eap
   regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
   replace: ${ver}-${build}
 autoupdate:

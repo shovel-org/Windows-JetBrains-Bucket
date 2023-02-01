@@ -18,7 +18,7 @@ shortcuts:
 - - dotTrace.exe
   - dotTrace
 checkver:
-  url: https://data.services.jetbrains.com/products/releases?code=DP&latest=true&platform=zip&type=release
+  url: https://data.services.jetbrains.com/products/releases?code=DP&latest=true&type=release
   jsonpath: $..version
 autoupdate:
   architecture:
