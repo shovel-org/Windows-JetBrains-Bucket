@@ -1,52 +1,36 @@
-{
-    "version": "2022.3.2-223.8617.56",
-    "description": "IntelliJ IDEA Ultimate. Cross-Platform Java IDE for professional developers by JetBrains.",
-    "homepage": "https://www.jetbrains.com/idea/",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://www.jetbrains.com/store/license.html"
-    },
-    "changelog": "https://www.jetbrains.com/idea/whatsnew/",
-    "url": "https://download.jetbrains.com/idea/ideaIU-2022.3.2.win.zip",
-    "hash": "050a236427715e8cccfea74548bd48a54704fb1768446258d7fca33445933c90",
-    "extract_to": "IDE",
-    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "architecture": {
-        "64bit": {
-            "bin": [
-                "IDE\\bin\\idea64.exe",
-                [
-                    "IDE\\bin\\idea64.exe",
-                    "idea"
-                ]
-            ],
-            "shortcuts": [
-                [
-                    "IDE\\bin\\idea64.exe",
-                    "JetBrains\\IntelliJ IDEA Ultimate"
-                ]
-            ]
-        },
-        "32bit": {
-            "bin": "IDE\\bin\\idea.exe",
-            "shortcuts": [
-                [
-                    "IDE\\bin\\idea.exe",
-                    "JetBrains\\IntelliJ IDEA Ultimate"
-                ]
-            ]
-        }
-    },
-    "persist": "IDE\\bin\\idea.properties",
-    "checkver": {
-        "url": "https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
-        "replace": "${ver}-${build}"
-    },
-    "autoupdate": {
-        "url": "https://download.jetbrains.com/idea/ideaIU-$matchHead.win.zip",
-        "hash": {
-            "url": "$url.sha256"
-        }
-    }
-}
+version: 2022.3.2-223.8617.56
+description: IntelliJ IDEA Ultimate. Cross-Platform Java IDE for professional developers by JetBrains.
+homepage: https://www.jetbrains.com/idea/
+license:
+  identifier: Proprietary
+  url: https://www.jetbrains.com/store/license.html
+changelog: https://www.jetbrains.com/idea/whatsnew/
+architecture:
+  64bit:
+    url: https://download.jetbrains.com/idea/ideaIU-2022.3.2.exe#/cosi.7z
+    hash: 115ab48b5f8efb0a4f25e9cb39c1ba85d1f0fee00b1a992e668bace26e85fdc4
+  arm64:
+    url: https://download.jetbrains.com/idea/ideaIU-2022.3.2-aarch64.exe#/cosi.7z
+    hash: c28c44761ad3626c39eeb6243fea79eca49c9580a90273f6d9ef2d2205dfb6a2
+extract_to: IDE
+pre_install: Remove-AppDirItem 'IDE\$*'
+bin:
+- IDE\bin\idea64.exe
+- - IDE\bin\idea64.exe
+  - idea
+shortcuts:
+- - IDE\bin\idea64.exe
+  - JetBrains\IntelliJ IDEA Ultimate
+persist: IDE\bin\idea.properties
+checkver:
+  url: https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=release
+  regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
+  replace: ${ver}-${build}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/idea/ideaIU-${headVersion}.exe#/cosi.7z
+    arm64:
+      url: https://download.jetbrains.com/idea/ideaIU-${headVersion}-aarch64.exe#/cosi.7z
+  hash:
+    url: $url.sha256

@@ -1,43 +1,31 @@
-{
-    "version": "2023.1-231.5920.14",
-    "description": "IntelliJ IDEA Ultimate Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.",
-    "homepage": "https://www.jetbrains.com/idea/",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
-    },
-    "url": "https://download.jetbrains.com/idea/ideaIU-231.5920.14.win.zip",
-    "hash": "f5a2a0aae7b9007075abc22ea2d11510c39927eb25956e1ee2cf4995e32faf9b",
-    "extract_to": "IDE",
-    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\idea64.exe",
-                    "JetBrains\\IntelliJ IDEA Ultimate (Early Access Program)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\idea.exe",
-                    "JetBrains\\IntelliJ IDEA Ultimate (Early Access Program)"
-                ]
-            ]
-        }
-    },
-    "persist": "IDE\\bin\\idea.properties",
-    "checkver": {
-        "url": "https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&platform=zip&type=eap",
-        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
-        "replace": "${ver}-${build}"
-    },
-    "autoupdate": {
-        "url": "https://download.jetbrains.com/idea/ideaIU-$preReleaseVersion.win.zip",
-        "hash": {
-            "url": "$url.sha256"
-        }
-    }
-}
+version: 2023.1-231.5920.14
+description: IntelliJ IDEA Ultimate Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.
+homepage: https://www.jetbrains.com/idea/
+license:
+  identifier: Proprietary
+  url: https://www.jetbrains.com/legal/agreements/user_eap.html
+architecture:
+  64bit:
+    url: https://download.jetbrains.com/idea/ideaIU-231.5920.14.exe#/cosi.7z
+    hash: 2866e94337e22ee9410942030e60f3d91d25fb82030043b7304468c267ddda5d
+  arm64:
+    url: https://download.jetbrains.com/idea/ideaIU-231.5920.14-aarch64.exe#/cosi.7z
+    hash: 0a9bb494636bba74c652fa88f3a9ff4a894272ad8730c08abd87459585f69c79
+extract_to: IDE
+pre_install: Remove-AppDirItem 'IDE\$*'
+shortcuts:
+- - IDE\bin\idea64.exe
+  - JetBrains\IntelliJ IDEA Ultimate (Early Access Program)
+persist: IDE\bin\idea.properties
+checkver:
+  url: https://data.services.jetbrains.com/products/releases?code=IIU&latest=true&type=eap
+  regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
+  replace: ${ver}-${build}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/idea/ideaIU-${preReleaseVersion}.exe#/cosi.7z
+    arm64:
+      url: https://download.jetbrains.com/idea/ideaIU-${preReleaseVersion}-aarch64.exe#/cosi.7z
+  hash:
+    url: $url.sha256
