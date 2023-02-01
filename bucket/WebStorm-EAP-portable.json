@@ -6,14 +6,28 @@
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
     },
-    "url": [
-        "https://download.jetbrains.com/webstorm/WebStorm-231.5920.7.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
-    ],
-    "hash": [
-        "d944b0ec7b42f567196f8b2dca3c03e34d994679ad4fd4cd6ee2b95e7e99fc1b",
-        "2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8"
-    ],
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://download.jetbrains.com/webstorm/WebStorm-231.5920.7.exe#/cosi.7z",
+                "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
+            ],
+            "hash": [
+                "d944b0ec7b42f567196f8b2dca3c03e34d994679ad4fd4cd6ee2b95e7e99fc1b",
+                "2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8"
+            ]
+        },
+        "arm64": {
+            "url": [
+                "https://download.jetbrains.com/webstorm/WebStorm-231.5920.7-aarch64.exe#/cosi.7z",
+                "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
+            ],
+            "hash": [
+                "9a2d6c6eee36b66488a130470b425f10165637ade44d65c88e86a4f3bde8afff",
+                "2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8"
+            ]
+        }
+    },
     "extract_to": "IDE",
     "installer": {
         "script": [
@@ -21,24 +35,12 @@
             "Remove-Item \"$dir\\IDE\\`$*\", \"$dir\\portable.ps1\" -Force -Recurse"
         ]
     },
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\webstorm64.exe",
-                    "JetBrains\\WebStorm (Early Access Program)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\webstorm.exe",
-                    "JetBrains\\WebStorm (Early Access Program)"
-                ]
-            ]
-        }
-    },
+    "shortcuts": [
+        [
+            "IDE\\bin\\webstorm64.exe",
+            "JetBrains\\WebStorm (Early Access Program)"
+        ]
+    ],
     "persist": [
         "IDE\\bin\\idea.properties",
         "profile"
@@ -49,7 +51,14 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/webstorm/WebStorm-$preReleaseVersion.exe#/cosi.7z",
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/webstorm/WebStorm-${preReleaseVersion}.exe#/cosi.7z"
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/webstorm/WebStorm-${preReleaseVersion}-aarch64.exe#/cosi.7z"
+            }
+        },
         "hash": {
             "url": "$url.sha256"
         }

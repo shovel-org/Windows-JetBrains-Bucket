@@ -6,28 +6,24 @@
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
     },
-    "url": "https://download.jetbrains.com/webstorm/WebStorm-231.5920.7.exe#/cosi.7z",
-    "hash": "d944b0ec7b42f567196f8b2dca3c03e34d994679ad4fd4cd6ee2b95e7e99fc1b",
-    "extract_to": "IDE",
-    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\webstorm64.exe",
-                    "JetBrains\\WebStorm (Early Access Program)"
-                ]
-            ]
+            "url": "https://download.jetbrains.com/webstorm/WebStorm-231.5920.7.exe#/cosi.7z",
+            "hash": "d944b0ec7b42f567196f8b2dca3c03e34d994679ad4fd4cd6ee2b95e7e99fc1b"
         },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\webstorm.exe",
-                    "JetBrains\\WebStorm (Early Access Program)"
-                ]
-            ]
+        "arm64": {
+            "url": "https://download.jetbrains.com/webstorm/WebStorm-231.5920.7-aarch64.exe#/cosi.7z",
+            "hash": "9a2d6c6eee36b66488a130470b425f10165637ade44d65c88e86a4f3bde8afff"
         }
     },
+    "extract_to": "IDE",
+    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "shortcuts": [
+        [
+            "IDE\\bin\\webstorm64.exe",
+            "JetBrains\\WebStorm (Early Access Program)"
+        ]
+    ],
     "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=WS&latest=true&platform=zip&type=eap",
@@ -35,7 +31,14 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/webstorm/WebStorm-$preReleaseVersion.exe#/cosi.7z",
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/webstorm/WebStorm-${preReleaseVersion}.exe#/cosi.7z"
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/webstorm/WebStorm-${preReleaseVersion}-aarch64.exe#/cosi.7z"
+            }
+        },
         "hash": {
             "url": "$url.sha256"
         }
