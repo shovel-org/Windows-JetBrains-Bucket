@@ -16,19 +16,16 @@
             "hash": [
                 "507d60a1550e04682fb8ab7b77085e5fb7af45d14f43feb5ed302b1f8236cb7c",
                 "2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8"
+            ]
+        },
+        "arm64": {
+            "url": [
+                "https://download.jetbrains.com/rider/JetBrains.Rider-2022.3.2-aarch64.exe#/cosi.7z",
+                "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
             ],
-            "bin": [
-                "IDE\\bin\\rider64.exe",
-                [
-                    "IDE\\bin\\rider64.exe",
-                    "rider"
-                ]
-            ],
-            "shortcuts": [
-                [
-                    "IDE\\bin\\rider64.exe",
-                    "JetBrains\\Rider"
-                ]
+            "hash": [
+                "33ed3502598a9e3f380c272c6e1500b1e4e96ba04ba3a11a14922f214d9674d9",
+                "2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8"
             ]
         }
     },
@@ -36,26 +33,42 @@
     "installer": {
         "script": [
             "& \"$dir\\portable.ps1\" $dir $persist_dir",
-            "Remove-Item \"$dir\\IDE\\`$*\", \"$dir\\portable.ps1\" -Force -Recurse"
+            "Remove-AppDirItem 'IDE\\$*', 'portable.ps1'"
         ]
     },
+    "bin": [
+        "IDE\\bin\\rider64.exe",
+        [
+            "IDE\\bin\\rider64.exe",
+            "rider"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "IDE\\bin\\rider64.exe",
+            "JetBrains\\Rider"
+        ]
+    ],
     "persist": [
         "IDE\\bin\\idea.properties",
         "profile"
     ],
     "checkver": {
-        "url": "https://data.services.jetbrains.com/products/releases?code=RD&latest=true&platform=zip&type=release",
+        "url": "https://data.services.jetbrains.com/products/releases?code=RD&latest=true&type=release",
         "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.jetbrains.com/rider/JetBrains.Rider-$matchHead.exe#/cosi.7z",
-                "hash": {
-                    "url": "$url.sha256"
-                }
+                "url": "https://download.jetbrains.com/rider/JetBrains.Rider-${matchHead}.exe#/cosi.7z"
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/rider/JetBrains.Rider-${matchHead}-aarch64.exe#/cosi.7z"
             }
+        },
+        "hash": {
+            "url": "$url.sha256"
         }
     }
 }

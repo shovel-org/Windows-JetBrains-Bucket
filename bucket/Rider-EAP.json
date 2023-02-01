@@ -9,31 +9,38 @@
     "architecture": {
         "64bit": {
             "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2023.1-EAP2-231.5920.16.Checked.win.zip",
-            "hash": "38c22f5955989c71fc6905e8d3e5f2ba9c2c125987f22d93fd7056e67f109227",
-            "shortcuts": [
-                [
-                    "IDE\\bin\\rider64.exe",
-                    "JetBrains\\Rider (Early Access Program)"
-                ]
-            ]
+            "hash": "38c22f5955989c71fc6905e8d3e5f2ba9c2c125987f22d93fd7056e67f109227"
+        },
+        "arm64": {
+            "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2023.1-EAP2-231.5920.16.Checked-aarch64.win.zip",
+            "hash": "0138d167c062f1831c2631eade55044e58c1eeaedcddecf47d15ded81fd75836"
         }
     },
     "extract_to": "IDE",
-    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
+    "pre_install": "Remove-AppDirItem 'IDE\\$*'",
+    "shortcuts": [
+        [
+            "IDE\\bin\\rider64.exe",
+            "JetBrains\\Rider (Early Access Program)"
+        ]
+    ],
     "persist": "IDE\\bin\\idea.properties",
     "checkver": {
-        "url": "https://data.services.jetbrains.com/products/releases?code=RD&latest=true&platform=zip&type=eap",
+        "url": "https://data.services.jetbrains.com/products/releases?code=RD&latest=true&type=eap",
         "regex": "version\":\"(?<ver>[\\w.-]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.jetbrains.com/rider/JetBrains.Rider-$version.Checked.win.zip",
-                "hash": {
-                    "url": "$url.sha256"
-                }
+                "url": "https://download.jetbrains.com/rider/JetBrains.Rider-$version.Checked.win.zip"
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/rider/JetBrains.Rider-$version.Checked-aarch64.win.zip"
             }
+        },
+        "hash": {
+            "url": "$url.sha256"
         }
     }
 }
