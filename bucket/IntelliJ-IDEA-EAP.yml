@@ -1,43 +1,31 @@
-{
-    "version": "2023.1-231.5920.14",
-    "description": "IntelliJ IDEA Community Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.",
-    "homepage": "https://www.jetbrains.com/idea/",
-    "license": {
-        "identifier": "Apache-2.0",
-        "url": "https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-"
-    },
-    "url": "https://download.jetbrains.com/idea/ideaIC-231.5920.14.win.zip",
-    "hash": "19bbc24946e3c950ee9fccf53232162a2e2152e239b6a3b1aabb17eafaeb92e4",
-    "extract_to": "IDE",
-    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\idea64.exe",
-                    "JetBrains\\IntelliJ IDEA Community (Early Access Program)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\idea.exe",
-                    "JetBrains\\IntelliJ IDEA Community (Early Access Program)"
-                ]
-            ]
-        }
-    },
-    "persist": "IDE\\bin\\idea.properties",
-    "checkver": {
-        "url": "https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&platform=zip&type=eap",
-        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
-        "replace": "${ver}-${build}"
-    },
-    "autoupdate": {
-        "url": "https://download.jetbrains.com/idea/ideaIC-$preReleaseVersion.win.zip",
-        "hash": {
-            "url": "$url.sha256"
-        }
-    }
-}
+version: 2023.1-231.5920.14
+description: IntelliJ IDEA Community Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.
+homepage: https://www.jetbrains.com/idea/
+license:
+  identifier: Apache-2.0
+  url: https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-
+architecture:
+  64bit:
+    url: https://download.jetbrains.com/idea/ideaIC-231.5920.14.exe#/cosi.7z
+    hash: bd25d0b2c647bc5b8f00da2b94554f049d6395810891620147159d534c6b1513
+  arm64:
+    url: https://download.jetbrains.com/idea/ideaIC-231.5920.14-aarch64.exe#/cosi.7z
+    hash: 915cec59f9ea1080de2a3008c3a491d53ba31e61ee4b789f1344827a79e36bb6
+extract_to: IDE
+pre_install: Remove-AppDirItem 'IDE\$*'
+shortcuts:
+- - IDE\bin\idea64.exe
+  - JetBrains\IntelliJ IDEA Community (Early Access Program)
+persist: IDE\bin\idea.properties
+checkver:
+  url: https://data.services.jetbrains.com/products/releases?code=IIC&latest=true&type=eap
+  regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
+  replace: ${ver}-${build}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/idea/ideaIC-${preReleaseVersion}.exe#/cosi.7z
+    arm64:
+      url: https://download.jetbrains.com/idea/ideaIC-${preReleaseVersion}-aarch64.exe#/cosi.7z
+  hash:
+    url: $url.sha256
