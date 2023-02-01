@@ -6,39 +6,41 @@
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/store/license.html"
     },
-    "url": [
-        "https://download.jetbrains.com/ruby/RubyMine-191.7141.46.exe#/cosi.7z",
-        "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
-    ],
-    "hash": [
-        "cbc24b10b5709850499832b73fcc60c7d843418b40cd6faeafdad4236216b2e4",
-        "2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8"
-    ],
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://download.jetbrains.com/ruby/RubyMine-191.7141.46.exe#/cosi.7z",
+                "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
+            ],
+            "hash": [
+                "cbc24b10b5709850499832b73fcc60c7d843418b40cd6faeafdad4236216b2e4",
+                "2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8"
+            ]
+        },
+        "arm64": {
+            "url": [
+                "https://download.jetbrains.com/ruby/RubyMine-191.7141.46.exe#/cosi.7z",
+                "https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1"
+            ],
+            "hash": [
+                "cbc24b10b5709850499832b73fcc60c7d843418b40cd6faeafdad4236216b2e4",
+                "2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8"
+            ]
+        }
+    },
     "extract_to": "IDE",
     "installer": {
         "script": [
             "& \"$dir\\portable.ps1\" $dir $persist_dir",
-            "Remove-Item \"$dir\\IDE\\`$*\", \"$dir\\portable.ps1\" -Force -Recurse"
+            "Remove-AppDirItem 'IDE\\$*', 'portable.ps1'"
         ]
     },
-    "architecture": {
-        "64bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\rubymine64.exe",
-                    "JetBrains\\RubyMine (Release Candidate)"
-                ]
-            ]
-        },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\rubymine.exe",
-                    "JetBrains\\RubyMine (Release Candidate)"
-                ]
-            ]
-        }
-    },
+    "shortcuts": [
+        [
+            "IDE\\bin\\rubymine64.exe",
+            "JetBrains\\RubyMine (Release Candidate)"
+        ]
+    ],
     "persist": [
         "IDE\\bin\\idea.properties",
         "profile"
@@ -49,7 +51,14 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/ruby/RubyMine-$preReleaseVersion.exe#/cosi.7z",
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/ruby/RubyMine-${preReleaseVersion}.exe#/cosi.7z"
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/ruby/RubyMine-${preReleaseVersion}-aarch64.exe#/cosi.7z"
+            }
+        },
         "hash": {
             "url": "$url.sha256"
         }

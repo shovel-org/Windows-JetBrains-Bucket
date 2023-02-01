@@ -6,28 +6,24 @@
         "identifier": "Proprietary",
         "url": "https://www.jetbrains.com/legal/agreements/user_eap.html"
     },
-    "url": "https://download.jetbrains.com/ruby/RubyMine-231.5920.15.exe#/cosi.7z",
-    "hash": "d17feeaf88199f71b80fb8bb6a581303f3556ccaf2e10ab8294e2a2b4039f82e",
-    "extract_to": "IDE",
-    "pre_install": "Remove-Item \"$dir\\IDE\\`$*\" -Force -Recurse",
     "architecture": {
         "64bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\rubymine64.exe",
-                    "JetBrains\\RubyMine (Early Access Program)"
-                ]
-            ]
+            "url": "https://download.jetbrains.com/ruby/RubyMine-231.5920.15.exe#/cosi.7z",
+            "hash": "d17feeaf88199f71b80fb8bb6a581303f3556ccaf2e10ab8294e2a2b4039f82e"
         },
-        "32bit": {
-            "shortcuts": [
-                [
-                    "IDE\\bin\\rubymine.exe",
-                    "JetBrains\\RubyMine (Early Access Program)"
-                ]
-            ]
+        "arm64": {
+            "url": "https://download.jetbrains.com/ruby/RubyMine-231.5920.15-aarch64.exe#/cosi.7z",
+            "hash": "51d1481a6e4ddc1860c60aaec178a2928c7e03e20b3259df959fcd9f6de9453c"
         }
     },
+    "extract_to": "IDE",
+    "pre_install": "Remove-AppDirItem 'IDE\\$*'",
+    "shortcuts": [
+        [
+            "IDE\\bin\\rubymine64.exe",
+            "JetBrains\\RubyMine (Early Access Program)"
+        ]
+    ],
     "persist": "IDE\\bin\\idea.properties",
     "checkver": {
         "url": "https://data.services.jetbrains.com/products/releases?code=RM&latest=true&platform=zip&type=eap",
@@ -35,7 +31,14 @@
         "replace": "${ver}-${build}"
     },
     "autoupdate": {
-        "url": "https://download.jetbrains.com/ruby/RubyMine-$preReleaseVersion.exe#/cosi.7z",
+        "architecture": {
+            "64bit": {
+                "url": "https://download.jetbrains.com/ruby/RubyMine-${preReleaseVersion}.exe#/cosi.7z"
+            },
+            "arm64": {
+                "url": "https://download.jetbrains.com/ruby/RubyMine-${preReleaseVersion}-aarch64.exe#/cosi.7z"
+            }
+        },
         "hash": {
             "url": "$url.sha256"
         }
