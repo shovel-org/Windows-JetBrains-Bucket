@@ -1,37 +1,31 @@
-{
-    "version": "2022.3.2-223.8617.58",
-    "description": "DataSpell. Cross-Platform IDE for Data Scientists by JetBrains.",
-    "homepage": "https://www.jetbrains.com/dataspell/",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://www.jetbrains.com/store/license.html"
-    },
-    "architecture": {
-        "64bit": {
-            "url": "https://download.jetbrains.com/python/dataspell-2022.3.2.exe#/dl.7z",
-            "hash": "6d405ec6de945b3ef2cb8a96f9afbbe484c078dc889d947d7925793a87f8a7fb",
-            "shortcuts": [
-                [
-                    "IDE\\bin\\dataspell64.exe",
-                    "JetBrains\\DataSpell"
-                ]
-            ]
-        }
-    },
-    "extract_to": "IDE",
-    "checkver": {
-        "url": "https://data.services.jetbrains.com/products/releases?code=DS&latest=true&platform=zip&type=release",
-        "regex": "version\":\"(?<ver>[\\d.]+)\".*\"build\":\"(?<build>[\\d.]+)\"",
-        "replace": "${ver}-${build}"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://download.jetbrains.com/python/dataspell-$headVersion.exe#/dl.7z"
-            }
-        },
-        "hash": {
-            "url": "$url.sha256"
-        }
-    }
-}
+version: 2022.3.2-223.8617.58
+description: DataSpell. Cross-Platform IDE for Data Scientists by JetBrains.
+homepage: https://www.jetbrains.com/dataspell/
+license:
+  identifier: Proprietary
+  url: https://www.jetbrains.com/store/license.html
+architecture:
+  64bit:
+    url: https://download.jetbrains.com/python/dataspell-2022.3.2.exe#/dl.7z
+    hash: 6d405ec6de945b3ef2cb8a96f9afbbe484c078dc889d947d7925793a87f8a7fb
+  arm64:
+    url: https://download.jetbrains.com/python/dataspell-2022.3.2-aarch64.exe#/dl.7z
+    hash: 7ca9a42cc658c3fe16a90aa464d16087ac31b59e8a620c47adc14d8585d90be7
+extract_to: IDE
+pre_install: Remove-AppDirItem 'IDE\$*'
+shortcuts:
+- - IDE\bin\dataspell64.exe
+  - JetBrains\DataSpell
+persist: IDE\bin\idea.properties
+checkver:
+  url: https://data.services.jetbrains.com/products/releases?code=DS&latest=true&type=release
+  regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
+  replace: ${ver}-${build}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/python/dataspell-${headVersion}.exe#/dl.7z
+    arm64:
+      url: https://download.jetbrains.com/python/dataspell-${headVersion}-aarch64.exe#/dl.7z
+  hash:
+    url: $url.sha256
