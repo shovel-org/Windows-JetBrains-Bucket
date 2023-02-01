@@ -8,14 +8,14 @@ architecture:
   64bit:
     url:
     - https://download.jetbrains.com/go/goland-231.5920.13.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 68a5e578ec4973aa93986fd10376e6a4b35310bf9abad25b350ee59dfcfa5844
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
     - https://download.jetbrains.com/go/goland-231.5920.13-aarch64.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 8a945e9d9a9ba242babedf93a81222879b7798def7a8362b5eabc131884b2750
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8

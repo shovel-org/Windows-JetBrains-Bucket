@@ -8,14 +8,14 @@ architecture:
   64bit:
     url:
     - https://download.jetbrains.com/python/pycharm-professional-231.4840.379.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 440d23d547f1e23bee1e2ca9616495f7afdd9321878cdd1cb036c18ba60c5a22
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
     - https://download.jetbrains.com/python/pycharm-professional-231.4840.379-aarch64.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 2cc712145549763f369df8bca5def96712ad84fbf7179d76bc3069ae0fc7ed3d
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8

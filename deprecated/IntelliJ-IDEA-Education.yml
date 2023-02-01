@@ -5,11 +5,11 @@ license:
   identifier: Proprietary
   url: https://www.jetbrains.com/store/license.html
 url:
-- https://download.jetbrains.com/idea/ideaIE-2022.2.2.exe#/cosi.7z
-- https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+  - https://download.jetbrains.com/idea/ideaIE-2022.2.2.exe#/cosi.7z
+  - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
 hash:
-- 707fda9ff2c129d251c263fce0831fd076f5a23810a1b3369458fd966f2aede8
-- 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
+  - 707fda9ff2c129d251c263fce0831fd076f5a23810a1b3369458fd966f2aede8
+  - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
   script: |
@@ -18,15 +18,15 @@ installer:
 architecture:
   64bit:
     shortcuts:
-    - - IDE\bin\idea64.exe
-      - JetBrains\IntelliJ IDEA Education
+      - - IDE\bin\idea64.exe
+        - JetBrains\IntelliJ IDEA Education
   32bit:
     shortcuts:
-    - - IDE\bin\idea.exe
-      - JetBrains\IntelliJ IDEA Education
+      - - IDE\bin\idea.exe
+        - JetBrains\IntelliJ IDEA Education
 persist:
-- IDE\bin\idea.properties
-- profile
+  - IDE\bin\idea.properties
+  - profile
 checkver:
   url: https://data.services.jetbrains.com/products/releases?code=IIE&latest=true&type=release
   regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"

@@ -9,14 +9,14 @@ architecture:
   64bit:
     url:
     - https://download.jetbrains.com/cpp/CLion-2022.3.2.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 93ba3075646213804e065b0a88f90b9b27f0853a755248a4ae6e96328e6b4da0
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
     - https://download.jetbrains.com/cpp/CLion-2022.3.2-aarch64.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - e8442e2f81e9bcdd056e7057a0bcd22185995c2aeee608f4491073fc4ddbaff9
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8

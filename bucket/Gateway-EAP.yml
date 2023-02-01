@@ -9,14 +9,14 @@ architecture:
   64bit:
     url:
     - https://download.jetbrains.com/idea/gateway/JetBrainsGateway-231.5920.14.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 022e1cac4251b2eb11ee8d2ac00992250dbdf55a4da3ab426ec7f3c961ff5706
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
     - https://download.jetbrains.com/idea/gateway/JetBrainsGateway-231.5920.14-aarch64.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 542ca8a1edd0a1c4dd104f84c76c58befd7e9b6745f5f031b4398a55ea035f97
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8

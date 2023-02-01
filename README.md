@@ -1,4 +1,4 @@
-# [Shovel](https://github.com/Ash258/Scoop-Core) JetBrains bucket [![Build status](https://img.shields.io/appveyor/ci/Ash258/Windows-JetBrains-Bucket/master.svg?style=popout&logo=appveyor&label=AppVeyor)](https://ci.appveyor.com/project/Ash258/Windows-JetBrains-Bucket)
+# [Shovel](https://github.com/Ash258/Scoop-Core) JetBrains bucket [![Build status](https://img.shields.io/appveyor/ci/Ash258/Windows-JetBrains-Bucket/main.svg?style=popout&logo=appveyor&label=AppVeyor)](https://ci.appveyor.com/project/Ash258/Windows-JetBrains-Bucket)
 
 `shovel bucket add JetBrains`
 

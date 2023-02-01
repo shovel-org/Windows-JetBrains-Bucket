@@ -9,14 +9,14 @@ architecture:
   64bit:
     url:
     - https://download.jetbrains.com/idea/ideaIC-2022.3.2.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 02406c0ac7bea1c03c700c458f187832aae31271d737eebe9d626dca8787cbe6
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
     - https://download.jetbrains.com/idea/ideaIC-2022.3.2-aarch64.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 9cbfb922d8d29f71c65b80258298cd5ffcf306f81c2636e8de3c59e63043bdcf
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8

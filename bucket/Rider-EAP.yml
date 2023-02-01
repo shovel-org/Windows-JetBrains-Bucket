@@ -8,14 +8,14 @@ architecture:
   64bit:
     url:
     - https://download.jetbrains.com/rider/JetBrains.Rider-2023.1-EAP2-231.5920.16.Checked.win.zip
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 38c22f5955989c71fc6905e8d3e5f2ba9c2c125987f22d93fd7056e67f109227
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
     - https://download.jetbrains.com/rider/JetBrains.Rider-2023.1-EAP2-231.5920.16.Checked-aarch64.win.zip
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 0138d167c062f1831c2631eade55044e58c1eeaedcddecf47d15ded81fd75836
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8

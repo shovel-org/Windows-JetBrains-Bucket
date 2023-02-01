@@ -8,14 +8,14 @@ architecture:
   64bit:
     url:
     - https://download.jetbrains.com/webide/PhpStorm-231.5920.17.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 449813ab5f4df508497caa32366f70b57346ca13951d555396f0cf22e0fc36d7
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
     - https://download.jetbrains.com/webide/PhpStorm-231.5920.17-aarch64.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - cf481ae934bed686aaaf1d02e3372fd727d6c749b924009904bcb40cfef43c11
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8

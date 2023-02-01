@@ -9,14 +9,14 @@ architecture:
   64bit:
     url:
     - https://download.jetbrains.com/webstorm/WebStorm-2022.3.2.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - ba07cb3086993dd7796b7186a57e182006d4214740c494139ba498c956a64d78
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
     - https://download.jetbrains.com/webstorm/WebStorm-2022.3.2-aarch64.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 1cccbd81d2f5d5d274242d1a22d3950ba78477b4e39d83e22a3b8761e158df8d
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8

@@ -8,14 +8,14 @@ architecture:
   64bit:
     url:
     - https://download.jetbrains.com/idea/ideaIU-223.8617.20.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 4339bb1af655ee07d5e34412a0b5604299a6cdca748a7109682bda791e5f57b2
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
     - https://download.jetbrains.com/idea/ideaIU-223.8617.20-aarch64.exe#/cosi.7z
-    - https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
     - 3103fa5a15df01d7d2e8f3dd2a2da17b191eddf66d12dd8f2b1da9f579105942
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8

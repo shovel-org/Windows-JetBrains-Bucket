@@ -6,7 +6,7 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 url:
 - https://download.jetbrains.com/mps/2022.2/MPS-2022.2-EAP1.exe#/cosi.7z
-- https://raw.githubusercontent.com/Ash258/Scoop-JetBrains/main/scripts/portable.ps1
+- https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
 hash:
 - 8634b2c9c24921737ef73029443d38f520c05ea50b33fbd24998391d538976fc
 - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
