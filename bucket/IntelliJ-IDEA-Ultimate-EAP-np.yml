@@ -1,4 +1,4 @@
-version: 2023.1-231.5920.14
+version: 2023.1-231.6471.13
 description: IntelliJ IDEA Ultimate Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/idea/ideaIU-231.5920.14.exe#/cosi.7z
-    hash: 2866e94337e22ee9410942030e60f3d91d25fb82030043b7304468c267ddda5d
+    url: https://download.jetbrains.com/idea/ideaIU-231.6471.13.exe#/cosi.7z
+    hash: f73781b0024b012d9b485e46899e380bacf40c6d72b3265ca2c01febb3a6d4c0
   arm64:
-    url: https://download.jetbrains.com/idea/ideaIU-231.5920.14-aarch64.exe#/cosi.7z
-    hash: 0a9bb494636bba74c652fa88f3a9ff4a894272ad8730c08abd87459585f69c79
+    url: https://download.jetbrains.com/idea/ideaIU-231.6471.13-aarch64.exe#/cosi.7z
+    hash: 2cadff108c85965f882435c6776927d654f486c1c97f8c0bbb1ee3d9359d5216
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
