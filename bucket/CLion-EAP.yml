@@ -1,4 +1,4 @@
-version: 2023.1-231.7665.29
+version: 2023.1-231.7864.77
 description: CLion Early Access Program. Cross-Platform IDE for C and C++ by JetBrains.
 homepage: https://www.jetbrains.com/cpp/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/cpp/CLion-231.7665.29.exe#/cosi.7z
+    - https://download.jetbrains.com/cpp/CLion-231.7864.77.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 2d03e0fd9e5c60d801429949af4a1513aa1e1ebc79796b524bceedb49c8145b3
+    - 6154555fcae79d6602b6fd32ae93f47c28dd1ba72624faa10b1110b36cac9d3f
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/cpp/CLion-231.7665.29-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/cpp/CLion-231.7864.77-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - f9555bfe3d04beee0b70a3137c9aed3f33ba5c756027ff07d24d8f0323f95bf2
+    - f3e0d3941c69b7f2929bed18f594b640d36416de0946bf10f5214416445aca48
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
