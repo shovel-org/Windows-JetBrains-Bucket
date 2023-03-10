@@ -1,4 +1,4 @@
-version: 2022.3.3-223.8836.35
+version: 2022.3.3-223.8836.41
 description: IntelliJ IDEA Community. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -8,10 +8,10 @@ changelog: https://www.jetbrains.com/idea/whatsnew/
 architecture:
   64bit:
     url: https://download.jetbrains.com/idea/ideaIC-2022.3.3.exe#/cosi.7z
-    hash: 6f9851f1276107682c8c451da0198d752e68238e4047f11d96b7f7802d48fd11
+    hash: cc927e6bbbd8d51dae487f22ded3ce44a031c76159efddf8bf45aa4e52b84ace
   arm64:
     url: https://download.jetbrains.com/idea/ideaIC-2022.3.3-aarch64.exe#/cosi.7z
-    hash: ddfa941dbf37817ec08a659830f059667fd646c4aec9f540a5d2fb37c592ca2a
+    hash: 8998c1e2acf2028266fd5ce37fe4d110040438e2fb3bb82b7ce5d95824cf573d
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
