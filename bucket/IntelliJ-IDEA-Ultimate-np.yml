@@ -1,4 +1,4 @@
-version: 2022.3.3-223.8836.35
+version: 2022.3.3-223.8836.41
 description: IntelliJ IDEA Ultimate. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -8,10 +8,10 @@ changelog: https://www.jetbrains.com/idea/whatsnew/
 architecture:
   64bit:
     url: https://download.jetbrains.com/idea/ideaIU-2022.3.3.exe#/cosi.7z
-    hash: 70f844cba21ce212d674e1edc8d5c44deaf0f55cd21f4d4aebf801b360008e15
+    hash: 3e7856afba10f03f4dfab8d46db06f14e2915d87dc591e60aab49cc5890682fe
   arm64:
     url: https://download.jetbrains.com/idea/ideaIU-2022.3.3-aarch64.exe#/cosi.7z
-    hash: 58bb6112de9826145e7adc754fcf0dfaff5b6e6ee0aeaba8962b62ac3d5ed962
+    hash: 9fc3a20eed41d32a19982fbf37c3f914541535161ff9998a930a52bac55575ca
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
