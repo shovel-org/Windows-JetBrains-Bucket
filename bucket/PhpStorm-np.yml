@@ -1,4 +1,4 @@
-version: 2022.3.2-223.8617.59
+version: 2022.3.3-223.8836.42
 description: PhpStorm. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.
 homepage: https://www.jetbrains.com/phpstorm/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/phpstorm/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/webide/PhpStorm-2022.3.2.exe#/cosi.7z
-    hash: 634721a22301ef9fdc621fc14bf7ba3c1a09bdfc320d08cc73e85eb24b6e4548
+    url: https://download.jetbrains.com/webide/PhpStorm-2022.3.3.exe#/cosi.7z
+    hash: ded69037ae7089909ac6d4dcad75a11a728ee9bff2944f74e35cae2ca29025d6
   arm64:
-    url: https://download.jetbrains.com/webide/PhpStorm-2022.3.2-aarch64.exe#/cosi.7z
-    hash: 31fb39cbd436bf057ce7fca9ff018622922520229903de4c957fa700cd5d5c33
+    url: https://download.jetbrains.com/webide/PhpStorm-2022.3.3-aarch64.exe#/cosi.7z
+    hash: eb49e394bd2bb709b890a3ffaa46b195150af9b080b1a0ac4d8bad0a69395ce2
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
