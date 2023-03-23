@@ -1,4 +1,4 @@
-version: 2023.1-231.8109.91
+version: 2023.1-231.8109.140
 description: PyCharm Professional Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/pycharm/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/python/pycharm-professional-231.8109.91.exe#/cosi.7z
+    - https://download.jetbrains.com/python/pycharm-professional-231.8109.140.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 3f4a874be8b9bfb4641942617131245c493ae8c5034cf2cdf1b0d67bae5ee1f9
+    - 60a01c3097cec136ed77036553fc93cd84773a316bb30963c9a729fee7db2018
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/python/pycharm-professional-231.8109.91-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/python/pycharm-professional-231.8109.140-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - bf06d76a56d59a1966e2e3059ab39a2c316bb6b4fbbc5971fdea6c8fb4a99a6f
+    - 954c9991b1e9f9810dab3ef22b886c3fd390a3502dfeed8e2bab1a7d52ce5320
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
