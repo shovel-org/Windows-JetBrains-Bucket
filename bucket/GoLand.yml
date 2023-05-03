@@ -1,4 +1,4 @@
-version: 2023.1-231.8109.199
+version: 2023.1.1-231.8770.71
 description: GoLand. Cross-Platform, Clever IDE to Go by JetBrains.
 homepage: https://www.jetbrains.com/goland/
 license:
@@ -8,17 +8,17 @@ changelog: https://www.jetbrains.com/goland/whatsnew/
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/go/goland-2023.1.exe#/cosi.7z
+    - https://download.jetbrains.com/go/goland-2023.1.1.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 83e7e804d9588eb8513f2a269cd1d74f75f6d76a9426e456a998f9aeed6efb0a
+    - 3ff89b209dcdbe1ee25f1b44c9cd77d163f48422ab8ed04e0171e2e4f30735d7
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/go/goland-2023.1-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/go/goland-2023.1.1-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - febdffcb5bd65626113fe94376640c490623356c9031fdac631d8b2d7bfc1065
+    - 06ce780bfe11fbba900d68ce2cc77c5bab42875cab40e1a82575279d78d501bd
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
