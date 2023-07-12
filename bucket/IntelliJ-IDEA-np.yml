@@ -1,4 +1,4 @@
-version: 2023.1.3-231.9161.38
+version: 2023.1.4-231.9225.16
 description: IntelliJ IDEA Community. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/idea/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/idea/ideaIC-2023.1.3.exe#/cosi.7z
-    hash: 3240657e435c0babf3ee657b16a2ee9ae7a962449ab7f65de340c6c315f7e00e
+    url: https://download.jetbrains.com/idea/ideaIC-2023.1.4.exe#/cosi.7z
+    hash: ddc666261fb88b4ec0bc065d26af7e5399c9448c7fb8a591f74a3a5b57814334
   arm64:
-    url: https://download.jetbrains.com/idea/ideaIC-2023.1.3-aarch64.exe#/cosi.7z
-    hash: 414061ee8cdd3ab126170624f731b43304a06681af9567e4924a07f1ed36a1f2
+    url: https://download.jetbrains.com/idea/ideaIC-2023.1.4-aarch64.exe#/cosi.7z
+    hash: 68dd19c4943212b3e63a15d1054bfd162a32ee913f9c61bd78352e50e58a47ec
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
