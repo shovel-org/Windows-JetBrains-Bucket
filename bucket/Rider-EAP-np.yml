@@ -1,4 +1,4 @@
-version: 2023.2-EAP8-232.8660.29
+version: 2023.2-EAP9-232.8660.64
 description: Rider (Early Access Program). Fast, powerful and cross-platform .NET IDE by JetBrains.
 homepage: https://www.jetbrains.com/rider/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/rider/JetBrains.Rider-2023.2-EAP8-232.8660.29.Checked.win.zip
-    hash: 7fe09c309d630f94ec9afbcc03f7896fc81a47f5ed2a64e99457fe36811e1ad4
+    url: https://download.jetbrains.com/rider/JetBrains.Rider-2023.2-EAP9-232.8660.64.Checked.win.zip
+    hash: b623be7a6f8a4d0d76a9b066ded7195f985b0d5589e9ad7c8d1f5ba8c883ce2b
   arm64:
-    url: https://download.jetbrains.com/rider/JetBrains.Rider-2023.2-EAP8-232.8660.29.Checked-aarch64.win.zip
-    hash: d5400cf059c9b85c17998908b0dfd233ba53e807e58fadff27ec0993129cb920
+    url: https://download.jetbrains.com/rider/JetBrains.Rider-2023.2-EAP9-232.8660.64.Checked-aarch64.win.zip
+    hash: 2348818ace28fbd60ebd8db31f5c045467d314994ddcf2848cd99cbc66a4225b
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
