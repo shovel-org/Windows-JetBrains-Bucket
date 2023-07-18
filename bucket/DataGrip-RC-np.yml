@@ -1,4 +1,4 @@
-version: 2023.1-231.8109.126
+version: 2023.2-232.8660.88
 description: DataGrip Release Candidate. Cross-Platform IDE for Databases & SQL by JetBrains.
 homepage: https://www.jetbrains.com/datagrip/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/store/license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/datagrip/datagrip-231.8109.126.exe#/cosi.7z
-    hash: e832a44b887337f10320d25680b15c4afa1bb27e72467d244dcd430f2e96a81b
+    url: https://download.jetbrains.com/datagrip/datagrip-232.8660.88.exe#/cosi.7z
+    hash: 26240a212f11df3c12d2b46e5dc6cd29feb32daaffec3f1ccbab59f832d18e64
   arm64:
-    url: https://download.jetbrains.com/datagrip/datagrip-231.8109.126-aarch64.exe#/cosi.7z
-    hash: c06fc910493172686c75e5641c3bd5e7687853eaf7f77d64f40e9099997140d1
+    url: https://download.jetbrains.com/datagrip/datagrip-232.8660.88-aarch64.exe#/cosi.7z
+    hash: cdbdb1f90cde97ea6a016052fc13449cc1341041f2141c09ab5143b3413dbd84
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
