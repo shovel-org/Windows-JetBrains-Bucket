@@ -1,4 +1,4 @@
-version: 2023.1-231.8109.141
+version: 2023.2-232.8660.139
 description: CLion Release Candidate. Cross-Platform IDE for C and C++ by JetBrains.
 homepage: https://www.jetbrains.com/cpp/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/store/license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/cpp/CLion-231.8109.141.exe#/cosi.7z
-    hash: 8ae9206b0e0cba78c33fb35672ba02d9354b553183c36091b15ebea59f0211b7
+    url: https://download.jetbrains.com/cpp/CLion-232.8660.139.exe#/cosi.7z
+    hash: a5976107255b53fb7eb51aa2ef0ee988b3f1a44e86b2771d95e585fd64ba9b5d
   arm64:
-    url: https://download.jetbrains.com/cpp/CLion-231.8109.141-aarch64.exe#/cosi.7z
-    hash: 49f5a4309cea9fe7e1d14ed5691a9d61ea912ac8fcf8ba9fbcf1010a5293c6b2
+    url: https://download.jetbrains.com/cpp/CLion-232.8660.139-aarch64.exe#/cosi.7z
+    hash: 40b835cf575e09d45dbf47d4e7c7f7aec920f5c63e81942090c6c7ee47129bd2
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
