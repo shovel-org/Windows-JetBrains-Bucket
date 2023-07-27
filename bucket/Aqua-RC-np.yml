@@ -1,14 +1,14 @@
-version: 2023.1-231.9206
+version: 2023.2-232.8660.199
 description: JetBrains Aqua Preview. A powerful IDE for test automation
 homepage: https://www.jetbrains.com/aqua/
 license: Unknown
 architecture:
   64bit:
-    url: https://download.jetbrains.com/aqua/aqua-231.9206.exe#/cosi.7z
-    hash: c369f596d65dc7a9abd9faf8f3b0e0c7ff05a10b250f656d08aff280388a543a
+    url: https://download.jetbrains.com/aqua/aqua-232.8660.199.exe#/cosi.7z
+    hash: 7291fe88efec5d11a7328f0f418f77b547b71db469930cc0a799e42c526076cf
   arm64:
-    url: https://download.jetbrains.com/aqua/aqua-231.9206-aarch64.exe#/cosi.7z
-    hash: 2390197451569082561c6154113813302c8c2f374034c056b8aef7d46ef1787b
+    url: https://download.jetbrains.com/aqua/aqua-232.8660.199-aarch64.exe#/cosi.7z
+    hash: c93f195bdaa4a8c740271a65ef921ff9f575920d492af2fd642f0f92b179a9b5
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*', 'portable.ps1'
 shortcuts:
