@@ -1,4 +1,4 @@
-version: 2023.2-232.8660.185
+version: 2023.2.1-232.9559.62
 description: IntelliJ IDEA Community. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -8,17 +8,17 @@ changelog: https://www.jetbrains.com/idea/whatsnew/
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/idea/ideaIC-2023.2.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIC-2023.2.1.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 62a190e929846a673473da098b3eceeff3bf54b3bc83a9b67fcad1b548776b34
+    - 991308f6f0df63d4d0a4381822adb93aeebbec818f48671011d8fb81f6a02c2d
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/idea/ideaIC-2023.2-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIC-2023.2.1-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 53efa845326fad3ed9ecc894726b9b67d9f27636dccbdfb380fe884446c8010b
+    - e706bd2e5ee52dc5003967943bcb36a21edeceaa47507820b8b1089d02b5246d
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
