@@ -1,4 +1,4 @@
-version: 2023.2.1-232.9559.34
+version: 2023.2.2-232.9921.28
 description: IntelliJ IDEA Community Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-
 architecture:
   64bit:
-    url: https://download.jetbrains.com/idea/ideaIC-232.9559.34.exe#/cosi.7z
-    hash: 4ed9cc1a96bd5fd269eec5db6947f8ba0a3bf13db21eb133b637410c704fecaa
+    url: https://download.jetbrains.com/idea/ideaIC-232.9921.28.exe#/cosi.7z
+    hash: 8aede704aece8471343dea37e3b7f2a917b82a500b44069cc8f6cc05cceac362
   arm64:
-    url: https://download.jetbrains.com/idea/ideaIC-232.9559.34-aarch64.exe#/cosi.7z
-    hash: ee246733eae9ea6cd275179ca6d8b55409673be9db2dc3d485d5e696183bcbbf
+    url: https://download.jetbrains.com/idea/ideaIC-232.9921.28-aarch64.exe#/cosi.7z
+    hash: 5b3b719ef8b6f7743a8e5d74a099b9f3da45ecc832e98901d018c1af8af7bd0f
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
