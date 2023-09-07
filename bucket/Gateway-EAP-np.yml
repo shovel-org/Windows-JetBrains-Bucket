@@ -1,4 +1,4 @@
-version: 2023.2.1-232.9559.34
+version: 2023.2.2-232.9921.28
 description: JetBrains Gateway Early Access Program. Launcher that brings a backend server and local environment together.
 homepage: https://www.jetbrains.com/help/idea/2021.3/remote-development-starting-page.html
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/help/idea/2021.3/remote-development-starting-page.html#licensing
 architecture:
   64bit:
-    url: https://download.jetbrains.com/idea/gateway/JetBrainsGateway-232.9559.34.exe#/cosi.7z
-    hash: 4a8e82a9b0d504cd668452f5849e36c5dd10e022a74f14f01f5c280218796120
+    url: https://download.jetbrains.com/idea/gateway/JetBrainsGateway-232.9921.28.exe#/cosi.7z
+    hash: 23b23b379a533f80afec87bb415fc6397f76d24038f23f7ea2d20622d4ef5082
   arm64:
-    url: https://download.jetbrains.com/idea/gateway/JetBrainsGateway-232.9559.34-aarch64.exe#/cosi.7z
-    hash: f3f3b6248c77a292e108b977e50a52d2817ebb58ae105f1d9def214e6bc443db
+    url: https://download.jetbrains.com/idea/gateway/JetBrainsGateway-232.9921.28-aarch64.exe#/cosi.7z
+    hash: 857b7301d20d67825a9ac2aa921b3da41e573f0ead7f024640d97df8657c68c2
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
