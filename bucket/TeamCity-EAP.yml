@@ -31,6 +31,7 @@ bin:
   - teamcity-server-eap
 persist: conf
 checkver:
+  disable: true
   url: https://confluence.jetbrains.com/display/TW/ChangeLog
   regex: '\s+([\d.]+)\s+EAP(?<eap>\d+)\s+\(build\s+(?<build>[\d.]+)\)\s+Release\s+Notes</a>'
   replace: $1.EAP${eap}-${build}

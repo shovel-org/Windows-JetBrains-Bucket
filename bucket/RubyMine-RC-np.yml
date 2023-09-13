@@ -18,6 +18,7 @@ shortcuts:
   - JetBrains\RubyMine (Release Candidate)
 persist: IDE\bin\idea.properties
 checkver:
+  disable: true
   url: https://data.services.jetbrains.com/products/releases?code=RM&latest=true&type=rc
   regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
   replace: ${ver}-${build}
