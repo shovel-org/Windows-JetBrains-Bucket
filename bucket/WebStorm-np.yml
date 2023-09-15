@@ -1,4 +1,4 @@
-version: 2023.2.1-232.9559.58
+version: 2023.2.2-232.9921.42
 description: WebStorm. Cross-Platform, Smart JavaScript IDE by JetBrains.
 homepage: https://www.jetbrains.com/webstorm/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/webstorm/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/webstorm/WebStorm-2023.2.1.exe#/cosi.7z
-    hash: 97ee3b1132b00a1a3cca60cb63433ca20193966e9a8f47bacc6390ed3ae7c40a
+    url: https://download.jetbrains.com/webstorm/WebStorm-2023.2.2.exe#/cosi.7z
+    hash: 58c03f699298ee9e5bc65b0d96f987f3330c128bafd6469b84c54cb0d9317759
   arm64:
-    url: https://download.jetbrains.com/webstorm/WebStorm-2023.2.1-aarch64.exe#/cosi.7z
-    hash: c431ea26d8cee3f3495b310c6e36e4a26f8c1ef0e8cdef91c3129d98261dbb61
+    url: https://download.jetbrains.com/webstorm/WebStorm-2023.2.2-aarch64.exe#/cosi.7z
+    hash: 85ae8aebc30bc86b011568cc033841d13912050b1effa714a1ea23909d61d5b0
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
