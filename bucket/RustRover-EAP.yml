@@ -1,0 +1,44 @@
+version: 2023.2-232.9921.62
+description: RustRover Early Access Program. Cross-Platform IDE for Rust by JetBrains.
+homepage: https://www.jetbrains.com/rust/
+license:
+  identifier: Proprietary
+  url: https://www.jetbrains.com/legal/agreements/user_eap.html
+architecture:
+  64bit:
+    url:
+    - https://download.jetbrains.com/rustrover/RustRover-232.9921.62.exe#/cosi.7z
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
+    hash:
+    - 1864733ced3dddf85870bf3ce12703583b4f2eeb8aee6260a04b723fd7fe442c
+    - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
+  arm64:
+    url:
+    - https://download.jetbrains.com/rustrover/RustRover-232.9921.62-aarch64.exe#/cosi.7z
+    - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
+    hash:
+    - 9c8306652478be8d9ed3d3cb6709dc690e80688c8d6023c72620618c7b423e00
+    - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
+extract_to: IDE
+installer:
+  script: |
+    & "$dir\portable.ps1" $dir $persist_dir
+    Remove-AppDirItem 'IDE\$*', 'portable.ps1'
+shortcuts:
+- - IDE\bin\rustrover64.exe
+  - JetBrains\RustRover (Early Access Program)
+persist:
+- IDE\bin\idea.properties
+- profile
+checkver:
+  url: https://data.services.jetbrains.com/products/releases?code=RR&latest=true&type=eap
+  regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
+  replace: ${ver}-${build}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/rustrover/RustRover-${preReleaseVersion}.exe#/cosi.7z
+    arm64:
+      url: https://download.jetbrains.com/rustrover/RustRover-${preReleaseVersion}-aarch64.exe#/cosi.7z
+  hash:
+    url: $url.sha256
