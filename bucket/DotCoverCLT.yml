@@ -1,4 +1,4 @@
-version: 2023.2.1
+version: 2023.2.2
 description: dotCover Command Line Tools. Standalone command line package that enables analysing code coverage outside of Visual Studio by JetBrains.
 homepage: https://www.jetbrains.com/dotcover/download/#section=commandline
 license:
@@ -6,14 +6,14 @@ license:
   url: https://www.jetbrains.com/dotcover/download/dotcover_clt_license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2023.2.1/JetBrains.dotCover.CommandLineTools.windows-x64.2023.2.1.zip
-    hash: 1fd3f93acec341e83f7bae387a28e02f3db8acbbff563e07bfbe4967c5746a5b
+    url: https://download.jetbrains.com/resharper/dotUltimate.2023.2.2/JetBrains.dotCover.CommandLineTools.windows-x64.2023.2.2.zip
+    hash: da915da211d004bd3be5ab9a7849839396fadd6e8dfa3f8f6481d29ff8ce45b6
   32bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2023.2.1/JetBrains.dotCover.CommandLineTools.windows-x86.2023.2.1.zip
-    hash: 72951b275ba93e4818822d56fb2e97d38729843fc343c4964a45ae2e144b51d6
+    url: https://download.jetbrains.com/resharper/dotUltimate.2023.2.2/JetBrains.dotCover.CommandLineTools.windows-x86.2023.2.2.zip
+    hash: 06af81d3226042c8531c95867873897c468b0a59ccc5f2c07e231e4b3fed3cc9
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2023.2.1/JetBrains.dotCover.CommandLineTools.windows-arm64.2023.2.1.zip
-    hash: 4f8608fa93001c7afe575bf2526e9ba6e5eb892f995ae77ddcc19633e470f065
+    url: https://download.jetbrains.com/resharper/dotUltimate.2023.2.2/JetBrains.dotCover.CommandLineTools.windows-arm64.2023.2.2.zip
+    hash: bbfb0f9f5b2d1cd8b5125a179dcf3520dcdfb78c8c3a7b05f38ab7fbafe33354
 bin: dotCover.exe
 checkver:
   url: https://data.services.jetbrains.com/products/releases?code=DCCLT&latest=true&type=release
