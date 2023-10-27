@@ -1,4 +1,4 @@
-version: 2023.3-233.10527.20
+version: 2023.3-233.11361.10
 description: IntelliJ IDEA Ultimate Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/idea/ideaIU-233.10527.20.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIU-233.11361.10.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 5f52d9a3f796f55cc6c7d8093b702a0eeb3041c4c6e5f3959544ff60d509827a
+    - b8ac241b2fac82aa3c777ca1eb223b81a3a34f431cb0d53797c66c4e64d0a3c5
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/idea/ideaIU-233.10527.20-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIU-233.11361.10-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 07d6133f51ea9a8150a32c83f96c0ae92d933c799b6ec10227381de440948a06
+    - 2287a95f1144741bd1f12c0634d976f0e571dcc77e0224ac98a1b2883d4ee2e3
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
