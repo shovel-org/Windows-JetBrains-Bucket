@@ -1,4 +1,4 @@
-version: 2023.3-233.11799.6
+version: 2023.3-233.11799.30
 description: IntelliJ IDEA Community Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-
 architecture:
   64bit:
-    url: https://download.jetbrains.com/idea/ideaIC-233.11799.6.exe#/cosi.7z
-    hash: faaddf086600bee38641507131f81ada4898cc1d711c3d92ed3bdbbaa33d112d
+    url: https://download.jetbrains.com/idea/ideaIC-233.11799.30.exe#/cosi.7z
+    hash: d0ab5d44280a04b7c5ad77b3cfc09a605bb14e2cc44d55f43a414352577e5b75
   arm64:
-    url: https://download.jetbrains.com/idea/ideaIC-233.11799.6-aarch64.exe#/cosi.7z
-    hash: fc68a0e144b7790e0824c9089fc5da2756887ce147f84551772a01cd3d6d2b00
+    url: https://download.jetbrains.com/idea/ideaIC-233.11799.30-aarch64.exe#/cosi.7z
+    hash: e296546f3823471e42a4abedd7f0b34276578133752517840e5103678080990c
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
