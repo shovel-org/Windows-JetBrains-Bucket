@@ -1,4 +1,4 @@
-version: 2023.3-233.11799.244
+version: 2023.3.1-233.11799.285
 description: DataSpell. Cross-Platform IDE for Data Scientists by JetBrains.
 homepage: https://www.jetbrains.com/dataspell/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/store/license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/python/dataspell-2023.3.exe#/cosi.7z
-    hash: 7e80caa2e50f8495e9603b91b1c11177574ee211b2458ade68f399e9a7c77113
+    url: https://download.jetbrains.com/python/dataspell-2023.3.1.exe#/cosi.7z
+    hash: 10b76cd6366ac093f5c1916af32bf2df501ffbbd454c9806e6805fbeb5397453
   arm64:
-    url: https://download.jetbrains.com/python/dataspell-2023.3-aarch64.exe#/cosi.7z
-    hash: cfad9e823b79a050583227ba9c2e00e6a22d790dd478fedcd04b8b629a351e16
+    url: https://download.jetbrains.com/python/dataspell-2023.3.1-aarch64.exe#/cosi.7z
+    hash: ee37784b3f858149b2755d2db8f7df3022d87a7108f94a3ff8b966bd8babe476
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
