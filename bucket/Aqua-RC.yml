@@ -1,21 +1,21 @@
-version: 2023.3-233.11555.14
+version: 2023.3-233.13135.75
 description: JetBrains Aqua Preview. A powerful IDE for test automation
 homepage: https://www.jetbrains.com/aqua/
 license: Unknown
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/aqua/aqua-233.11555.14.exe#/cosi.7z
+    - https://download.jetbrains.com/aqua/aqua-233.13135.75.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 1a63ea8c6298c8df7339a261835e18bb8e54c6a90cdeeae185f625f2ffb1cd0b
+    - 0f4d95334fc7950fdc53e4181e09e61a8697056b744ff62171d2b5fa609f1687
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/aqua/aqua-233.11555.14-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/aqua/aqua-233.13135.75-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - c91065f40a9be5bb334cab5991699363e10e6a03c1a926994ba9e48470bee2eb
+    - 0b3c95ac0103df187f14d5f033c17b366ab09fde0da91559828886ab4266b0bf
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
