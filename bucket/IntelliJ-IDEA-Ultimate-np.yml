@@ -1,4 +1,4 @@
-version: 2023.3.1-233.11799.300
+version: 2023.3.2-233.13135.103
 description: IntelliJ IDEA Ultimate. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/idea/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/idea/ideaIU-2023.3.1.exe#/cosi.7z
-    hash: 6c086e6d75677f8fb213ff5b66ca5539725e2616bee48d2ecc12d84b1461e3a3
+    url: https://download.jetbrains.com/idea/ideaIU-2023.3.2.exe#/cosi.7z
+    hash: 0b3e6ee9d8b2ab398ac4753f6ac374300720813e2f1d4eec96c4c7bb7e74632d
   arm64:
-    url: https://download.jetbrains.com/idea/ideaIU-2023.3.1-aarch64.exe#/cosi.7z
-    hash: a1a2cbc8b1b0107c31c16aed924245511b1cfdce71c46034e0886a414da92ad2
+    url: https://download.jetbrains.com/idea/ideaIU-2023.3.2-aarch64.exe#/cosi.7z
+    hash: 855c586d93d70c68052a7446305dc7a53f976528747d9e672cdd6e271ef39c75
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
