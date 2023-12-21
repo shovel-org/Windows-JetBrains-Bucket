@@ -1,4 +1,4 @@
-version: 2023.3.1-233.11799.298
+version: 2023.3.2-233.13135.95
 description: PyCharm Community. Cross-Platform Python IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/pycharm/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/pycharm/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/python/pycharm-community-2023.3.1.exe#/cosi.7z
-    hash: 232b70b2f1f76d1695f58b1ec736b8013f07de2b5ab25968abcf22ad11fffb6b
+    url: https://download.jetbrains.com/python/pycharm-community-2023.3.2.exe#/cosi.7z
+    hash: d428da244107c746eec15e934d41d2593f1e9d3e94b088bfa49a828a0e6157be
   arm64:
-    url: https://download.jetbrains.com/python/pycharm-community-2023.3.1-aarch64.exe#/cosi.7z
-    hash: ade49607f55c1e79a8845209246ad69e2ff68c351d4e33b5eaf209110e94dc96
+    url: https://download.jetbrains.com/python/pycharm-community-2023.3.2-aarch64.exe#/cosi.7z
+    hash: 67842712d246e3660786c69bb92ceb3bfc87acfbdc0e0391177493b1c2c03a96
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
