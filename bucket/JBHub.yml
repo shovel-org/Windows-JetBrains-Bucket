@@ -1,14 +1,14 @@
 '##': JBHub name do not conflict with Hub (github) command line utility
-version: 2023.3.21798
+version: 2023.3.22912
 description: Hub. Integration Across Team Collaboration Tools by JetBrains.
 homepage: https://www.jetbrains.com/hub/
 license:
   identifier: Proprietary
   url: https://www.jetbrains.com/hub/download/license.html
 notes: Hub could be executed from anywhere using 'jbhub' command.
-url: https://download.jetbrains.com/hub/hub-2023.3.21798.zip
-hash: 467d53b9b4f5f12737cfeb45259387e02f23f7ec2d79871fb6b32348d7c64657
-extract_dir: hub-2023.3.21798
+url: https://download.jetbrains.com/hub/hub-2023.3.22912.zip
+hash: 46f5cf6ae7172481cd539265bbed827cabaee03d8df4c89105067cbd769270ec
+extract_dir: hub-2023.3.22912
 installer:
   script: |
     $ver_path = "$dir\bin"
