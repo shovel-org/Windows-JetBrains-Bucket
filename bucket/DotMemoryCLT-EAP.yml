@@ -1,4 +1,4 @@
-version: 2023.3.EAP8
+version: 2024.1.EAP1
 description: DotMemory Command Line Tool Early Access Program. Free package for profiling .NET memory usage from the command line by JetBrains.
 homepage: https://www.jetbrains.com/dotmemory/download/#section=command-line-profiler
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2023.3.EAP8/JetBrains.dotMemory.Console.windows-x64.2023.3.EAP8.Checked.zip
-    hash: 973d7eee5d7b5344d0a85deefe3296ffbea88ee991a472812e32af1c1dd941cb
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.EAP1/JetBrains.dotMemory.Console.windows-x64.2024.1.EAP1.Checked.zip
+    hash: 72b95b5a8e80969668ab1843624cc84c2a9518d9ffe37e133cc5cf956ec04f82
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2023.3.EAP8/JetBrains.dotMemory.Console.windows-arm64.2023.3.EAP8.Checked.zip
-    hash: fc5e66b135f4eb7f2ab0df20f720395f9195ace079b045ac80d78fe76d00fd8f
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.EAP1/JetBrains.dotMemory.Console.windows-arm64.2024.1.EAP1.Checked.zip
+    hash: cf03d52d8770c160bb848f5a6f61670df16438429debd1f279b12c6908949e56
 bin:
 - dotMemory.exe
 - - dotMemory.exe
