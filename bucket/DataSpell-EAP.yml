@@ -1,4 +1,4 @@
-version: 2024.1-241.8102.135
+version: 2024.1-241.10840.15
 description: DataSpell Early Access Program. Cross-Platform IDE for Data Scientists by JetBrains.
 homepage: https://www.jetbrains.com/dataspell/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/python/dataspell-241.8102.135.exe#/cosi.7z
+    - https://download.jetbrains.com/python/dataspell-241.10840.15.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 8be90d674efa334c5ace1a8331577a3182b7c759eb77205d6efd8561cfa045b3
+    - df7eee2731604736d4c759ed6c51f83bfa64331345e253f698aa0a651d686b12
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/python/dataspell-241.8102.135-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/python/dataspell-241.10840.15-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - aa5cd3f854a268e5f237b4a4907eb59ae1c0164b694fd803bc31d17425ee6119
+    - cb71d596a2412a7bb2ffa9c72d1aeb9fff37188bc5a40f294c0e226dfd93d422
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
