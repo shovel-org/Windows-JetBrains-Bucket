@@ -1,4 +1,4 @@
-version: 2023.11.4.147586
+version: 2024.03.156166
 description: TeamCity. Powerful Continuous Integration out of the box by JetBrains.
 homepage: https://www.jetbrains.com/teamcity/
 license:
@@ -8,8 +8,8 @@ changelog: https://www.jetbrains.com/teamcity/whatsnew/
 notes:
 - TeamCity could be executed from anywhere using 'teamcity' command.
 - Run 'teamcity --help' to get more info.
-url: https://download.jetbrains.com/teamcity/TeamCity-2023.11.exe#/cosi.7z
-hash: 93446a8f9e17df64e6de3c1588fcfa2896e3b8d5fe822415e0b07f4c112e549b
+url: https://download.jetbrains.com/teamcity/TeamCity-2024.03.exe#/cosi.7z
+hash: c66182937a9a61a7ed66ee4e05c5ffe7bbee8b5cc73dec5a97fb9f1cad9d417d
 installer:
   script: |
     Remove-AppDirItem '$*'
