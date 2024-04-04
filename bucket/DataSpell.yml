@@ -1,4 +1,4 @@
-version: 2023.3.5-233.15026.16
+version: 2024.1-241.14494.247
 description: DataSpell. Cross-Platform IDE for Data Scientists by JetBrains.
 homepage: https://www.jetbrains.com/dataspell/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/python/dataspell-2023.3.5.exe#/cosi.7z
+    - https://download.jetbrains.com/python/dataspell-2024.1.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 3fa3ee7941535e16cd69686ee5b5332eeb45a1a6977fb01f99e25ec45dc3eefe
+    - 96093fcf14f1d943c8bc7de93c7a53a67d6bae732d27bcfe98cc5a2ea50f0587
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/python/dataspell-2023.3.5-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/python/dataspell-2024.1-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 653faccf1f6024c1e9b1ad8799312b487e59a59d3a800adda989adaa59d83458
+    - 40e3f5e29fb64ca0a5bd7e09ced873e322ab38fe10798a8bee848c40d3afeed5
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
