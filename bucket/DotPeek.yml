@@ -1,4 +1,4 @@
-version: 2024.1.1
+version: 2024.1.2
 description: DotPeek. Free .NET Decompiler and Assembly Browser by JetBrains.
 homepage: https://www.jetbrains.com/decompiler/
 license:
@@ -6,14 +6,14 @@ license:
   url: https://www.jetbrains.com/decompiler/download/license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.1/dotPeek64.2024.1.1.exe#/dotPeek.exe
-    hash: cf14609531e8de327527538a388d131985cea9a54e87d0cb77438e8ec59ff5e2
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.2/dotPeek64.2024.1.2.exe#/dotPeek.exe
+    hash: 7ce7cf6166f04e820d75086df6f1b2d0d5f897f099ac568219f13a8517131f94
   32bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.1/dotPeek32.2024.1.1.exe#/dotPeek.exe
-    hash: 1f8bc2c14d78cb2d2057677627cada9cdee2a9e6bc4e9800b28c688685e185d3
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.2/dotPeek32.2024.1.2.exe#/dotPeek.exe
+    hash: b7730ebd3e555e335c26ab233d957cf884d7da4d325c497730f5148cc6713043
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.1/dotPeek64a.2024.1.1.exe#/dotPeek.exe
-    hash: 2a29bee57b60da46932fc7258eaa8309ba41e43275158e092c12690b7256d8e4
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.2/dotPeek64a.2024.1.2.exe#/dotPeek.exe
+    hash: 8ecc2cee4fde97d01b830ac01d98f352d44c0b96aa517dddbfa3eeb7d090f57d
 bin: dotPeek.exe
 shortcuts:
 - - dotPeek.exe
