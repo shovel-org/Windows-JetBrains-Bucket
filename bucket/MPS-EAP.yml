@@ -1,14 +1,14 @@
-version: 2023.3-233.11799.543-EAP1
+version: 2024.1-241.17011.705-EAP1
 description: MPS Early Access Program. The Domain-Specific language creator by JetBrains.
 homepage: https://www.jetbrains.com/mps/
 license:
   identifier: Proprietary
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 url:
-- https://download.jetbrains.com/mps/2023.3/MPS-2023.3-EAP1.exe#/cosi.7z
+- https://download.jetbrains.com/mps/2024.1/MPS-2024.1-EAP1.exe#/cosi.7z
 - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
 hash:
-- 564e82580444f38c748b0cbf4c8f5c5760fbddb625235ece49ddb5bf29260997
+- e06be550d3a0ac125494c1c8037f2b4c5d4f2d72e5ab38f13c88cfb93e3f443e
 - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
