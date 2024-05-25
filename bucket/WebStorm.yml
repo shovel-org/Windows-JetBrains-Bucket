@@ -40,7 +40,7 @@ checkver:
 autoupdate:
   architecture:
     64bit:
-      url: https://download.jetbrains.com/webstorm/WebStorm-$matchHead.exe#/cosi.7z
+      url: https://download.jetbrains.com/webstorm/WebStorm-${matchHead}.exe#/cosi.7z
     arm64:
       url: https://download.jetbrains.com/webstorm/WebStorm-${matchHead}-aarch64.exe#/cosi.7z
   hash:
