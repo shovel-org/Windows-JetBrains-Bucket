@@ -1,11 +1,16 @@
-version: 2023.3.EAP1
+version: 2024.1.EAP9
 description: dotCover Command Line Tools Early Access Program. Standalone command line package that enables analysing code coverage outside of Visual Studio.
 homepage: https://www.jetbrains.com/dotcover/download/#section=commandline
 license:
   identifier: Proprietary
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
-url: https://download.jetbrains.com/resharper/dotUltimate.2023.3.EAP1/JetBrains.dotCover.CommandLineTools.2023.3.EAP1.Checked.zip
-hash: 9907bbb48ca22d69dbf021f34b7695572200b0980665bee35255e40d9f16b7aa
+architecture:
+  64bit:
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.EAP9/JetBrains.dotCover.CommandLineTools.windows-x64.2024.1.EAP9.Checked.zip
+    hash: 334c2179e377b8ac2a16ce11229f6c691e5c8a1401baf14169ce677a55c83042
+  arm64:
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.EAP9/JetBrains.dotCover.CommandLineTools.windows-arm64.2024.1.EAP9.Checked.zip
+    hash: 6df89c2e3cb5194e299bd764fe299f69749165a5d058fd95faf335f9b482d876
 bin:
 - dotCover.exe
 - - dotCover.exe
@@ -14,6 +19,10 @@ checkver:
   url: https://data.services.jetbrains.com/products/releases?code=DCCLT&latest=true&type=eap
   regex: '\.([\d.]+EAP\d+)/'
 autoupdate:
-  url: https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotCover.CommandLineTools.$version.Checked.zip
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotCover.CommandLineTools.windows-x64.$version.Checked.zip
+    arm64:
+      url: https://download.jetbrains.com/resharper/dotUltimate.$version/JetBrains.dotCover.CommandLineTools.windows-arm64.$version.Checked.zip
   hash:
     url: $url.sha256
