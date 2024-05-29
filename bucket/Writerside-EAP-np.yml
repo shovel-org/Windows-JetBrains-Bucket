@@ -1,0 +1,31 @@
+version: 2024.1-241.15989.11
+description: Writerside Early Access Program. IDE for authoring, building, testing, and publishing technical documentation by JetBrains.
+homepage: https://www.jetbrains.com/writerside/
+license:
+  identifier: Proprietary
+  url: https://www.jetbrains.com/legal/agreements/user_eap.html
+architecture:
+  64bit:
+    url: https://download.jetbrains.com/writerside/writerside-241.15989.11.exe#/cosi.7z
+    hash: 02aded958e8a2a19151ef5bf5a8aa8df1253a33fcd70fd558ee9def008d85c3f
+  arm64:
+    url: https://download.jetbrains.com/writerside/writerside-241.15989.11-aarch64.exe#/cosi.7z
+    hash: b88080f7e01d84e389cf66f26078212e4c697d4f1dec48b93181d3f8055d0625
+extract_to: IDE
+pre_install: Remove-AppDirItem 'IDE\$*'
+shortcuts:
+- - IDE\bin\writerside64.exe
+  - JetBrains\Writerside (Early Access Program)
+persist: IDE\bin\idea.properties
+checkver:
+  url: https://data.services.jetbrains.com/products/releases?code=WRS&latest=true&type=eap
+  regex: version":"(?<ver>[\d.]+)".*"build":"(?<build>[\d.]+)"
+  replace: ${ver}-${build}
+autoupdate:
+  architecture:
+    64bit:
+      url: https://download.jetbrains.com/writerside/writerside-${preReleaseVersion}.exe#/cosi.7z
+    arm64:
+      url: https://download.jetbrains.com/writerside/writerside-${preReleaseVersion}-aarch64.exe#/cosi.7z
+  hash:
+    url: $url.sha256
