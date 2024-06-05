@@ -1,4 +1,4 @@
-version: 2024.1-241.15989.11
+version: 2024.1-241.16003.85
 description: Writerside Early Access Program. IDE for authoring, building, testing, and publishing technical documentation by JetBrains.
 homepage: https://www.jetbrains.com/writerside/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/writerside/writerside-241.15989.11.exe#/cosi.7z
+    - https://download.jetbrains.com/writerside/writerside-241.16003.85.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 02aded958e8a2a19151ef5bf5a8aa8df1253a33fcd70fd558ee9def008d85c3f
+    - 534cdc9d67839791093ed7826f80bb156f1de4602e6c8ba4fc7c383c6caab315
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/writerside/writerside-241.15989.11-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/writerside/writerside-241.16003.85-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - b88080f7e01d84e389cf66f26078212e4c697d4f1dec48b93181d3f8055d0625
+    - ebc9a31fc20d85729082ed8fdf9b5e9b991be44c18c263bcc02724930b7bd39f
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
