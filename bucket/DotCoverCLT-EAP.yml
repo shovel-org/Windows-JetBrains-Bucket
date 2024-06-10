@@ -1,4 +1,4 @@
-version: 2024.1.EAP9
+version: 2024.2.EAP2
 description: dotCover Command Line Tools Early Access Program. Standalone command line package that enables analysing code coverage outside of Visual Studio.
 homepage: https://www.jetbrains.com/dotcover/download/#section=commandline
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.EAP9/JetBrains.dotCover.CommandLineTools.windows-x64.2024.1.EAP9.Checked.zip
-    hash: 334c2179e377b8ac2a16ce11229f6c691e5c8a1401baf14169ce677a55c83042
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.2.EAP2/JetBrains.dotCover.CommandLineTools.windows-x64.2024.2.EAP2.Checked.zip
+    hash: 097da9e3e4bcbdd3488cf7892572abdf2e6db7321fb96c9b6922f894dc74c587
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.EAP9/JetBrains.dotCover.CommandLineTools.windows-arm64.2024.1.EAP9.Checked.zip
-    hash: 6df89c2e3cb5194e299bd764fe299f69749165a5d058fd95faf335f9b482d876
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.2.EAP2/JetBrains.dotCover.CommandLineTools.windows-arm64.2024.2.EAP2.Checked.zip
+    hash: cc3751ef739f6561ffb7d0b1c0fff30a715fc58e21fa5a826018ebf825a79f22
 bin:
 - dotCover.exe
 - - dotCover.exe
