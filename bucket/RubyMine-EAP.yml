@@ -1,4 +1,4 @@
-version: 2024.2-242.14146.20
+version: 2024.2-242.15523.8
 description: RubyMine Early Access Program. Cross-Platform Ruby on Rails IDE by JetBrains.
 homepage: https://www.jetbrains.com/ruby/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/ruby/RubyMine-242.14146.20.exe#/cosi.7z
+    - https://download.jetbrains.com/ruby/RubyMine-242.15523.8.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - bf777a45ba459a8a1e7606eb0046de271c685c451df387bf83bf356d8da24161
+    - 67f730147531e89f441cd2dd387b4705fca1538a7b4d397c4c1cc09fd8710f6f
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/ruby/RubyMine-242.14146.20-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/ruby/RubyMine-242.15523.8-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 7f9899cf3438eeb68ad60583968f3a917f4f2f5275dff0627491daa1810de7f2
+    - 77a9992cb8676b86d3a530bdbed779b718d913d4ce17ea3fcd6f73c31187cf8c
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
