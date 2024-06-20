@@ -1,4 +1,4 @@
-version: 2024.1.4-241.18034.18
+version: 2024.1.4-241.18034.53
 description: PyCharm Community Release Candidate. Cross-Platform Python IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/pycharm/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-
 architecture:
   64bit:
-    url: https://download.jetbrains.com/python/pycharm-community-241.18034.18.exe#/cosi.7z
-    hash: 0fc10905e0489aa5cbe0e093e05477fbe4418f11050f9bcdbd909e8a986b590f
+    url: https://download.jetbrains.com/python/pycharm-community-241.18034.53.exe#/cosi.7z
+    hash: c5ad0e16dafc940141c8df0ac17de0da494125a2c0fb6eac726e364a2c8987bb
   arm64:
-    url: https://download.jetbrains.com/python/pycharm-community-241.18034.18-aarch64.exe#/cosi.7z
-    hash: e458b976084dade335751ab070f91ca1b7500fa0f46a2369cc2b329d57111b4f
+    url: https://download.jetbrains.com/python/pycharm-community-241.18034.53-aarch64.exe#/cosi.7z
+    hash: 8d266c5948d91e7a66c4d8ac7b604484da453f85f03718e68e9af7ad29417117
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
