@@ -1,4 +1,4 @@
-version: 2024.2-242.18071.26
+version: 2024.2-242.19533.55
 description: GoLand Early Access Program. Cross-Platform, Clever IDE to Go by JetBrains.
 homepage: https://www.jetbrains.com/goland/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/go/goland-242.18071.26.exe#/cosi.7z
+    - https://download.jetbrains.com/go/goland-242.19533.55.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 48abd2be1d7685282f859e038056ea5ecd3e6112e6b667a2c73275e348816e40
+    - 992f7d019c36da361ac0f922405e3fa9a15cf6c535f2170d789c8022d60316dc
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/go/goland-242.18071.26-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/go/goland-242.19533.55-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 1bb21a356732e92b53b74965e9d00303398e48decf1fb2dbf76d563ba3f02021
+    - c3f3b96d5b351da1ed190002c48e5023347b56ac1fee24fe0c26a0ceef0e1b6b
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
