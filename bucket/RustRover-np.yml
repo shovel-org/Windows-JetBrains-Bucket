@@ -1,4 +1,4 @@
-version: 2024.1.3-241.17011.175
+version: 2024.1.4-241.17890.34
 description: RustRover Early Access Program. Cross-Platform IDE for Rust by JetBrains.
 homepage: https://www.jetbrains.com/rust/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/rustrover/RustRover-2024.1.3.exe#/cosi.7z
-    hash: 77bf25820587634a3bb172b0fec3094a0508aad1c075c4fd917d249ec42815d1
+    url: https://download.jetbrains.com/rustrover/RustRover-2024.1.4.exe#/cosi.7z
+    hash: fe2b6ad05492797a6deb3a415e4e81fda10f9799449d1b97159a2294dcf1d834
   arm64:
-    url: https://download.jetbrains.com/rustrover/RustRover-2024.1.3-aarch64.exe#/cosi.7z
-    hash: c41f6c77e0e2dc1cee6576c9a3fa01615e48c3bd697a8e9be70fdadec67be685
+    url: https://download.jetbrains.com/rustrover/RustRover-2024.1.4-aarch64.exe#/cosi.7z
+    hash: 271092fe73df085c76bf190454fab4403c757b589f5017a40a31e75905880c7a
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
