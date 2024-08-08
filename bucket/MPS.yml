@@ -1,4 +1,4 @@
-version: 2023.3.1-233.13135.1068
+version: 2024.1-241.18034.1093
 description: MPS. The Domain-Specific language creator by JetBrains.
 homepage: https://www.jetbrains.com/mps/
 license:
@@ -6,10 +6,10 @@ license:
   url: https://www.jetbrains.com/store/license.html
 changelog: https://www.jetbrains.com/mps/whatsnew/
 url:
-- https://download.jetbrains.com/mps/2023.3/MPS-2023.3.1.exe#/cosi.7z
+- https://download.jetbrains.com/mps/2024.1/MPS-2024.1.exe#/cosi.7z
 - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
 hash:
-- 92672817466125999e957c60735005fed3ac5db56efa3c9a4bc08876ee69004a
+- 3cf6045e2c458b745ecbaa1217ca837592060786e7f7ffa2c9e7be4775986f8c
 - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
