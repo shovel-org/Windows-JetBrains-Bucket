@@ -1,4 +1,4 @@
-version: 2024.1.6
+version: "2024.2"
 description: DotTrace. .NET Performace Profiler by JetBrains.
 homepage: https://www.jetbrains.com/profiler/
 license:
@@ -6,14 +6,14 @@ license:
   url: https://www.jetbrains.com/store/license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.6/dotTrace64.2024.1.6.exe#/dotTrace.exe
-    hash: 03361f9745c8464f04f65402c7376cc358a7de2fec6318e45a1e899288d4bb45
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.2/dotTrace64.2024.2.exe#/dotTrace.exe
+    hash: 7949075321822fd325c40bfa54ec8d2c709ed78168cb26180e0ccf4f83c34fe5
   32bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.6/dotTrace32.2024.1.6.exe#/dotTrace.exe
-    hash: 292aa99f23b465e4bb40cbc5078765c23606eb193c450d6ac27d3b517d7c7b2b
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.2/dotTrace32.2024.2.exe#/dotTrace.exe
+    hash: b03f257d456d91d1c86cd485e5934357d0bf2a17317aa955a8144860922fc372
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.6/dotTrace64a.2024.1.6.exe#/dotTrace.exe
-    hash: 5c3b63e9b174abc9c40253207300ce5f693039becb682fcf157af19185d79b09
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.2/dotTrace64a.2024.2.exe#/dotTrace.exe
+    hash: 17fa144461c99651fa1eed6d54c162a4fafb1360ef177ee917b50fe9bd817093
 shortcuts:
 - - dotTrace.exe
   - dotTrace
