@@ -1,4 +1,4 @@
-version: 2024.1.6
+version: "2024.2"
 description: DotMemory. Memory Profile & Unit testing framework for .NET by JetBrains.
 homepage: https://www.jetbrains.com/dotmemory/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/store/license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.6/dotMemory.UI.64.2024.1.6.exe#/dotMemory.exe
-    hash: 40716738a43b60a9b156dd4ab44210fc306befa757569fead15be8f6f779fbdd
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.2/dotMemory.UI.64.2024.2.exe#/dotMemory.exe
+    hash: 5556fe5d62bb6cd832ec81be5e0a3d1cd63f2c4b6c89e4c1d7b8b7d6ab937a9f
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.1.6/dotMemory.UI.64a.2024.1.6.exe#/dotMemory.exe
-    hash: e3cd6da6bf92c9f4172e50060ba851a1bed2fc64e24517cf1c0f9b68a19a2d71
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.2/dotMemory.UI.64a.2024.2.exe#/dotMemory.exe
+    hash: c20b91c2a03a90fb0aa1c164303351127ff6e11a27079bf4a13edd618d7a0c8f
 shortcuts:
 - - dotMemory.exe
   - dotMemory
