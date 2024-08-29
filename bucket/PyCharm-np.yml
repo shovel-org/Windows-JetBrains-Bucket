@@ -1,4 +1,4 @@
-version: 2024.2-242.20224.347
+version: 2024.2.1-242.21829.153
 description: PyCharm Community. Cross-Platform Python IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/pycharm/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/pycharm/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/python/pycharm-community-2024.2.exe#/cosi.7z
-    hash: 155bd522f300157be1eb509601c5e96ae63aa261ffd7d0686ae8ee57fceeb194
+    url: https://download.jetbrains.com/python/pycharm-community-2024.2.1.exe#/cosi.7z
+    hash: 92df53a531e0e727b5a50df5c81eabd2e8d70de473539cecd73d1fd98eb4d334
   arm64:
-    url: https://download.jetbrains.com/python/pycharm-community-2024.2-aarch64.exe#/cosi.7z
-    hash: cac3022278d36485fe20de6496f4171c28b5e88b5c3d937fe81e332143e114a0
+    url: https://download.jetbrains.com/python/pycharm-community-2024.2.1-aarch64.exe#/cosi.7z
+    hash: 0e81476c492953a1618e1fd497f08af5e55bb2ebdecc49880c0b9f22e3b80941
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
