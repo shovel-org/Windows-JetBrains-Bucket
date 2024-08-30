@@ -1,4 +1,4 @@
-version: 2024.2-242.20224.338
+version: 2024.2.1-242.21829.150
 description: RubyMine. Cross-Platform Ruby on Rails IDE by JetBrains.
 homepage: https://www.jetbrains.com/ruby/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/ruby/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/ruby/RubyMine-2024.2.exe#/cosi.7z
-    hash: f53e83d2a46b1dce354081d2aa1090135c0172c3c602bde292c10b06c0067aec
+    url: https://download.jetbrains.com/ruby/RubyMine-2024.2.1.exe#/cosi.7z
+    hash: e5e25c3b0a9744df6c6298ba99e31872dcded51ac3ddf989968a0cc1ac309db8
   arm64:
-    url: https://download.jetbrains.com/ruby/RubyMine-2024.2-aarch64.exe#/cosi.7z
-    hash: 83fe58fa95e13c0659c759bc1d81b88c187c7708c7d75d18eeadd8c125066f32
+    url: https://download.jetbrains.com/ruby/RubyMine-2024.2.1-aarch64.exe#/cosi.7z
+    hash: f8b28fbbb21ad8897ce3e60e43eb6044246e34eae068e8ebf3b4c8191dbb8d20
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
