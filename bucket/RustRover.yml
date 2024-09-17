@@ -1,4 +1,4 @@
-version: 2024.2-242.21829.198
+version: 2024.2.1-242.21829.233
 description: RustRover Early Access Program. Cross-Platform IDE for Rust by JetBrains.
 homepage: https://www.jetbrains.com/rust/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/rustrover/RustRover-2024.2.exe#/cosi.7z
+    - https://download.jetbrains.com/rustrover/RustRover-2024.2.1.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - c73355480fa04910501dbd8ec6d5c54790554d75e8aef0f4dc92428fd1079333
+    - 5b18e72d7dda14ca73038ba88f50d17d0f2e4e140a108f4dcd382cbf4b03306f
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/rustrover/RustRover-2024.2-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/rustrover/RustRover-2024.2.1-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - b4e7457524d0f757a1557b53568e4715dcc216f06e474dd053c60ef880a00e14
+    - 9dbf821e919f1866f12eab112c328e20c1fba5f47a16d153c1ec7fdb1f6bf197
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
