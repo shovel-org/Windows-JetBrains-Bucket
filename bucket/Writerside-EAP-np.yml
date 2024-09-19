@@ -1,4 +1,4 @@
-version: 2024.1-241.18775.101
+version: 2024.2-242.21870.138
 description: Writerside Early Access Program. IDE for authoring, building, testing, and publishing technical documentation by JetBrains.
 homepage: https://www.jetbrains.com/writerside/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/writerside/writerside-241.18775.101.exe#/cosi.7z
-    hash: 0872381d808f74d577c44116f9b8b4c78b67a745b6b6f18b239e383220303eb0
+    url: https://download.jetbrains.com/writerside/writerside-242.21870.138.exe#/cosi.7z
+    hash: d51745871f6283f4c0189ff1b77d79942119918f7b700198e438337499833497
   arm64:
-    url: https://download.jetbrains.com/writerside/writerside-241.18775.101-aarch64.exe#/cosi.7z
-    hash: bbca8446b8f0f628415f8075ccafafabaf40a9e98a421d438b65f197a717b7bd
+    url: https://download.jetbrains.com/writerside/writerside-242.21870.138-aarch64.exe#/cosi.7z
+    hash: 0001571b65406140f87c7d41effc92d7b9e14e05fd1377d96a055d0ccc659069
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
