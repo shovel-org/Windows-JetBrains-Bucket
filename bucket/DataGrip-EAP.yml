@@ -1,4 +1,4 @@
-version: 2024.2-242.20224.99
+version: 2024.3-243.16718.27
 description: DataGrip Early Access Program. Cross-Platform IDE for Databases & SQL by JetBrains.
 homepage: https://www.jetbrains.com/datagrip/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/datagrip/datagrip-242.20224.99.exe#/cosi.7z
+    - https://download.jetbrains.com/datagrip/datagrip-243.16718.27.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 03518006b4122e19efd2b96905cc9e62483851f506a6c123b45d30560f8d62cd
+    - 6fd201d8f0be4647fed745f2d48587ea2438b56b7f5734978dbf12ce7661909c
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/datagrip/datagrip-242.20224.99-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/datagrip/datagrip-243.16718.27-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 3399737e3d15cf3ea8bb8c995924f531c5ffb33aa3560ea4d1e53fdb2bf58424
+    - c76458aaffb4ed9299248aa44e9ebde7a47a49414a65c575e672563cf505cd4a
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
