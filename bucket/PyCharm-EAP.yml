@@ -1,4 +1,4 @@
-version: 2024.3-243.18137.19
+version: 2024.3-243.19420.35
 description: PyCharm Community Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/pycharm/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/python/pycharm-community-243.18137.19.exe#/cosi.7z
+    - https://download.jetbrains.com/python/pycharm-community-243.19420.35.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 2e2eba49c8ea1cb8bb5f08f748939b51f05089e91e24e8b77a1fd895243da53d
+    - f96655822d294e83f54f610f7271dc7011ba1844837ff5b2c0d5373832d021dc
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/python/pycharm-community-243.18137.19-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/python/pycharm-community-243.19420.35-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - e7e2b9646c7f0fea3b35b45a57028e25894714691f667b9b20645b1041cce702
+    - de7bf4cc755ab0b83aa26c464ce7c94d4af32d96076cfa3f2aa6971395183e96
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
