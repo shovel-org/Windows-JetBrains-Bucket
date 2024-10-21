@@ -1,4 +1,4 @@
-version: 2024.3-243.19420.28
+version: 2024.3-243.20847.43
 description: CLion Early Access Program. Cross-Platform IDE for C and C++ by JetBrains.
 homepage: https://www.jetbrains.com/cpp/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/cpp/CLion-243.19420.28.exe#/cosi.7z
-    hash: 2dd330dfeaa170957f19d4ea8705ae00446fe8001bd183b5a8f40568ce84ea04
+    url: https://download.jetbrains.com/cpp/CLion-243.20847.43.exe#/cosi.7z
+    hash: 4c148e2f5776e9064c2d9482005f0ffbb00d675b733f3eff1b5b047c4903499d
   arm64:
-    url: https://download.jetbrains.com/cpp/CLion-243.19420.28-aarch64.exe#/cosi.7z
-    hash: 62c2b000aea7a9165ea939da03386ac231692867fc6cd9aacfbd13901b480d75
+    url: https://download.jetbrains.com/cpp/CLion-243.20847.43-aarch64.exe#/cosi.7z
+    hash: 0c99599ce0759baa0d61213e2ac624cb521ddcf8ebe41393463d5f8352c8aeec
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
