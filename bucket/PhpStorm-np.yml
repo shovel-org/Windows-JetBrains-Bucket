@@ -1,4 +1,4 @@
-version: 2024.2.3-242.23339.16
+version: 2024.2.4-242.23726.107
 description: PhpStorm. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.
 homepage: https://www.jetbrains.com/phpstorm/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/phpstorm/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/webide/PhpStorm-2024.2.3.exe#/cosi.7z
-    hash: 3d3679d2952f0d0b2e7e73582962547f83ed823028ffe167ab07bdce02b1a5bf
+    url: https://download.jetbrains.com/webide/PhpStorm-2024.2.4.exe#/cosi.7z
+    hash: ce6ab3da0ea4e74f5f74003eadca00c0a1b2283e7098f5a8da3858f854d0caf9
   arm64:
-    url: https://download.jetbrains.com/webide/PhpStorm-2024.2.3-aarch64.exe#/cosi.7z
-    hash: 105ba5c3f7290e35657052db04a0cd5ec4e0c0c59f05f255ba40b7732defd98b
+    url: https://download.jetbrains.com/webide/PhpStorm-2024.2.4-aarch64.exe#/cosi.7z
+    hash: 8f3ad0a8f412019e36b6176ddbb4d8c61a3cbff8f341db6598cf41c7e81ea3cc
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
