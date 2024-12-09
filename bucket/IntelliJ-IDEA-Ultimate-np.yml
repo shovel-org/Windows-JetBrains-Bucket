@@ -1,4 +1,4 @@
-version: 2024.3-243.21565.193
+version: 2024.3.1-243.22562.145
 description: IntelliJ IDEA Ultimate. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/idea/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/idea/ideaIU-2024.3.exe#/cosi.7z
-    hash: 07a93a15c2fb28798ccb1d0d86c4bcb9902daa7954b300646a885b12a781eab4
+    url: https://download.jetbrains.com/idea/ideaIU-2024.3.1.exe#/cosi.7z
+    hash: dfc57fb6fd79e019afb404c966876c833af6c5b82e2891cd86bd2d6dad8e9e05
   arm64:
-    url: https://download.jetbrains.com/idea/ideaIU-2024.3-aarch64.exe#/cosi.7z
-    hash: defc07a96d768b56e2ec66352957102a7f6a5d19342d83833c024459ea4f734a
+    url: https://download.jetbrains.com/idea/ideaIU-2024.3.1-aarch64.exe#/cosi.7z
+    hash: c16a452dc317e7915a2f902c8744f9d4c32c14a716017311594fcf4a74033886
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
