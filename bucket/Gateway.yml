@@ -1,5 +1,5 @@
 '##': 'TODO: Change the target path of the thinclient from Appdata'
-version: 2024.3.1-243.22562.160
+version: 2024.3.1.1-243.22562.252
 description: JetBrains Gateway. Launcher that brings a backend server and local environment together.
 homepage: https://www.jetbrains.com/remote-development/gateway/
 license: Unknown
