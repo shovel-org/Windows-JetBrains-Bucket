@@ -1,4 +1,4 @@
-version: 2024.3.1-243.22562.186
+version: 2024.3.2-243.23654.119
 description: GoLand. Cross-Platform, Clever IDE to Go by JetBrains.
 homepage: https://www.jetbrains.com/goland/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/goland/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/go/goland-2024.3.1.exe#/cosi.7z
-    hash: 97e88c1e3c8d83a543aade719d2edf3c74994c698be0343b629e48306e4a532a
+    url: https://download.jetbrains.com/go/goland-2024.3.2.exe#/cosi.7z
+    hash: 578a106dc1c21d3f32c5888efc220b2f6002fa2501c42a0e2c32fb0463ef2bbc
   arm64:
-    url: https://download.jetbrains.com/go/goland-2024.3.1-aarch64.exe#/cosi.7z
-    hash: 0be63f0b08e6b4512d61bce77375b034d4eb3fa4f044b0c552c6e839591ad117
+    url: https://download.jetbrains.com/go/goland-2024.3.2-aarch64.exe#/cosi.7z
+    hash: 05063bf98b93599273de908d422c0f6ae29eb3777e1b35b4d13dc3ca35067344
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
