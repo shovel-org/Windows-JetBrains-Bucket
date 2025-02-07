@@ -1,4 +1,4 @@
-version: 2024.3.4
+version: 2024.3.5
 description: DotMemory Command Line Tool. Free package for profiling .NET memory usage from the command line by JetBrains.
 homepage: https://www.jetbrains.com/dotmemory/download/#section=command-line-profiler
 license:
@@ -6,14 +6,14 @@ license:
   url: https://www.jetbrains.com/dotmemory/download/dotmemory_clt_license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.3.4/JetBrains.dotMemory.Console.windows-x64.2024.3.4.zip
-    hash: 0302b430b60831fe698e488c6a11cc72aa25ecabf3bab78adc3a497631635cdf
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.3.5/JetBrains.dotMemory.Console.windows-x64.2024.3.5.zip
+    hash: 24394f6c265121ca38b2c3d7d57950d240871e517f0ce42709affdd9d016d5b7
   32bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.3.4/JetBrains.dotMemory.Console.windows-x86.2024.3.4.zip
-    hash: d2cac592806564a907b18d6b36eb49c5bd3a00a683b9c4b5d7c169532d46e343
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.3.5/JetBrains.dotMemory.Console.windows-x86.2024.3.5.zip
+    hash: 68bdb8a0635e162f5e57bc1c6e967f24e63f2fcae114b90568d5e087cf975043
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2024.3.4/JetBrains.dotMemory.Console.windows-arm64.2024.3.4.zip
-    hash: 191288f64ed119c6581f5bb7a211c516223679ad9f433f4fe5ee29930f105ac6
+    url: https://download.jetbrains.com/resharper/dotUltimate.2024.3.5/JetBrains.dotMemory.Console.windows-arm64.2024.3.5.zip
+    hash: 5bd0fb3ad79e075909b66a6180100f3017e5d1160e5234b8fd41a525b47aa067
 bin: dotMemory.exe
 checkver:
   url: https://data.services.jetbrains.com/products/releases?code=DMCLP&latest=true&type=release
