@@ -1,4 +1,4 @@
-version: 2025.1-251.21418.62
+version: 2025.1-251.22821.72
 description: IntelliJ IDEA Community Early Access Program. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/idea/ideaIC-251.21418.62.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIC-251.22821.72.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - eb658620833424efc203840defe79a80bd429405ba4638db20fdc423d871f7a0
+    - cc5d2de6103503cd995d734084d1659e1bf8074261b1c5035cfbe134c74e986a
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/idea/ideaIC-251.21418.62-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIC-251.22821.72-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - dff2d8fe05ae2f6b8c9fdfe715675766a945faebbfb885fdb49f7b9265641f53
+    - 374034cd8d8bcac448d7a8985b1f7a3d77e584ea969b9459de3486a0144cc6ba
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
