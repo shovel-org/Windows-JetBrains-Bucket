@@ -1,4 +1,4 @@
-version: 2024.3.5-243.24978.27
+version: 2024.3.6-243.25659.34
 description: Rider. Fast, powerful and cross-platform .NET IDE by JetBrains.
 homepage: https://www.jetbrains.com/rider/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/rider/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/rider/JetBrains.Rider-2024.3.5.exe#/cosi.7z
-    hash: e21236edeab69240e926c0c8dcb4ad213fc428738d6eb1a33cb911519b4d8d99
+    url: https://download.jetbrains.com/rider/JetBrains.Rider-2024.3.6.exe#/cosi.7z
+    hash: 806f8c40ba600106f65cc2bf93f087bd1acad9c11da23db447014c2625545a87
   arm64:
-    url: https://download.jetbrains.com/rider/JetBrains.Rider-2024.3.5-aarch64.exe#/cosi.7z
-    hash: 7444ae306541bf0534fe91ae28e256711aa38a7d699e27718239a836ed63a059
+    url: https://download.jetbrains.com/rider/JetBrains.Rider-2024.3.6-aarch64.exe#/cosi.7z
+    hash: 9d8f4327c3da69a637eb8a7c75f900b0d241e1acadaae46ece8a239790bd2e67
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
