@@ -1,4 +1,4 @@
-version: 2024.3.3-243.24978.46
+version: 2024.3.4-243.25659.39
 description: IntelliJ IDEA Community. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -7,11 +7,11 @@ license:
 changelog: https://www.jetbrains.com/idea/whatsnew/
 architecture:
   64bit:
-    url: https://download.jetbrains.com/idea/ideaIC-2024.3.3.exe#/cosi.7z
-    hash: fc6399980cdbb04fdaaefa79aa41aef6f52306f0fe9ed3ca8e58152d0b2be23c
+    url: https://download.jetbrains.com/idea/ideaIC-2024.3.4.exe#/cosi.7z
+    hash: 65b96aca66832cdcefc2e92d0e120fe1e0b82e4765323f7c89582e8e24507d74
   arm64:
-    url: https://download.jetbrains.com/idea/ideaIC-2024.3.3-aarch64.exe#/cosi.7z
-    hash: 9cd71d97c2319b17ce60051b719ad378aadb3c1e9720b123ca98ec0b2e54494f
+    url: https://download.jetbrains.com/idea/ideaIC-2024.3.4-aarch64.exe#/cosi.7z
+    hash: 6b4c00c76aa602fc8d5aceab00777d147c15f162bf76bafe3197d4d14070ca78
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 bin:
