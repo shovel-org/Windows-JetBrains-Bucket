@@ -1,4 +1,4 @@
-version: 2025.1-251.23536.40
+version: 2025.1-251.23774.37
 description: PyCharm Community Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/pycharm/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://sales.jetbrains.com/hc/en-gb/articles/115001015290-Where-can-I-find-the-EULA-End-User-License-Agreement-
 architecture:
   64bit:
-    url: https://download.jetbrains.com/python/pycharm-community-251.23536.40.exe#/cosi.7z
-    hash: c6f183c4f61647e3c68d5b4fe0dd42e2c6e52e7b7b6d98a274e4d6a6768a6f1e
+    url: https://download.jetbrains.com/python/pycharm-community-251.23774.37.exe#/cosi.7z
+    hash: d1c3a74a96deae9e55d84c3c0ade9f6914fae35d651927c7eba8443f0bc838e5
   arm64:
-    url: https://download.jetbrains.com/python/pycharm-community-251.23536.40-aarch64.exe#/cosi.7z
-    hash: 8c5940d6a0263bc27011bd6419824006932c0a0596643bf9031797b44e2a5742
+    url: https://download.jetbrains.com/python/pycharm-community-251.23774.37-aarch64.exe#/cosi.7z
+    hash: cfae7ab4ef2533c77b53faafe6ecbb993fe1b8da32c561c3b34123593c8d9b1f
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
