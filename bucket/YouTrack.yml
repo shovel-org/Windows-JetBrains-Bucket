@@ -1,4 +1,4 @@
-version: 2025.1.64291
+version: 2025.1.66652
 description: Youtrack. Easy-to-use, fully customizable issue tracking and agile project management tool.
 homepage: https://jetbrains.com/youtrack/
 license:
@@ -6,9 +6,9 @@ license:
   url: https://jetbrains.com/youtrack/buy/license.html
 changelog: https://www.jetbrains.com/youtrack/whatsnew/
 notes: YouTrack could be executed from anywhere using 'youtrack' command.
-url: https://download.jetbrains.com/charisma/youtrack-2025.1.64291.zip
-hash: b8eb2bc106f89a83d7b1d822ecf47dd1d53449156171a53cb56990633cbb225f
-extract_dir: youtrack-2025.1.64291
+url: https://download.jetbrains.com/charisma/youtrack-2025.1.66652.zip
+hash: 91049ca2f9b9eb201893bbc5172c82de146e3e202033e07d93e58df628428f3b
+extract_dir: youtrack-2025.1.66652
 installer:
   script: |
     $ver_path = "$dir\bin"
