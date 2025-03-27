@@ -1,4 +1,4 @@
-version: 2025.1-251.23774.117
+version: 2025.1-251.23774.216
 description: GoLand Early Access Program. Cross-Platform, Clever IDE to Go by JetBrains.
 homepage: https://www.jetbrains.com/goland/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/go/goland-251.23774.117.exe#/cosi.7z
-    hash: 6df60625438dcdea99ab329c4d68763afbfb818a7ee42c747815630d819f53c7
+    url: https://download.jetbrains.com/go/goland-251.23774.216.exe#/cosi.7z
+    hash: 294ced0cd06a1120e2f8e4ac83e444ee374b325c0971d2080afdefec1add8626
   arm64:
-    url: https://download.jetbrains.com/go/goland-251.23774.117-aarch64.exe#/cosi.7z
-    hash: c5cc1f5a37278f1d13d5ae4fe02effcc2a24066fb1263ae851d37240b420a8f5
+    url: https://download.jetbrains.com/go/goland-251.23774.216-aarch64.exe#/cosi.7z
+    hash: 1f860b339021b977980809c1191eab906653f818b3b797f83c0bb062501f6445
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
