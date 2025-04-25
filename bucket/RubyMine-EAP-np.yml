@@ -1,4 +1,4 @@
-version: 2025.1-251.23774.208
+version: 2025.1.1-251.25410.31
 description: RubyMine Early Access Program. Cross-Platform Ruby on Rails IDE by JetBrains.
 homepage: https://www.jetbrains.com/ruby/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/ruby/RubyMine-251.23774.208.exe#/cosi.7z
-    hash: d4ed85c2c504cf91fb3cdb62e5ac74719d6f406e1ec6e69174565f6aebe97cb5
+    url: https://download.jetbrains.com/ruby/RubyMine-251.25410.31.exe#/cosi.7z
+    hash: 977d55782947c9c8e701613bd56e53f23f3f8f717b854dcd5ae9a1fd9db7cdf3
   arm64:
-    url: https://download.jetbrains.com/ruby/RubyMine-251.23774.208-aarch64.exe#/cosi.7z
-    hash: 860d46d2c4f606c0a53e8f5b79202dcb1136a914871ff212ffc3195b0de6a9f4
+    url: https://download.jetbrains.com/ruby/RubyMine-251.25410.31-aarch64.exe#/cosi.7z
+    hash: b3c8bf8fa4cc7fc5051be96f03e5d877f8ef7d44da6eccdb0dc04af677b53874
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
