@@ -1,4 +1,4 @@
-version: 2025.1.1-251.25410.139
+version: 2025.1.1.1-251.25410.160
 description: JetBrains Gateway Early Access Program. Launcher that brings a backend server and local environment together.
 homepage: https://www.jetbrains.com/help/idea/2021.3/remote-development-starting-page.html
 license:
