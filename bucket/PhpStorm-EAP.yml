@@ -1,4 +1,4 @@
-version: 2025.2-252.13776.56
+version: 2025.2-252.16512.27
 description: PhpStorm Early Access Program. Cross-Platform, Lightning-Smart IDE for PHP programming by JetBrains.
 homepage: https://www.jetbrains.com/phpstorm/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/webide/PhpStorm-252.13776.56.exe#/cosi.7z
+    - https://download.jetbrains.com/webide/PhpStorm-252.16512.27.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - c4c2bfe87d77a6fcd132f18b84fd80a29c5c6e9da7bf7626d3f99ded6137c555
+    - d8d4795e0355394662c4f009157150a7b39963d3bf2f0500577e9d17a15fdcc5
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/webide/PhpStorm-252.13776.56-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/webide/PhpStorm-252.16512.27-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 333ac37e66ac7b350ee8b8527317bb9e1f6546c72f1c5aa480bc6900ef1ebf8c
+    - 2d005ac96e56aa9602bfad0da2bd0d06a5d9817a11e29fb49c9fe7616c6573ae
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
