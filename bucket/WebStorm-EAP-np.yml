@@ -1,4 +1,4 @@
-version: 2025.2-252.16512.32
+version: 2025.2-252.18003.34
 description: WebStorm Early Access Program. Cross-Platform, Smart JavaScript IDE by JetBrains.
 homepage: https://www.jetbrains.com/webstorm/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/webstorm/WebStorm-252.16512.32.exe#/cosi.7z
-    hash: 904457d566bed064c6508209d7b75b3d7028f1623542bf1560c43e87bb46e074
+    url: https://download.jetbrains.com/webstorm/WebStorm-252.18003.34.exe#/cosi.7z
+    hash: b53ca4a02658ea2ffefd436986044c63b9064a4880ea543de673a2556b5e269e
   arm64:
-    url: https://download.jetbrains.com/webstorm/WebStorm-252.16512.32-aarch64.exe#/cosi.7z
-    hash: 9cdd69a8376f000607b3d49a69b4056165ad5b4b3755590d9577031e49eda548
+    url: https://download.jetbrains.com/webstorm/WebStorm-252.18003.34-aarch64.exe#/cosi.7z
+    hash: 1a4f78661dd04601cc0d31dc9cc1d367849617b58ff2ab01946bcc7ad876d85c
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
