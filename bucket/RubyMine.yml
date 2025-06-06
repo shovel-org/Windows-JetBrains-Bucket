@@ -1,4 +1,4 @@
-version: 2025.1.1-251.25410.120
+version: 2025.1.2-251.26094.122
 description: RubyMine. Cross-Platform Ruby on Rails IDE by JetBrains.
 homepage: https://www.jetbrains.com/ruby/
 license:
@@ -8,17 +8,17 @@ changelog: https://www.jetbrains.com/ruby/whatsnew/
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/ruby/RubyMine-2025.1.1.exe#/cosi.7z
+    - https://download.jetbrains.com/ruby/RubyMine-2025.1.2.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - a407e62de86a22ba115191218d262d828891a25bc913f96f377322d9a0e86fd3
+    - 5d207015b8fb50f4a8326f2997cd5ea6d426eb59df98a1b7a8eccd2de16bdbf5
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/ruby/RubyMine-2025.1.1-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/ruby/RubyMine-2025.1.2-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 0df2624c97512eace3afbd2c76277002198aab2662e4b4438f7e42cded9f9260
+    - 34cf9f9ed618524fe51c100f6ab39f569c648c460f12e5a80b671a80695cc4b9
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
