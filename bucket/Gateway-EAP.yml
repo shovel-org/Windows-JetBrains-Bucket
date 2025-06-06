@@ -1,5 +1,5 @@
 '##': 'TODO: Change the target path of the thinclient from Appdata'
-version: 2025.2-252.13776.57
+version: 2025.2-252.19874.23
 description: JetBrains Gateway Early Access Program. Launcher that brings a backend server and local environment together.
 homepage: https://www.jetbrains.com/help/idea/2021.3/remote-development-starting-page.html
 license:
@@ -8,17 +8,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/idea/gateway/JetBrainsGateway-252.13776.57.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/gateway/JetBrainsGateway-252.19874.23.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 4a71b6bb3e70d8f02746d2aa8176d73c9feda91fab9f157bb358d7640ba4813f
+    - 6206fd012fdb005331e446eb900075364fadbe06d3db057a7f73718e506ec491
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/idea/gateway/JetBrainsGateway-252.13776.57-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/gateway/JetBrainsGateway-252.19874.23-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 1cc1bd8e44adde83f4e7972f1abd586d9b9c4148f52c9347e41e2489d2108b47
+    - fcc8266da8dd54ebf460c9a6c31ec40e05648fbfac0c415f82dc6e667d0b1c6c
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
