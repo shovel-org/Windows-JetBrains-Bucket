@@ -1,4 +1,4 @@
-version: 2025.1.3-251.26927.40
+version: 2025.1.4.1-251.27812.50
 description: WebStorm. Cross-Platform, Smart JavaScript IDE by JetBrains.
 homepage: https://www.jetbrains.com/webstorm/
 license:
@@ -8,17 +8,17 @@ changelog: https://www.jetbrains.com/webstorm/whatsnew/
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/webstorm/WebStorm-2025.1.3.exe#/cosi.7z
+    - https://download.jetbrains.com/webstorm/WebStorm-2025.1.4.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 060e697d95a0898f714ac5cbf054fe770fa33a8c1152047aa1bc2ff30f3ab21d
+    - 3c17d95f45ea5faf3205cffe1e4fc7a118c5efc21fa5da165b4045559905c818
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/webstorm/WebStorm-2025.1.3-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/webstorm/WebStorm-2025.1.4-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 911dd7ef3626f3b9158bb292de60e3253a8406fe390ad5a22e4161763a268566
+    - 9211b3e17030ea7d5af8e219ca899aec3619190ab636d9121e9677fcce25b80c
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
