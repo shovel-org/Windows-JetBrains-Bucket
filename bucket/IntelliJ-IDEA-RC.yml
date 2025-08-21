@@ -1,4 +1,4 @@
-version: 2025.2-252.23892.360
+version: 2025.2.1-252.25557.77
 description: IntelliJ IDEA Community Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/idea/ideaIC-252.23892.360.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIC-252.25557.77.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 5e8a2c38d6b91f24f2c0f39db2942c3d6f9b050a580c93c9fe996be4a7e25a36
+    - 3a74e127477d70380779835bf98604083ac65cc0efae1c3f234fd83c8ae9f8eb
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/idea/ideaIC-252.23892.360-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIC-252.25557.77-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - c010ff9964fa794d246419ae500e2b33bc3e16a32a71bd2a6013421bb5a1a870
+    - 3b4f945b315477348aa7ac35eabfab762986941cbf5e6fa7d949f65392c664cb
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
