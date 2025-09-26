@@ -1,4 +1,4 @@
-version: 2025.2.2
+version: 2025.2.2.1
 description: dotTrace Command Line Tools. Free package that enables analyzing performance of .NET applications outside of Visual Studio by JetBrains.
 homepage: https://www.jetbrains.com/profiler/download/#section=dottraceclt
 license:
@@ -6,14 +6,14 @@ license:
   url: https://www.jetbrains.com/profiler/download/dottrace_clt_license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.2/JetBrains.dotTrace.CommandLineTools.windows-x64.2025.2.2.zip
-    hash: b43cfbb359d8701198997e076ad0fcb2dc75fe7e2b0c5cfab6b76f49d118b121
+    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.2.1/JetBrains.dotTrace.CommandLineTools.windows-x64.2025.2.2.1.zip
+    hash: 9e90a4e191da8cc9c55f9cf1f2fd16fd26c69793560199b5f9208fdaa6cef4be
   32bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.2/JetBrains.dotTrace.CommandLineTools.windows-x86.2025.2.2.zip
-    hash: 6de36e0154364cec2fc8e56d70763469b23b56c466ee59eaf483ffff7dadf89c
+    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.2.1/JetBrains.dotTrace.CommandLineTools.windows-x86.2025.2.2.1.zip
+    hash: 77cee562ad95be902d77958f3122fc689ab06a40fdd17c62be4bb3fc0a7f78cd
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.2/JetBrains.dotTrace.CommandLineTools.windows-arm64.2025.2.2.zip
-    hash: a77311b7ea1ab1ab1262d671d77ee795c393feddceaf91348f8eacdeba0bb10a
+    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.2.1/JetBrains.dotTrace.CommandLineTools.windows-arm64.2025.2.2.1.zip
+    hash: 898825f3f15fa883ea0f4d7afd040d5b87d4c19ebfceb49476629782ee9accf3
 bin:
 - dottrace.exe
 - Reporter.exe
