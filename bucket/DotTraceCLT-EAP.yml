@@ -1,4 +1,4 @@
-version: 2025.3.EAP4
+version: 2025.3.EAP5
 description: dotTrace Command Line Tools Early Access Program. .NET Applications performance analyzer outside of Visual Studio by JetBrains.
 homepage: https://www.jetbrains.com/profiler/download/#section=dottraceclt
 license:
@@ -6,14 +6,14 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2025.3.EAP4/JetBrains.dotTrace.CommandLineTools.windows-x64.2025.3.EAP4.Checked.zip
-    hash: fce91d674fefc8ed47d52f543a679da7e01e61242c0fd21db34a7e766c5b01e6
+    url: https://download.jetbrains.com/resharper/dotUltimate.2025.3.EAP5/JetBrains.dotTrace.CommandLineTools.windows-x64.2025.3.EAP5.Checked.zip
+    hash: fb825119a5b7572c9932323408865102e9c1c47b53559433ad7414715f53fe28
   32bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2025.3.EAP4/JetBrains.dotTrace.CommandLineTools.windows-x86.2025.3.EAP4.Checked.zip
-    hash: 6c8432e764993495c59acfc5c468d8fcad6bd246ef3df229d30683604c215b80
+    url: https://download.jetbrains.com/resharper/dotUltimate.2025.3.EAP5/JetBrains.dotTrace.CommandLineTools.windows-x86.2025.3.EAP5.Checked.zip
+    hash: 32a9b404a97a69290c4e36221394e64b412fcf170abdc8c51d8933da77053178
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2025.3.EAP4/JetBrains.dotTrace.CommandLineTools.windows-arm64.2025.3.EAP4.Checked.zip
-    hash: 805c9616df8ae4972519ec9c8101e0ad9a163fc6214bdcde869bae53854452f5
+    url: https://download.jetbrains.com/resharper/dotUltimate.2025.3.EAP5/JetBrains.dotTrace.CommandLineTools.windows-arm64.2025.3.EAP5.Checked.zip
+    hash: ccaf322ea1f393846f04491364741f7a4c2eb834f66d0c4b5b29c7b13088de19
 bin:
 - dottrace.exe
 - Reporter.exe
