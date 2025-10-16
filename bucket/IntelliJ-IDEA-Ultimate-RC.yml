@@ -1,4 +1,4 @@
-version: 2025.2.3-252.26830.24
+version: 2025.2.4-252.27397.28
 description: IntelliJ IDEA Ultimate Release Candidate. Cross-Platform Java IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/idea/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/idea/ideaIU-252.26830.24.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIU-252.27397.28.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - dfa96f6a5ca1c4453c1105b6c2ace2ce38dd02413b4fafad6f1b6072fcd13700
+    - 1b48ffa5f166f735ad7ec39a944b8189106833df5764dbff064e5c39cf5a5685
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/idea/ideaIU-252.26830.24-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/idea/ideaIU-252.27397.28-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 9b69e2f84d0cd48370ec04344a7dff2e127837b70b64339f3fc012e42592cc0d
+    - 241e1b9381f1fdcb6dcea28eb6ad4342a76d65b27e6bc08da9942c916e9d99df
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
