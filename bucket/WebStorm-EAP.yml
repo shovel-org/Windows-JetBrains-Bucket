@@ -1,4 +1,4 @@
-version: 2025.3-253.25908.30
+version: 2025.3-253.27642.34
 description: WebStorm Early Access Program. Cross-Platform, Smart JavaScript IDE by JetBrains.
 homepage: https://www.jetbrains.com/webstorm/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/webstorm/WebStorm-253.25908.30.exe#/cosi.7z
+    - https://download.jetbrains.com/webstorm/WebStorm-253.27642.34.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 4fce258531259125de7640a2c67f9e31a55754801d350b8ee0c4a5c1d23bd31f
+    - 9f2ffcb6a4707b79d86d2247a32b005772a81b74d94f1c516d6f158bbc140ea7
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/webstorm/WebStorm-253.25908.30-aarch64.exe#/cosi.7z
+    - https://download.jetbrains.com/webstorm/WebStorm-253.27642.34-aarch64.exe#/cosi.7z
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - a1e2c3eb41300f6bf08d37defcfdac9ab47d9db8f2884eb8618c901bd5ef06c3
+    - 526ab1a6be2af45fcffcc4fbab9f8ee9cce1641f6aa6bb76177c93755eb541dc
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
