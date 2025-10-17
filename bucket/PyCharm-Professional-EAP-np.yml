@@ -1,4 +1,4 @@
-version: 2025.3-253.24325.40
+version: 2025.3-253.27642.35
 description: PyCharm Professional Early Access Program. Cross-Platform Python IDE for professional developers by JetBrains.
 homepage: https://www.jetbrains.com/pycharm/
 license:
@@ -6,11 +6,11 @@ license:
   url: https://www.jetbrains.com/legal/agreements/user_eap.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/python/pycharm-professional-253.24325.40.exe#/cosi.7z
-    hash: 971d0c97df80bbc055153153789582d1c954af51603b5f78628ec336a4be68f9
+    url: https://download.jetbrains.com/python/pycharm-professional-253.27642.35.exe#/cosi.7z
+    hash: 14ace5995b4793b2b7a2f1ccde0a3927d5c5c049bca4b60fbb8683791d100636
   arm64:
-    url: https://download.jetbrains.com/python/pycharm-professional-253.24325.40-aarch64.exe#/cosi.7z
-    hash: ff4d564cafd6657a4dcf3eb68ab0cb75697b6c4a3cebd73542cde642b3f7f68d
+    url: https://download.jetbrains.com/python/pycharm-professional-253.27642.35-aarch64.exe#/cosi.7z
+    hash: 3fcef770c97f60068978056933ca0ac46a458ac2304481a3e04e3c5887f54325
 extract_to: IDE
 pre_install: Remove-AppDirItem 'IDE\$*'
 shortcuts:
