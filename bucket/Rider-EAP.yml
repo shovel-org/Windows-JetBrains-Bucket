@@ -1,4 +1,4 @@
-version: 2025.3-EAP5-253.25908.23
+version: 2025.3-EAP6-253.27642.42
 description: Rider (Early Access Program). Fast, powerful and cross-platform .NET IDE by JetBrains.
 homepage: https://www.jetbrains.com/rider/
 license:
@@ -7,17 +7,17 @@ license:
 architecture:
   64bit:
     url:
-    - https://download.jetbrains.com/rider/JetBrains.Rider-2025.3-EAP5-253.25908.23.Checked.win.zip
+    - https://download.jetbrains.com/rider/JetBrains.Rider-2025.3-EAP6-253.27642.42.Checked.win.zip
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 4940ca009bb36b624644758e83697a9e455c727c51bc025768652391500a1303
+    - 186e48b42b6b079975d170dd065ae187b129823661fbeb7243c33707185a60ba
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
   arm64:
     url:
-    - https://download.jetbrains.com/rider/JetBrains.Rider-2025.3-EAP5-253.25908.23.Checked-aarch64.win.zip
+    - https://download.jetbrains.com/rider/JetBrains.Rider-2025.3-EAP6-253.27642.42.Checked-aarch64.win.zip
     - https://raw.githubusercontent.com/shovel-org/Windows-JetBrains-Bucket/main/scripts/portable.ps1
     hash:
-    - 722ec8d73468d91c21a8a6766bc0ad4e8f4e27a45f62929f58b63d8afc62aa98
+    - dc43383935acfc2f793715c1aa6c5a4c6953a329607c9b2ffec8981b662ae988
     - 2255673952a7909596b8783f6e913d2301f91f0def0275fcfbc6371b0ca021f8
 extract_to: IDE
 installer:
