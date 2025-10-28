@@ -1,4 +1,4 @@
-version: 2025.2.3
+version: 2025.2.4
 description: DotTrace. .NET Performace Profiler by JetBrains.
 homepage: https://www.jetbrains.com/profiler/
 license:
@@ -6,14 +6,14 @@ license:
   url: https://www.jetbrains.com/store/license.html
 architecture:
   64bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.3/dotTrace64.2025.2.3.exe#/dotTrace.exe
-    hash: 5228db1074d3049f0d300529d6be6723485f0b8baaa567c3df48bd131b06b8f4
+    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.4/dotTrace64.2025.2.4.exe#/dotTrace.exe
+    hash: d3ab26f25ec7141f950d66acf94d9dcf771eaeb21f9836010b1728a48caff60d
   32bit:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.3/dotTrace32.2025.2.3.exe#/dotTrace.exe
-    hash: 4ba9d82cfe5087801515aa7b303a9dffe50e2cc6e59268944ecc7f2ebd75fe1e
+    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.4/dotTrace32.2025.2.4.exe#/dotTrace.exe
+    hash: b38a9f002fb7978bf91ffdae5ee99a8931cbb9ef29abc29d4b33cefc878a38bc
   arm64:
-    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.3/dotTrace64a.2025.2.3.exe#/dotTrace.exe
-    hash: f6a657f2ba32b184e90cb733a3ec973b0d57a70af5740c78eb2912eb14a752c1
+    url: https://download.jetbrains.com/resharper/dotUltimate.2025.2.4/dotTrace64a.2025.2.4.exe#/dotTrace.exe
+    hash: 4f32dd6468bbe7fa7fea6a118b7e8b6dc378149a6f9c3aee7785b735d534d348
 shortcuts:
 - - dotTrace.exe
   - dotTrace
